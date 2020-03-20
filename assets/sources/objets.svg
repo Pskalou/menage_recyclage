@@ -459,9 +459,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.56349325"
-     inkscape:cx="362.50727"
-     inkscape:cy="2084.8514"
+     inkscape:zoom="0.31619414"
+     inkscape:cx="688.73611"
+     inkscape:cy="1390.8877"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -469,7 +469,7 @@
      inkscape:guide-bbox="true"
      inkscape:window-width="1920"
      inkscape:window-height="1029"
-     inkscape:window-x="1280"
+     inkscape:window-x="0"
      inkscape:window-y="27"
      inkscape:window-maximized="1" />
   <metadata
@@ -480,7 +480,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -490,7 +490,7 @@
      id="layer1">
     <g
        id="g2371"
-       transform="translate(51.395379,-307.3503)"
+       transform="translate(22.291209,-163.63844)"
        clip-path="url(#clipPath2509)"
        inkscape:export-filename="/home/bouscadilla/godot/Ménage et recyclage/assets/poubelle_bleue_f.png"
        inkscape:export-xdpi="81.18499"
@@ -505,29 +505,29 @@
       <image
          sodipodi:absref="/home/bouscadilla/godot/Ménage et recyclage/assets/sources/4_poubelles.jpg"
          xlink:href="4_poubelles.jpg"
-         clip-path="url(#clipPath2123)"
-         y="-473.92496"
-         x="-329.13531"
-         id="image1591-4-9-5-3"
-         preserveAspectRatio="none"
-         height="190.5"
+         transform="matrix(-1,0,0,1,77.592428,531.03002)"
          width="285.75"
-         transform="matrix(-1,0,0,1,77.592428,531.03002)" />
+         height="190.5"
+         preserveAspectRatio="none"
+         id="image1591-4-9-5-3"
+         x="-329.13531"
+         y="-473.92496"
+         clip-path="url(#clipPath2123)" />
       <image
          sodipodi:absref="/home/bouscadilla/godot/Ménage et recyclage/assets/sources/4_poubelles.jpg"
          xlink:href="4_poubelles.jpg"
-         width="285.75"
-         height="190.5"
-         preserveAspectRatio="none"
-         id="image1591-4-9-5"
-         x="-185.2804"
-         y="-211.46556"
+         transform="matrix(-1,0,0,1,221.44734,268.57062)"
          clip-path="url(#clipPath2119)"
-         transform="matrix(-1,0,0,1,221.44734,268.57062)" />
+         y="-211.46556"
+         x="-185.2804"
+         id="image1591-4-9-5"
+         preserveAspectRatio="none"
+         height="190.5"
+         width="285.75" />
     </g>
     <g
        id="g2366"
-       transform="translate(10.254199,-440.55085)"
+       transform="translate(-18.849968,-296.83899)"
        clip-path="url(#clipPath2497)"
        inkscape:export-filename="/home/bouscadilla/godot/Ménage et recyclage/assets/poubelle_verte_f.png"
        inkscape:export-xdpi="81.18499"
@@ -542,31 +542,31 @@
       <image
          sodipodi:absref="/home/bouscadilla/godot/Ménage et recyclage/assets/sources/4_poubelles.jpg"
          xlink:href="4_poubelles.jpg"
-         width="286.27917"
-         height="190.85278"
-         preserveAspectRatio="none"
-         id="image1591-4-90"
-         x="-212.1096"
-         y="34.859703"
-         clip-path="url(#clipPath1907-9)"
+         transform="translate(147.1541,-8.3345324)"
          style="opacity:1"
-         transform="translate(147.1541,-8.3345324)" />
+         clip-path="url(#clipPath1907-9)"
+         y="34.859703"
+         x="-212.1096"
+         id="image1591-4-90"
+         preserveAspectRatio="none"
+         height="190.85278"
+         width="286.27917" />
       <image
          sodipodi:absref="/home/bouscadilla/godot/Ménage et recyclage/assets/sources/4_poubelles.jpg"
          xlink:href="4_poubelles.jpg"
-         width="286.27917"
-         height="190.85277"
-         preserveAspectRatio="none"
-         id="image1591-4-6-9"
-         x="-212.1096"
-         y="34.859703"
-         clip-path="url(#clipPath1903-1)"
+         transform="translate(147.15401,-8.3344224)"
          style="opacity:1"
-         transform="translate(147.15401,-8.3344224)" />
+         clip-path="url(#clipPath1903-1)"
+         y="34.859703"
+         x="-212.1096"
+         id="image1591-4-6-9"
+         preserveAspectRatio="none"
+         height="190.85277"
+         width="286.27917" />
     </g>
     <g
        id="g2361"
-       transform="translate(133.20649,-278.6678)"
+       transform="translate(104.10229,-134.95594)"
        clip-path="url(#clipPath2517)"
        inkscape:export-filename="/home/bouscadilla/godot/Ménage et recyclage/assets/poubelle_rouge_f.png"
        inkscape:export-xdpi="81.18499"
@@ -581,27 +581,27 @@
       <image
          sodipodi:absref="/home/bouscadilla/godot/Ménage et recyclage/assets/sources/4_poubelles.jpg"
          xlink:href="4_poubelles.jpg"
-         clip-path="url(#clipPath1848-7)"
-         width="285.75"
-         height="190.5"
-         preserveAspectRatio="none"
-         id="image1591-8-2-6-1"
-         x="-142.08852"
-         y="-124.28402"
+         transform="translate(18.466289,152.76506)"
          style="fill:#808080"
-         transform="translate(18.466289,152.76506)" />
+         y="-124.28402"
+         x="-142.08852"
+         id="image1591-8-2-6-1"
+         preserveAspectRatio="none"
+         height="190.5"
+         width="285.75"
+         clip-path="url(#clipPath1848-7)" />
       <image
          sodipodi:absref="/home/bouscadilla/godot/Ménage et recyclage/assets/sources/4_poubelles.jpg"
          xlink:href="4_poubelles.jpg"
-         transform="translate(71.793436,478.77185)"
-         clip-path="url(#clipPath1844-1)"
-         width="285.75"
-         height="190.5"
-         preserveAspectRatio="none"
-         id="image1591-8-2-5"
-         x="-195.41547"
+         style="fill:#808080"
          y="-450.29068"
-         style="fill:#808080" />
+         x="-195.41547"
+         id="image1591-8-2-5"
+         preserveAspectRatio="none"
+         height="190.5"
+         width="285.75"
+         clip-path="url(#clipPath1844-1)"
+         transform="translate(71.793436,478.77185)" />
     </g>
     <g
        id="g970" />
@@ -684,15 +684,15 @@
       <image
          sodipodi:absref="/home/bouscadilla/godot/Ménage et recyclage/assets/sources/guillaume_jeu_1.png"
          xlink:href="guillaume_jeu_1.png"
-         style="opacity:1"
-         y="-309.06061"
-         x="287.20465"
-         id="image18"
-         preserveAspectRatio="none"
-         height="251.968"
-         width="335.95734"
+         inkscape:transform-center-y="111.45517"
          inkscape:transform-center-x="87.639959"
-         inkscape:transform-center-y="111.45517" />
+         width="335.95734"
+         height="251.968"
+         preserveAspectRatio="none"
+         id="image18"
+         x="287.20465"
+         y="-309.06061"
+         style="opacity:1" />
     </g>
     <g
        id="g983-3"
@@ -773,14 +773,14 @@
       <image
          sodipodi:absref="/home/bouscadilla/godot/Ménage et recyclage/assets/sources/guillaume_jeu_2.png"
          xlink:href="guillaume_jeu_2.png"
-         transform="rotate(-7.1210545)"
-         style="opacity:1"
-         y="-245.98422"
-         x="291.19589"
-         id="image29"
-         preserveAspectRatio="none"
+         width="350.87939"
          height="263.15955"
-         width="350.87939" />
+         preserveAspectRatio="none"
+         id="image29"
+         x="291.19589"
+         y="-245.98422"
+         style="opacity:1"
+         transform="rotate(-7.1210545)" />
     </g>
     <g
        id="g983-3-9"
@@ -859,14 +859,14 @@
         <image
            sodipodi:absref="/home/bouscadilla/godot/Ménage et recyclage/assets/sources/thilou_jeu_2.png"
            xlink:href="thilou_jeu_2.png"
-           transform="rotate(3.5333001)"
-           style="opacity:1"
-           y="-298.29868"
-           x="371.54919"
-           id="image73"
-           preserveAspectRatio="none"
+           width="168.2599"
            height="166.40781"
-           width="168.2599" />
+           preserveAspectRatio="none"
+           id="image73"
+           x="371.54919"
+           y="-298.29868"
+           style="opacity:1"
+           transform="rotate(3.5333001)" />
       </g>
     </g>
     <g
@@ -948,14 +948,14 @@
       <image
          sodipodi:absref="/home/bouscadilla/godot/Ménage et recyclage/assets/sources/juliette_jeu_1.png"
          xlink:href="juliette_jeu_1.png"
-         transform="rotate(2.9959263)"
-         style="opacity:1"
-         y="-321.61743"
-         x="383.10889"
-         id="image40"
-         preserveAspectRatio="none"
+         width="144.25882"
          height="192.34508"
-         width="144.25882" />
+         preserveAspectRatio="none"
+         id="image40"
+         x="383.10889"
+         y="-321.61743"
+         style="opacity:1"
+         transform="rotate(2.9959263)" />
     </g>
     <g
        id="g983-3-9-4-0"
@@ -1036,14 +1036,14 @@
       <image
          sodipodi:absref="/home/bouscadilla/godot/Ménage et recyclage/assets/sources/thilou_jeu_1.png"
          xlink:href="thilou_jeu_1.png"
-         transform="rotate(4.0646483)"
-         style="opacity:1"
-         y="-295.95728"
-         x="374.93912"
-         id="image62"
-         preserveAspectRatio="none"
+         width="155.38712"
          height="165.6552"
-         width="155.38712" />
+         preserveAspectRatio="none"
+         id="image62"
+         x="374.93912"
+         y="-295.95728"
+         style="opacity:1"
+         transform="rotate(4.0646483)" />
     </g>
     <g
        id="g983-3-9-4-5"
@@ -1124,14 +1124,14 @@
       <image
          sodipodi:absref="/home/bouscadilla/godot/Ménage et recyclage/assets/sources/juliette_jeu_2.png"
          xlink:href="juliette_jeu_2.png"
-         transform="rotate(21.077377)"
-         style="opacity:1"
-         y="-442.06467"
-         x="307.93741"
-         id="image51"
-         preserveAspectRatio="none"
+         width="144.07535"
          height="192.10048"
-         width="144.07535" />
+         preserveAspectRatio="none"
+         id="image51"
+         x="307.93741"
+         y="-442.06467"
+         style="opacity:1"
+         transform="rotate(21.077377)" />
     </g>
     <g
        id="g983-3-9-4-4"
@@ -1208,7 +1208,7 @@
     </g>
     <g
        id="g2356"
-       transform="translate(475.07804,-374.1629)"
+       transform="translate(445.97384,-230.45104)"
        clip-path="url(#clipPath2505)"
        inkscape:export-filename="/home/bouscadilla/godot/Ménage et recyclage/assets/poubelle_jaune_f.png"
        inkscape:export-xdpi="81.18499"
@@ -1223,29 +1223,29 @@
       <image
          sodipodi:absref="/home/bouscadilla/godot/Ménage et recyclage/assets/sources/4_poubelles.jpg"
          xlink:href="4_poubelles.jpg"
-         transform="translate(7.82434,472.89302)"
-         width="285.75"
-         height="190.5"
-         preserveAspectRatio="none"
-         id="image1591-4-9-7-5"
-         x="-441.6626"
+         clip-path="url(#clipPath2038-3)"
          y="-512.29462"
-         clip-path="url(#clipPath2038-3)" />
+         x="-441.6626"
+         id="image1591-4-9-7-5"
+         preserveAspectRatio="none"
+         height="190.5"
+         width="285.75"
+         transform="translate(7.82434,472.89302)" />
       <image
          sodipodi:absref="/home/bouscadilla/godot/Ménage et recyclage/assets/sources/4_poubelles.jpg"
          xlink:href="4_poubelles.jpg"
-         width="285.75"
-         height="190.5"
-         preserveAspectRatio="none"
-         id="image1591-4-9-6"
-         x="-296.45483"
-         y="59.621296"
+         transform="translate(-137.38342,-99.022909)"
          clip-path="url(#clipPath2034-6)"
-         transform="translate(-137.38342,-99.022909)" />
+         y="59.621296"
+         x="-296.45483"
+         id="image1591-4-9-6"
+         preserveAspectRatio="none"
+         height="190.5"
+         width="285.75" />
     </g>
     <g
        id="g2377"
-       transform="translate(0.15316907,10.545977)"
+       transform="translate(-28.950999,154.25779)"
        clip-path="url(#clipPath2513)"
        inkscape:export-filename="/home/bouscadilla/godot/Ménage et recyclage/assets/poubelle_bleue_o.png"
        inkscape:export-xdpi="81.18499"
@@ -1265,31 +1265,31 @@
       <image
          sodipodi:absref="/home/bouscadilla/godot/Ménage et recyclage/assets/sources/4_poubelles.jpg"
          xlink:href="4_poubelles.jpg"
-         transform="matrix(-1,0,0,1,47.876484,213.13373)"
-         clip-path="url(#clipPath2123-2)"
-         y="-473.92496"
-         x="-329.13531"
-         id="image1591-4-9-5-3-3"
-         preserveAspectRatio="none"
+         width="285.75"
          height="190.5"
-         width="285.75" />
+         preserveAspectRatio="none"
+         id="image1591-4-9-5-3-3"
+         x="-329.13531"
+         y="-473.92496"
+         clip-path="url(#clipPath2123-2)"
+         transform="matrix(-1,0,0,1,47.876484,213.13373)" />
       <image
          sodipodi:absref="/home/bouscadilla/godot/Ménage et recyclage/assets/sources/4_poubelles.jpg"
          xlink:href="4_poubelles.jpg"
-         transform="matrix(-0.25881905,0.96592583,0.96592583,0.25881905,244.2795,-223.44834)"
-         clip-path="url(#clipPath2119-8)"
-         y="-211.46556"
-         x="-185.2804"
-         id="image1591-4-9-5-9"
-         preserveAspectRatio="none"
-         height="190.5"
-         width="285.75"
+         inkscape:transform-center-y="-123.85959"
          inkscape:transform-center-x="-38.454307"
-         inkscape:transform-center-y="-123.85959" />
+         width="285.75"
+         height="190.5"
+         preserveAspectRatio="none"
+         id="image1591-4-9-5-9"
+         x="-185.2804"
+         y="-211.46556"
+         clip-path="url(#clipPath2119-8)"
+         transform="matrix(-0.25881905,0.96592583,0.96592583,0.25881905,244.2795,-223.44834)" />
     </g>
     <g
        id="g2383"
-       transform="translate(-56.682691,-148.74308)"
+       transform="translate(-85.786861,-5.0312793)"
        clip-path="url(#clipPath2493)"
        inkscape:export-filename="/home/bouscadilla/godot/Ménage et recyclage/assets/poubelle_verte_o.png"
        inkscape:export-xdpi="81.18499"
@@ -1310,33 +1310,33 @@
       <image
          sodipodi:absref="/home/bouscadilla/godot/Ménage et recyclage/assets/sources/4_poubelles.jpg"
          xlink:href="4_poubelles.jpg"
-         width="286.27917"
-         height="190.85278"
-         preserveAspectRatio="none"
-         id="image1591-4"
-         x="-212.1096"
-         y="34.859703"
-         clip-path="url(#clipPath1907)"
+         transform="translate(132.14229,-300.14229)"
          style="opacity:1"
-         transform="translate(132.14229,-300.14229)" />
+         clip-path="url(#clipPath1907)"
+         y="34.859703"
+         x="-212.1096"
+         id="image1591-4"
+         preserveAspectRatio="none"
+         height="190.85278"
+         width="286.27917" />
       <image
          sodipodi:absref="/home/bouscadilla/godot/Ménage et recyclage/assets/sources/4_poubelles.jpg"
          xlink:href="4_poubelles.jpg"
-         width="286.27917"
-         height="190.85277"
-         preserveAspectRatio="none"
-         id="image1591-4-6"
-         x="-212.1096"
-         y="34.859703"
-         clip-path="url(#clipPath1903)"
-         style="opacity:1"
-         transform="rotate(-75,-261.32974,-111.02728)"
+         inkscape:transform-center-y="-59.383166"
          inkscape:transform-center-x="-21.229606"
-         inkscape:transform-center-y="-59.383166" />
+         transform="rotate(-75,-261.32974,-111.02728)"
+         style="opacity:1"
+         clip-path="url(#clipPath1903)"
+         y="34.859703"
+         x="-212.1096"
+         id="image1591-4-6"
+         preserveAspectRatio="none"
+         height="190.85277"
+         width="286.27917" />
     </g>
     <g
        id="g2389"
-       transform="translate(42.323639,10.264367)"
+       transform="translate(13.219469,153.97618)"
        clip-path="url(#clipPath2521)"
        inkscape:export-filename="/home/bouscadilla/godot/Ménage et recyclage/assets/poubelle_rouge_o.png"
        inkscape:export-xdpi="81.18499"
@@ -1357,33 +1357,33 @@
       <image
          sodipodi:absref="/home/bouscadilla/godot/Ménage et recyclage/assets/sources/4_poubelles.jpg"
          xlink:href="4_poubelles.jpg"
-         clip-path="url(#clipPath1848)"
-         width="285.75"
-         height="190.5"
-         preserveAspectRatio="none"
-         id="image1591-8-2-6"
-         x="-142.08852"
-         y="-124.28402"
+         transform="translate(28.407048,-136.1671)"
          style="fill:#808080"
-         transform="translate(28.407048,-136.1671)" />
+         y="-124.28402"
+         x="-142.08852"
+         id="image1591-8-2-6"
+         preserveAspectRatio="none"
+         height="190.5"
+         width="285.75"
+         clip-path="url(#clipPath1848)" />
       <image
          sodipodi:absref="/home/bouscadilla/godot/Ménage et recyclage/assets/sources/4_poubelles.jpg"
          xlink:href="4_poubelles.jpg"
-         transform="rotate(-75,-16.606631,-319.10404)"
-         clip-path="url(#clipPath1844)"
-         width="285.75"
-         height="190.5"
-         preserveAspectRatio="none"
-         id="image1591-8-2"
-         x="-195.41547"
-         y="-450.29068"
-         style="fill:#808080"
+         inkscape:transform-center-y="-122.77056"
          inkscape:transform-center-x="-38.822368"
-         inkscape:transform-center-y="-122.77056" />
+         style="fill:#808080"
+         y="-450.29068"
+         x="-195.41547"
+         id="image1591-8-2"
+         preserveAspectRatio="none"
+         height="190.5"
+         width="285.75"
+         clip-path="url(#clipPath1844)"
+         transform="rotate(-75,-16.606631,-319.10404)" />
     </g>
     <g
        id="g2395"
-       transform="translate(312.26947,-151.6098)"
+       transform="translate(283.16527,-7.8979953)"
        clip-path="url(#clipPath2501)"
        inkscape:export-filename="/home/bouscadilla/godot/Ménage et recyclage/assets/poubelle_jaune_o.png"
        inkscape:export-xdpi="81.18499"
@@ -1403,27 +1403,27 @@
       <image
          sodipodi:absref="/home/bouscadilla/godot/Ménage et recyclage/assets/sources/4_poubelles.jpg"
          xlink:href="4_poubelles.jpg"
-         width="285.75"
-         height="190.5"
-         preserveAspectRatio="none"
-         id="image1591-4-9"
-         x="-296.45483"
-         y="59.621296"
+         transform="translate(-55.563491,-321.57601)"
          clip-path="url(#clipPath2034)"
-         transform="translate(-55.563491,-321.57601)" />
+         y="59.621296"
+         x="-296.45483"
+         id="image1591-4-9"
+         preserveAspectRatio="none"
+         height="190.5"
+         width="285.75" />
       <image
          sodipodi:absref="/home/bouscadilla/godot/Ménage et recyclage/assets/sources/4_poubelles.jpg"
          xlink:href="4_poubelles.jpg"
-         width="285.75"
-         height="190.5"
-         preserveAspectRatio="none"
-         id="image1591-4-9-7"
-         x="-441.6626"
-         y="-512.29462"
-         clip-path="url(#clipPath2038)"
-         transform="rotate(-75,-87.197561,-355.16169)"
+         inkscape:transform-center-y="4.7805"
          inkscape:transform-center-x="-3.7646851"
-         inkscape:transform-center-y="4.7805" />
+         transform="rotate(-75,-87.197561,-355.16169)"
+         clip-path="url(#clipPath2038)"
+         y="-512.29462"
+         x="-441.6626"
+         id="image1591-4-9-7"
+         preserveAspectRatio="none"
+         height="190.5"
+         width="285.75" />
     </g>
   </g>
 </svg>
