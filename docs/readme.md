@@ -1,5 +1,5 @@
 
-# Recyclage et ménage
+# Ménage et recyclage
 
 Pendant le confinement, nous avons préparé cette petite app
 
