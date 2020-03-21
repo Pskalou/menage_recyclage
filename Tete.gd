@@ -1,15 +1,20 @@
 extends Area2D
 
+var id = 0
+var tetes= {0:"juju", 1:"titi", 2:"guigui"}
+
 
 var tete:AnimatedSprite
-var node_index
 
 
 func _ready():
 	# TODO pb de supperposition des tetes
-	node_index = get_index()
-	tete= get_node("AnimatedSprite")
-	print(node_index)
+	
+	tete= get_node("sprite")
+	
+	tete.set_animation(tetes[id])
+	
+	
 
 
 var is_over= false
@@ -34,9 +39,10 @@ func _input(event):
 		# arrête de déplacer la tete
 		if dragging and !event.pressed:
 			dragging= false
-			Singleton.emit_signal("tete_lachee", self)
+			Singleton.emit_signal("tete_lachee", self, id)
 			
 	if dragging:
+		tete.z_index= 1
 		tete.set_frame(1)
 		tete.set_scale(Vector2(1.2,1.2))
 		position.x = event.position.x - delta_pos.x
@@ -50,6 +56,7 @@ func _input(event):
 		if position.y > 500:
 			position.y= 500
 	else:
+		tete.z_index= 0
 		tete.set_frame(0)
 		tete.set_scale(Vector2(1,1))
 

@@ -1,14 +1,35 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://assets/poubelle_bleue_o.png" type="Texture" id=1]
 [ext_resource path="res://assets/poubelle_bleue_f.png" type="Texture" id=2]
 [ext_resource path="res://Poubelle.gd" type="Script" id=3]
+[ext_resource path="res://assets/poubelle_jaune_f.png" type="Texture" id=4]
+[ext_resource path="res://assets/poubelle_jaune_o.png" type="Texture" id=5]
+[ext_resource path="res://assets/poubelle_rouge_f.png" type="Texture" id=6]
+[ext_resource path="res://assets/poubelle_verte_f.png" type="Texture" id=7]
+[ext_resource path="res://assets/poubelle_verte_o.png" type="Texture" id=8]
+[ext_resource path="res://assets/poubelle_rouge_o.png" type="Texture" id=9]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
+"frames": [ ExtResource( 6 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "rouge",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 2 ), ExtResource( 1 ) ],
 "loop": true,
-"name": "default",
+"name": "bleue",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 4 ), ExtResource( 5 ) ],
+"loop": true,
+"name": "jaune",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 7 ), ExtResource( 8 ) ],
+"loop": true,
+"name": "verte",
 "speed": 5.0
 } ]
 
@@ -23,6 +44,7 @@ script = ExtResource( 3 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 scale = Vector2( 0.7, 0.7 )
 frames = SubResource( 1 )
+animation = "verte"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 6.9834, -25.8385 )
