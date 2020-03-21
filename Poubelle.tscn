@@ -2,7 +2,7 @@
 
 [ext_resource path="res://assets/poubelle_bleue_o.png" type="Texture" id=1]
 [ext_resource path="res://assets/poubelle_bleue_f.png" type="Texture" id=2]
-[ext_resource path="res://Poubelle.gd" type="Script" id=3]
+[ext_resource path="res://scripts/Poubelle.gd" type="Script" id=3]
 [ext_resource path="res://assets/poubelle_jaune_f.png" type="Texture" id=4]
 [ext_resource path="res://assets/poubelle_jaune_o.png" type="Texture" id=5]
 [ext_resource path="res://assets/poubelle_rouge_f.png" type="Texture" id=6]
@@ -12,11 +12,6 @@
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
-"frames": [ ExtResource( 6 ), ExtResource( 9 ) ],
-"loop": true,
-"name": "rouge",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 2 ), ExtResource( 1 ) ],
 "loop": true,
 "name": "bleue",
@@ -30,6 +25,11 @@ animations = [ {
 "frames": [ ExtResource( 7 ), ExtResource( 8 ) ],
 "loop": true,
 "name": "verte",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 6 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "rouge",
 "speed": 5.0
 } ]
 

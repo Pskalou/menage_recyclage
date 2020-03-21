@@ -2,7 +2,7 @@ extends Area2D
 
 var id = 0
 
-var tetes= {0:"juju", 1:"titi", 2:"guigui"}
+var tetes= {0:"juju", 1:"titi", 2:"guigui", 3:"noe"}
 
 var tete:AnimatedSprite
 
@@ -22,11 +22,11 @@ func _ready():
 var mouse_over= false
 func _on_Area2D_mouse_entered():
 	Singleton.over_list[self] = self.get_index()
-	print(Singleton.over_list)
+#	print(Singleton.over_list)
 	mouse_over= true
 func _on_Area2D_mouse_exited():
 	Singleton.over_list.erase(self)
-	print(Singleton.over_list)
+#	print(Singleton.over_list)
 	mouse_over= false
 
 
