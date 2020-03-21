@@ -13,6 +13,10 @@ script = ExtResource( 1 )
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Tetes"]
 stream = ExtResource( 4 )
+attenuation = 0.353553
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Tetes"]
+stream = ExtResource( 4 )
 
 [node name="Poubelles" type="Node2D" parent="."]
 script = ExtResource( 3 )

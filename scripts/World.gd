@@ -61,7 +61,7 @@ func update_chrono():
 
 
 func _on_deltatimer_timeout():
-	$Tetes/AudioStreamPlayer2D.play()
+	$Tetes/AudioStreamPlayer.play()
 	Singleton.emit_signal("nouvelle_tete")
 	printt("BOOM", "score", score)
 	
