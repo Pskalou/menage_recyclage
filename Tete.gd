@@ -1,35 +1,15 @@
 extends Area2D
 
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
 var tete:AnimatedSprite
+var node_index
 
-# Called when the node enters the scene tree for the first time.
+
 func _ready():
+	# TODO pb de supperposition des tetes
+	node_index = get_index()
 	tete= get_node("AnimatedSprite")
-	set_position(Vector2(200,200))
-	
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
-
-#func _input(event):
-#	print(event.as_text())
-#	if event is InputEventMouseButton and event.is_pressed():
-#		print(event,"mouse button event at ", event.position)
-#		tete.set_frame(1)
-#		tete.set_scale(Vector2(1.2,1.2))
-#	else:
-#		tete.set_frame(0)
-#		tete.set_scale(Vector2(1,1))
-
-#
-#
+	print(node_index)
 
 
 var is_over= false
@@ -43,6 +23,7 @@ func _on_Area2D_mouse_exited():
 var dragging = false
 var delta_pos
 
+signal tete_lachee
 
 func _input(event):
 	if event is InputEventMouseButton and event.button_index == BUTTON_LEFT:
@@ -50,11 +31,10 @@ func _input(event):
 		if is_over and !dragging and event.pressed:
 			dragging= true
 			delta_pos= event.position - position
-			print(dragging, event.position, position)
 		# arrête de déplacer la tete
 		if dragging and !event.pressed:
 			dragging= false
-			print(dragging)
+			Singleton.emit_signal("tete_lachee", self)
 			
 	if dragging:
 		tete.set_frame(1)
@@ -72,3 +52,4 @@ func _input(event):
 	else:
 		tete.set_frame(0)
 		tete.set_scale(Vector2(1,1))
+

@@ -19,6 +19,10 @@ config/name="Ménage"
 run/main_scene="res://World.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+Singleton="*res://Singleton.gd"
+
 [rendering]
 
 quality/driver/driver_name="GLES2"

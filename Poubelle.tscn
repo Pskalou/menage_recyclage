@@ -1,0 +1,31 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://assets/poubelle_bleue_o.png" type="Texture" id=1]
+[ext_resource path="res://assets/poubelle_bleue_f.png" type="Texture" id=2]
+[ext_resource path="res://Poubelle.gd" type="Script" id=3]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 1 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 71.7865, 23.1994 )
+
+[node name="Poubelle" type="Area2D"]
+collision_layer = 4
+collision_mask = 2
+script = ExtResource( 3 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+scale = Vector2( 0.7, 0.7 )
+frames = SubResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 6.9834, -25.8385 )
+shape = SubResource( 2 )
+[connection signal="area_entered" from="." to="." method="_on_Poubelle_area_entered"]
+[connection signal="area_exited" from="." to="." method="_on_Poubelle_area_exited"]
