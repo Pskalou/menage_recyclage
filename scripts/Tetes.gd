@@ -12,12 +12,14 @@ func _ready():
 
 func _on_begin_game():
 	# qq têtes pour commencer	
-	for i in range (10):
+	for i in range (1):
 		add_tete(i)
 
 
 func _on_nouvelle_tete():
+	Singleton.nb_tetes += 1
 	add_tete(randi())
+	print (Singleton.nb_tetes)
 
 
 func add_tete(id):
@@ -28,11 +30,9 @@ func add_tete(id):
 	var randy= 100 + randi()%200
 	tetes[-1].set_position(Vector2(randx,randy))
 	add_child(tetes[-1])
-	Singleton.nb_tetes += 1
-	print (Singleton.nb_tetes)
-#	print (tetes[-1])
 
 
 func _on_mauvaise_poubelle(id):
+	
 	for i in range (3):
 		add_tete(i)

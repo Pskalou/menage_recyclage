@@ -13,5 +13,5 @@ var max_poubelles= 0
 
 var over_list = {}
 
-var score= 0
+var score= 15
 

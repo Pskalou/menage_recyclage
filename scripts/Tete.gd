@@ -97,3 +97,10 @@ func _on_Tete_area_entered(area):
 
 func _on_Tete_area_exited(area):
 	pass # Replace with function body.
+
+
+func _on_explosion_animation_finished():
+	self.queue_free()
+	Singleton.nb_tetes -= 1
+	print (Singleton.nb_tetes)
+	pass # Replace with function body.

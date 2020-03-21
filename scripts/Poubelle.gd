@@ -22,6 +22,12 @@ func _on_tete_lachee(area, id):
 			area.queue_free()
 			Singleton.emit_signal("increase_score")
 		else:
+			area.input_pickable = false
+			area.get_node("sprite").set_visible(false)
+			area.get_node("explosion").set_frame(0)
+			area.get_node("explosion").set_visible(true)
+			area.get_node("explosion").play()
+			
 			Singleton.emit_signal("decrease_score")
 
 		

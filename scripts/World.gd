@@ -5,6 +5,8 @@ var score_label
 var score = 0
 var timer
 var deltatimer
+var deltatimer2
+var deltatimer3
 
 var duree_init= 2
 var coef_init= 0.6
@@ -12,18 +14,20 @@ var duree_niv2= 3
 var coef_niv2= 0.8
 var duree_niv3= 2.5
 var coef_niv3= 0.7
-var duree_niv4= 2
-var coef_niv4= 0.6
+var duree_niv4= 5#2
+var coef_niv4= 1#0.6
 var duree
 
 
 var index= 0
 
 func _ready():
+	score= Singleton.score
 	Singleton.connect("increase_score", self, "increase_score")
 	Singleton.connect("decrease_score", self, "decrease_score")
 	score_label= get_node("GUI/Score")
 	chrono= get_node("GUI/Chrono")
+
 
 	update_score()
 	
@@ -32,7 +36,14 @@ func _ready():
 	deltatimer.connect("timeout", self, "_on_deltatimer_timeout")
 	add_child(deltatimer)
 	deltatimer.set_one_shot(true)
-	deltatimer.start(1)
+	deltatimer2 = Timer.new()
+	deltatimer2.connect("timeout", self, "_on_deltatimer_timeout")
+	add_child(deltatimer2)
+	deltatimer2.set_one_shot(true)
+	deltatimer3 = Timer.new()
+	deltatimer3.connect("timeout", self, "_on_deltatimer_timeout")
+	add_child(deltatimer3)
+	deltatimer3.set_one_shot(true)
 	
 	
 	timer = Timer.new()
@@ -94,15 +105,18 @@ func _on_timer_timeout():
 	else:
 		timer.start(duree_niv4 * coef_niv4)
 		
+		var t1 = randf()/2
+		var t2= t1 + randf()/2
+		var t3 = t2 + randf()/2
 		
-		deltatimer.start(randf()/2)
+		deltatimer.start(t1)
 #		$Tetes/AudioStreamPlayer2D.play()
 #		Singleton.emit_signal("nouvelle_tete")
 #		printt("BOOM", "score", score)
 		
-		deltatimer.start(randf()/1.5)
+		deltatimer2.start(t2)
 	
-		deltatimer.start(randf()/1.5)
+		deltatimer3.start(t3)
 		
 		
 		
