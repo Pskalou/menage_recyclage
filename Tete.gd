@@ -1,7 +1,12 @@
 extends Area2D
 
 var id = 0
+
 var tetes= {0:"juju", 1:"titi", 2:"guigui"}
+
+
+func set_id(id):
+	self.id = id%len(tetes)
 
 
 var tete:AnimatedSprite

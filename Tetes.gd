@@ -1,16 +1,21 @@
 extends Node2D
 
 var tete_scene= preload("res://Tete.tscn")
-
+var tetes=[]
+	
 func _ready():
 	randomize()
-	var tetes=[]
+	# qq têtes pour commencer	
+	for i in range (10):
+		add_tete(i)
+
+
+func add_tete(id):
+	tetes.append(tete_scene.instance())
+	tetes[-1].set_id(id)
 	
-	for i in range (3):
-		tetes.append(tete_scene.instance())
-		tetes[-1].id= i
-		
-		var randx= 200+i*200 # 100 + randi()%850
-		var randy= 200 #100 + randi()%200
-		tetes[-1].set_position(Vector2(randx,randy))
-		add_child(tetes[-1])
+	var randx= 100 + randi()%850
+	var randy= 100 + randi()%200
+	tetes[-1].set_position(Vector2(randx,randy))
+	add_child(tetes[-1])
+	
