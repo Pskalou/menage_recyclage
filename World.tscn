@@ -33,3 +33,5 @@ frames = SubResource( 2 )
 [node name="Poubelles" type="Node" parent="."]
 
 [node name="GUI" type="Node" parent="."]
+[connection signal="mouse_entered" from="Tetes/Area2D" to="Tetes/Area2D" method="_on_Area2D_mouse_entered"]
+[connection signal="mouse_exited" from="Tetes/Area2D" to="Tetes/Area2D" method="_on_Area2D_mouse_exited"]
