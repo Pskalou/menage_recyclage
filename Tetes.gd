@@ -18,4 +18,5 @@ func add_tete(id):
 	var randy= 100 + randi()%200
 	tetes[-1].set_position(Vector2(randx,randy))
 	add_child(tetes[-1])
+	print (tetes[-1])
 	

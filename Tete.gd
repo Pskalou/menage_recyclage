@@ -4,12 +4,11 @@ var id = 0
 
 var tetes= {0:"juju", 1:"titi", 2:"guigui"}
 
+var tete:AnimatedSprite
+
 
 func set_id(id):
 	self.id = id%len(tetes)
-
-
-var tete:AnimatedSprite
 
 
 func _ready():
@@ -18,34 +17,58 @@ func _ready():
 	tete= get_node("sprite")
 	
 	tete.set_animation(tetes[id])
-	
-	
 
 
-var is_over= false
-
+var mouse_over= false
 func _on_Area2D_mouse_entered():
-	is_over= true
+	Singleton.over_list[self] = self.get_index()
+	print(Singleton.over_list)
+	mouse_over= true
 func _on_Area2D_mouse_exited():
-	is_over= false
+	Singleton.over_list.erase(self)
+	print(Singleton.over_list)
+	mouse_over= false
 
 
 var dragging = false
 var delta_pos
+# utilisé pour vérifier que la tete est la première
+
 
 signal tete_lachee
 
+
+var maxIndex
+var tete_over
+var maxNode
+
+func _input_event(viewport, event, shape_idx):
+	# travail sur les calques de tete pour prendre la première
+#	print(Singleton.over_list)
+	
+	maxNode= self
+	maxIndex= maxNode.get_index()
+	for e in Singleton.over_list:
+		if e.get_index() > maxIndex:
+			maxNode= e
+			maxIndex= maxNode.get_index()
+	
+	tete_over = self.get_index() == maxIndex
+		
+
 func _input(event):
 	if event is InputEventMouseButton and event.button_index == BUTTON_LEFT:
+	
 		# commence à déplacer la tete
-		if is_over and !dragging and event.pressed:
+		if mouse_over and !dragging and event.pressed and tete_over:
 			dragging= true
 			delta_pos= event.position - position
 		# arrête de déplacer la tete
 		if dragging and !event.pressed:
 			dragging= false
 			Singleton.emit_signal("tete_lachee", self, id)
-			
+
+
 	if dragging:
 		tete.z_index= 1
 		tete.set_frame(1)
@@ -65,3 +88,12 @@ func _input(event):
 		tete.set_frame(0)
 		tete.set_scale(Vector2(1,1))
 
+
+
+func _on_Tete_area_entered(area):
+#	printt(self, area)
+	pass # Replace with function body.
+
+
+func _on_Tete_area_exited(area):
+	pass # Replace with function body.

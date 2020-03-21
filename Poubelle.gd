@@ -18,10 +18,13 @@ func _on_tete_lachee(area, id):
 	if tete == area:
 		if self.id == id:
 			printt("supprime", area, "id:",id)
+			Singleton.over_list.erase(area)
 			area.queue_free()
 			Singleton.emit_signal("increase_score")
 		else:
 			Singleton.emit_signal("decrease_score")
+
+		
 
 
 var tete:Area2D

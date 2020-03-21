@@ -14,11 +14,6 @@ height = 29.4373
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
-"frames": [ ExtResource( 5 ), ExtResource( 6 ) ],
-"loop": true,
-"name": "juju",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 4 ), ExtResource( 7 ) ],
 "loop": true,
 "name": "titi",
@@ -27,6 +22,11 @@ animations = [ {
 "frames": [ ExtResource( 3 ), ExtResource( 2 ) ],
 "loop": true,
 "name": "guigui",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 5 ), ExtResource( 6 ) ],
+"loop": true,
+"name": "juju",
 "speed": 5.0
 } ]
 
@@ -43,5 +43,7 @@ shape = SubResource( 1 )
 [node name="sprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 2 )
 animation = "juju"
+[connection signal="area_entered" from="." to="." method="_on_Tete_area_entered"]
+[connection signal="area_exited" from="." to="." method="_on_Tete_area_exited"]
 [connection signal="mouse_entered" from="." to="." method="_on_Area2D_mouse_entered"]
 [connection signal="mouse_exited" from="." to="." method="_on_Area2D_mouse_exited"]
