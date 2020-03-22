@@ -7,7 +7,6 @@ var tetes=[]
 func _ready():
 	randomize()
 	Singleton.connect("nouvelle_tete", self, "_on_nouvelle_tete")
-#	Singleton.connect("begin_game", self, "_on_begin_game")
 	Singleton.connect("good_poubelle", self, "_on_good_poubelle")
 	Singleton.connect("bad_poubelle", self, "_on_bad_poubelle")
 #
@@ -36,6 +35,7 @@ func add_tete(id=null):
 	var randy= 100 + randi()%200
 	tetes[-1].set_position(Vector2(randx,randy))
 	add_child(tetes[-1])
+	tetes[-1].z_index=-1
 
 
 func _on_good_poubelle(tete_node, tete_id):

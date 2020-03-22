@@ -4,7 +4,6 @@ extends Node
 signal increase_score
 signal decrease_score
 signal tete_lachee
-signal begin_game
 signal mauvaise_poubelle
 signal nouvelle_tete
 signal good_poubelle

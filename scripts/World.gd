@@ -34,6 +34,8 @@ func _ready():
 	chrono_label= get_node("GUI/Chrono")
 	nbtete_label= get_node("GUI/Nbtetes")
 	
+	
+	
 	_update_score()
 	
 	deltatimer = Timer.new()
@@ -56,7 +58,6 @@ func _ready():
 	timer.stop()
 	
 	$GUI/StartDialog.popup_centered(Vector2(250,100))
-
 
 
 func _on_deltatimer_timeout():
@@ -131,7 +132,6 @@ func _update_chrono():
 func _update_nbtete_label():
 	nbtete_label.set_text("Nombre total d'intrus : " + str(Singleton.nb_tetes))
 	pass
-
 
 
 func _process(delta):

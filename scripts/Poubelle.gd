@@ -9,7 +9,7 @@ var poubelles= Singleton.poubelles
 func _ready():
 	Singleton.max_poubelles= len(poubelles)
 	
-	self.z_index=2
+	self.z_index=1
 	sprite= $AnimatedSprite 
 	Singleton.connect("tete_lachee", self, "_on_tete_lachee")
 	
