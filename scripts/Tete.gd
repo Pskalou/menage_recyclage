@@ -13,7 +13,6 @@ func set_id(id):
 
 
 func _ready():
-	# TODO pb de supperposition des tetes
 	Singleton.max_tetes= len(tetes)
 	tete= get_node("sprite")
 	
