@@ -11,30 +11,60 @@ signal bad_poubelle
 signal game_over
 
 
-var score= 15
-var tetes= {0:"juju", 1:"titi", 2:"guigui", 3:"noe"}
+var score
+var tetes = {}
 var poubelles= {0:"bleue", 1:"jaune", 2:"verte", 3:"rouge"}
-var fin_partie_max_tete = 10
-var pelpel = true
-var boubou = false
-var bouscadilla= true
+var fin_partie_max_tete
+var with_pelpel:bool
+var with_boubou:bool
+var with_bouscadilla:bool
+var tetes_pelpel
+var tetes_bouscadilla
+var tetes_boubou
 
 
-var max_tetes= len(self.tetes)
-var max_poubelles= len(self.poubelles)
+var max_tetes
+var max_poubelles
 
 
 var nb_tetes= 0
 var over_list = {}
 
+
 func init_game():
     score= 15
-    tetes= {0:"juju", 1:"titi", 2:"guigui", 3:"noe"}
-    poubelles= {0:"bleue", 1:"jaune", 2:"verte", 3:"rouge"}
+    tetes_pelpel= ["guigui", "noe"]
+    tetes_boubou= []
+    tetes_bouscadilla= ["titi", "juju"]
+    
+    
+    tetes= {}
     fin_partie_max_tete = 10
-    pelpel = true
-    boubou = false
-    bouscadilla= true
+
+    with_pelpel = false
+    with_boubou = false
+    with_bouscadilla= true
+    
+    init_dict()
+    
     nb_tetes= 0
     over_list = {}
+    max_tetes= len(tetes)
+    max_poubelles= len(poubelles)
 
+
+func init_dict():
+    var temp= []
+    if with_boubou:
+        for e in tetes_boubou:
+            temp.append(e)
+    if with_bouscadilla:
+        for e in tetes_bouscadilla:
+            temp.append(e)
+    if with_pelpel:
+        for e in tetes_pelpel:
+            temp.append(e)
+    
+    for _i in range(len(temp)):
+        tetes[_i]= temp[_i]
+    

@@ -41,6 +41,8 @@ func _ready():
 	Singleton.connect("mauvaise_poubelle", self, "_on_mauvaise_poubelle")
 	Singleton.connect("game_over", self, "_on_game_over")
 	
+	Singleton.init_game()
+
 	score= Singleton.score
 	score_label= get_node("GUI/Score")
 	chrono_label= get_node("GUI/Chrono")
@@ -59,8 +61,13 @@ func _ready():
 
 func _on_game_over():
 	timer.stop()
-	var texte =str(Singleton.fin_partie_max_tete)
-	texte += " intrus ?!? C'est Beaucoup trop, domage pour toi..."
+
+	for e in get_node("Tetes").get_children():
+		e.input_pickable = false
+
+	var texte = "Plus de " + str(Singleton.fin_partie_max_tete)
+	texte += " intrus ?!? C'est Beaucoup trop."
+	texte += "\n\nDommage pour toi..."
 	texte += "\n\nTon score est de "
 	texte += str(Singleton.score) + " points."
 	texte += "\n\nEncore une partie ?"
