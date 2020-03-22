@@ -17,11 +17,6 @@ height = 29.4373
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
-"frames": [ ExtResource( 9 ), ExtResource( 8 ) ],
-"loop": true,
-"name": "noe",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 3 ), ExtResource( 2 ) ],
 "loop": true,
 "name": "guigui",
@@ -35,6 +30,11 @@ animations = [ {
 "frames": [ ExtResource( 4 ), ExtResource( 7 ) ],
 "loop": true,
 "name": "titi",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 9 ), ExtResource( 8 ) ],
+"loop": true,
+"name": "noe",
 "speed": 5.0
 } ]
 
@@ -145,8 +145,6 @@ visible = false
 scale = Vector2( 2.5, 2.5 )
 frames = SubResource( 19 )
 animation = "explose"
-[connection signal="area_entered" from="." to="." method="_on_Tete_area_entered"]
-[connection signal="area_exited" from="." to="." method="_on_Tete_area_exited"]
 [connection signal="mouse_entered" from="." to="." method="_on_Area2D_mouse_entered"]
 [connection signal="mouse_exited" from="." to="." method="_on_Area2D_mouse_exited"]
 [connection signal="animation_finished" from="explosion" to="." method="_on_explosion_animation_finished"]

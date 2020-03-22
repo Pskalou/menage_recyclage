@@ -8,8 +8,8 @@ var tetes= Singleton.tetes
 var tete:AnimatedSprite
 
 
-func set_id(id):
-	self.id = id%len(tetes)
+func set_id(current_id):
+	self.id = current_id % len(tetes)
 
 
 func _ready():
@@ -35,7 +35,7 @@ var delta_pos
 # utilisé pour vérifier que la tete est la première
 
 
-signal tete_lachee
+# signal tete_lachee
 
 
 var maxIndex
@@ -90,15 +90,6 @@ func _input(event):
 
 
 
-func _on_Tete_area_entered(area):
-#	printt(self, area)
-	pass # Replace with function body.
-
-
-func _on_Tete_area_exited(area):
-	pass # Replace with function body.
-
-
-
 func _on_explosion_animation_finished():
 	self.queue_free()
+

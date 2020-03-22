@@ -16,14 +16,12 @@ func _ready():
 	sprite.set_animation(poubelles[id])
 
 
-func _on_tete_lachee(area, id):
+func _on_tete_lachee(area, current_id):
 	if tete == area:
-		if self.id == id:
-			Singleton.emit_signal("good_poubelle", area, id)
+		if self.id == current_id:
+			Singleton.emit_signal("good_poubelle", area, current_id)
 		else:
-			Singleton.emit_signal("bad_poubelle", area, id)
-
-		
+			Singleton.emit_signal("bad_poubelle", area, current_id)	
 
 
 var tete:Area2D
@@ -37,3 +35,4 @@ func _on_Poubelle_area_entered(area):
 func _on_Poubelle_area_exited(area):
 	sprite.set_frame(0)
 	tete= null
+
