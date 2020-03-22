@@ -19,20 +19,9 @@ func _ready():
 func _on_tete_lachee(area, id):
 	if tete == area:
 		if self.id == id:
-			printt("supprime", area, "id:",id)
-			Singleton.over_list.erase(area)
-			area.queue_free()
-			Singleton.emit_signal("increase_score")
+			Singleton.emit_signal("good_poubelle", area, id)
 		else:
-			area.input_pickable = false
-			area.z_index = 3
-			area.get_node("sprite").set_visible(false)
-			area.get_node("explosion").set_frame(0)
-			area.get_node("explosion").set_visible(true)
-			area.get_node("explosion").play()
-			
-			Singleton.emit_signal("mauvaise_poubelle", id)
-			Singleton.emit_signal("decrease_score")
+			Singleton.emit_signal("bad_poubelle", area, id)
 
 		
 

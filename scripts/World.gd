@@ -1,7 +1,9 @@
 extends Node
 
-var chrono
+var chrono_label
 var score_label
+var nbtete_label
+
 var score = 0
 var timer
 var deltatimer
@@ -26,9 +28,11 @@ func _ready():
 	Singleton.connect("decrease_score", self, "decrease_score")
 	Singleton.connect("mauvaise_poubelle", self, "_on_mauvaise_poubelle")
 	
+	
 	score= Singleton.score
 	score_label= get_node("GUI/Score")
-	chrono= get_node("GUI/Chrono")
+	chrono_label= get_node("GUI/Chrono")
+	nbtete_label= get_node("GUI/Nbtetes")
 	
 	_update_score()
 	
@@ -54,11 +58,6 @@ func _ready():
 	$GUI/StartDialog.popup_centered(Vector2(250,100))
 
 
-func _update_chrono():
-	var duree= round(timer.get_time_left()*10)/10
-	chrono.set_text("Compte à rebours.... " + str(duree)+ " s")
-
-
 
 func _on_deltatimer_timeout():
 	$Tetes/AudioStreamPlayer.play()
@@ -68,7 +67,6 @@ func _on_deltatimer_timeout():
 
 func _on_timer_timeout():
 	index += 1
-	print(index)
 	var score= Singleton.score
 	
 	if score < 3 :
@@ -88,7 +86,7 @@ func _on_timer_timeout():
 	
 	else:
 		timer.start(duree_niv4 * coef_niv4)
-		_nouvelle_tetes(10)
+		_nouvelle_tetes(0)
 
 
 func _nouvelle_tetes(nb_total_tete=1, coef_reducteur=0.5):
@@ -104,10 +102,10 @@ func _nouvelle_tetes(nb_total_tete=1, coef_reducteur=0.5):
 	for _i in range(nb_total_tete):
 		durees.append(randf() * coef_reducteur)
 	
-	timers[0].start(durees[0])
-	for _i in range(1, nb_total_tete):
-#		printt("_i:",_i)
-		timers[_i].start(durees[_i-1] + durees[_i])
+	if timers != []:
+		timers[0].start(durees[0])
+		for _i in range(1, nb_total_tete):
+			timers[_i].start(durees[_i-1] + durees[_i])
 
 
 func increase_score():
@@ -125,20 +123,35 @@ func _update_score():
 	pass
 
 
+func _update_chrono():
+	var duree= round(timer.get_time_left()*10)/10
+	chrono_label.set_text("Compte à rebours.... " + str(duree)+ " s")
+
+
+func _update_nbtete_label():
+	nbtete_label.set_text("Nombre total d'intrus : " + str(Singleton.nb_tetes))
+	pass
+
+
+
 func _process(delta):
 	_update_chrono()
+	_update_nbtete_label()
 
 
 func _on_StartDialog_confirmed():
-	Singleton.emit_signal("begin_game")
+#	Singleton.emit_signal("begin_game")
 	duree= duree_init
 	timer.start(duree)
 	_update_chrono()
+	
+	_nouvelle_tetes(3, 0.3)
 	pass # Replace with function body.
 
 
 func _on_mauvaise_poubelle(id):
-	_nouvelle_tetes(3, 0.1)
+	Singleton.emit_signal("decrease_score")
+	_nouvelle_tetes(3, 0.3)
 
 
 

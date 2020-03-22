@@ -7,7 +7,8 @@ signal tete_lachee
 signal begin_game
 signal mauvaise_poubelle
 signal nouvelle_tete
-
+signal good_poubelle
+signal bad_poubelle
 
 var score= 15
 var tetes= {0:"juju", 1:"titi", 2:"guigui", 3:"noe"}

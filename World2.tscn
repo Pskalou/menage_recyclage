@@ -41,6 +41,16 @@ margin_top = 18.0
 margin_right = 491.0
 margin_bottom = 32.0
 
+[node name="Nbtetes" type="Label" parent="GUI"]
+margin_left = 850.822
+margin_top = 15.9606
+margin_right = 971.822
+margin_bottom = 29.9606
+text = "Nombre de tetes : "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="StartDialog" type="AcceptDialog" parent="GUI"]
 visible = true
 show_behind_parent = true
