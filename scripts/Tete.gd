@@ -63,10 +63,13 @@ func _input(event):
 		if mouse_over and !dragging and event.pressed and tete_over:
 			dragging= true
 			delta_pos= event.position - position
+			printt("jouer son: pop")
+
 		# arrête de déplacer la tete
 		if dragging and !event.pressed:
 			dragging= false
 			Singleton.emit_signal("tete_lachee", self, id)
+			printt("jouer son: pop")
 
 
 	if dragging:

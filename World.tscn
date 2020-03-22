@@ -72,7 +72,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="StartDialog" type="AcceptDialog" parent="GUI"]
+[node name="Debut_partie" type="AcceptDialog" parent="GUI"]
 show_behind_parent = true
 margin_left = 247.935
 margin_top = 224.39
@@ -87,6 +87,19 @@ Fais bien attention car si tu te trompes, de nouveaux intrus appaîtront...
 
 
 Commencer une nouvelle partie?"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Fin_partie" type="AcceptDialog" parent="GUI"]
+show_behind_parent = true
+margin_left = 247.935
+margin_top = 224.39
+margin_right = 739.935
+margin_bottom = 384.39
+popup_exclusive = true
+window_title = "GAME OVER"
+dialog_text = "Et c'est fini..."
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -147,4 +160,5 @@ stream = ExtResource( 18 )
 
 [node name="pop_04" type="AudioStreamPlayer" parent="Audio/pops"]
 stream = ExtResource( 19 )
-[connection signal="confirmed" from="GUI/StartDialog" to="." method="_on_StartDialog_confirmed"]
+[connection signal="confirmed" from="GUI/Debut_partie" to="." method="_on_StartDialog_confirmed"]
+[connection signal="confirmed" from="GUI/Fin_partie" to="." method="_on_Fin_partie_confirmed"]

@@ -9,18 +9,16 @@ func _ready():
 	Singleton.connect("nouvelle_tete", self, "_on_nouvelle_tete")
 	Singleton.connect("good_poubelle", self, "_on_good_poubelle")
 	Singleton.connect("bad_poubelle", self, "_on_bad_poubelle")
-#
-#
-#func _on_begin_game():
-#	# qq têtes pour commencer	
-#	for i in range (1):
-#		add_tete()
 
 
 func _on_nouvelle_tete():
 	Singleton.nb_tetes += 1
 	printt("Tetes._on_nouvelle_tete:","nb_tete:",Singleton.nb_tetes)
-	add_tete(randi())
+	if Singleton.nb_tetes < Singleton.fin_partie_max_tete:
+		add_tete(randi())
+	else:
+		printt("game over")
+		Singleton.emit_signal("game_over")
 
 
 func add_tete(id=null):

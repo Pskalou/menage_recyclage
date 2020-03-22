@@ -26,6 +26,7 @@ var index= 0
 
 var audio_clics = []
 var audio_pops = []
+
 func _populate_audio():
 	for e in get_node("Audio/clics").get_children():
 		audio_clics.append(e)
@@ -38,6 +39,7 @@ func _ready():
 	Singleton.connect("increase_score", self, "increase_score")
 	Singleton.connect("decrease_score", self, "decrease_score")
 	Singleton.connect("mauvaise_poubelle", self, "_on_mauvaise_poubelle")
+	Singleton.connect("game_over", self, "_on_game_over")
 	
 	score= Singleton.score
 	score_label= get_node("GUI/Score")
@@ -52,7 +54,25 @@ func _ready():
 	
 	_update_score()
 
-	$GUI/StartDialog.popup_centered(Vector2(250,100))
+	$GUI/Debut_partie.popup_centered(Vector2(250,100))
+
+
+func _on_game_over():
+	timer.stop()
+	var texte =str(Singleton.fin_partie_max_tete)
+	texte += " intrus ?!? C'est Beaucoup trop, domage pour toi..."
+	texte += "\n\nTon score est de "
+	texte += str(Singleton.score) + " points."
+	texte += "\n\nEncore une partie ?"
+	$GUI/Fin_partie.dialog_text = texte
+	$GUI/Fin_partie.popup_centered(Vector2(350,100))
+
+
+
+func  _on_Fin_partie_confirmed():
+	printt("fin de partie")
+	_on_StartDialog_confirmed()
+	
 
 
 func play_pop(id=null):
@@ -65,12 +85,8 @@ func play_pop(id=null):
 
 
 func _on_deltatimer_timeout():
-	# get_node("Audio/clic_01").play()
-	# audio_pops[1].play()
-	# $Tetes/pop_1.play()
 	play_pop()
 	Singleton.emit_signal("nouvelle_tete")
-#	printt("BOOM", "score", score)
 
 
 func _on_timer_timeout():
@@ -144,10 +160,17 @@ func _update_nbtete_label():
 func _process(delta):
 	_update_chrono()
 	_update_nbtete_label()
+	pass
+
 
 
 func _on_StartDialog_confirmed():
 #	Singleton.emit_signal("begin_game")
+	for element in get_node("Tetes").get_children():
+		element.queue_free()
+	
+	Singleton.init_game()
+
 	duree= duree_init
 	timer.start(duree)
 	_update_chrono()
