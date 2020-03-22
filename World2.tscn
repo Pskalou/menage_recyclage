@@ -11,17 +11,15 @@ script = ExtResource( 2 )
 [node name="Tetes" type="Node2D" parent="."]
 script = ExtResource( 1 )
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Tetes"]
-stream = ExtResource( 4 )
-attenuation = 0.353553
-
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Tetes"]
 stream = ExtResource( 4 )
 
 [node name="Poubelles" type="Node2D" parent="."]
+z_index = -1
 script = ExtResource( 3 )
 
 [node name="GUI" type="Control" parent="."]
+show_behind_parent = true
 margin_right = 40.0
 margin_bottom = 40.0
 __meta__ = {
@@ -45,12 +43,20 @@ margin_bottom = 32.0
 
 [node name="StartDialog" type="AcceptDialog" parent="GUI"]
 visible = true
-margin_left = 366.0
-margin_top = 251.0
-margin_right = 594.0
-margin_bottom = 309.0
+show_behind_parent = true
+margin_left = 364.0
+margin_top = 247.0
+margin_right = 856.0
+margin_bottom = 407.0
+popup_exclusive = true
 window_title = "Ménage et recyclage !"
-dialog_text = "Commencer une nouvelle partie?"
+dialog_text = "Pour gagner, tu dois faire le ménage et supprimer tous les intrus.
+Mais il est très important de bien recycler et de choisir la bonne poubelle.
+
+Fais bien attention car si tu te trompes, de nouveaux intrus appaîtront...
+
+
+Commencer une nouvelle partie?"
 __meta__ = {
 "_edit_use_anchors_": false
 }

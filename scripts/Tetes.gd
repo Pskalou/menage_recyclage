@@ -6,14 +6,13 @@ var tetes=[]
 
 func _ready():
 	randomize()
-	Singleton.connect("mauvaise_poubelle", self, "_on_mauvaise_poubelle")
 	Singleton.connect("nouvelle_tete", self, "_on_nouvelle_tete")
 	Singleton.connect("begin_game", self, "_on_begin_game")
 
 func _on_begin_game():
 	# qq têtes pour commencer	
 	for i in range (1):
-		add_tete(i)
+		add_tete()
 
 
 func _on_nouvelle_tete():
@@ -22,7 +21,12 @@ func _on_nouvelle_tete():
 	print (Singleton.nb_tetes)
 
 
-func add_tete(id):
+func add_tete(id=null):
+	
+	if id == null:
+		id = randi() % (Singleton.max_tetes)
+		printt("choix aléatoire de tête:",id)
+	
 	tetes.append(tete_scene.instance())
 	tetes[-1].set_id(id)
 	
@@ -31,8 +35,3 @@ func add_tete(id):
 	tetes[-1].set_position(Vector2(randx,randy))
 	add_child(tetes[-1])
 
-
-func _on_mauvaise_poubelle(id):
-	
-	for i in range (3):
-		add_tete(i)

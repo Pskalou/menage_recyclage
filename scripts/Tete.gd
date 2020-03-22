@@ -2,7 +2,8 @@ extends Area2D
 
 var id = 0
 
-var tetes= {0:"juju", 1:"titi", 2:"guigui", 3:"noe"}
+var tetes= Singleton.tetes
+
 
 var tete:AnimatedSprite
 
@@ -13,7 +14,7 @@ func set_id(id):
 
 func _ready():
 	# TODO pb de supperposition des tetes
-	
+	Singleton.max_tetes= len(tetes)
 	tete= get_node("sprite")
 	
 	tete.set_animation(tetes[id])
