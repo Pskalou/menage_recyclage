@@ -27,6 +27,7 @@ var index= 0
 var audio_clics = []
 var audio_pops = []
 
+
 func _populate_audio():
 	for e in get_node("Audio/clics").get_children():
 		audio_clics.append(e)
@@ -40,6 +41,7 @@ func _ready():
 	Singleton.connect("decrease_score", self, "decrease_score")
 	Singleton.connect("mauvaise_poubelle", self, "_on_mauvaise_poubelle")
 	Singleton.connect("game_over", self, "_on_game_over")
+	Singleton.connect("play_clic", self, "_play_clic")
 	
 	Singleton.init_game()
 
@@ -89,6 +91,16 @@ func play_pop(id=null):
 		printt("audio:", random_index)
 	else:
 		audio_pops[id].play()
+
+
+
+func _play_clic(id=null):
+	if id == null:
+		var random_index= randi() % audio_clics.size()
+		audio_clics[random_index].play()
+		printt("audio:", random_index)
+	else:
+		audio_clics[id].play()
 
 
 func _on_deltatimer_timeout():

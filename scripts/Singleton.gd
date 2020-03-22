@@ -9,7 +9,7 @@ signal nouvelle_tete
 signal good_poubelle
 signal bad_poubelle
 signal game_over
-
+signal play_clic
 
 var score
 var tetes = {}
@@ -32,16 +32,16 @@ var over_list = {}
 
 
 func init_game():
-    score= 15
+    score= 0
     tetes_pelpel= ["guigui", "noe"]
     tetes_boubou= []
     tetes_bouscadilla= ["titi", "juju"]
     
     
     tetes= {}
-    fin_partie_max_tete = 10
+    fin_partie_max_tete = 30
 
-    with_pelpel = false
+    with_pelpel = true
     with_boubou = false
     with_bouscadilla= true
     
