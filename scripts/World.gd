@@ -80,6 +80,8 @@ func _on_game_over():
 
 func  _on_Fin_partie_confirmed():
 	printt("fin de partie")
+	_update_nbtete_label()
+	_update_score()
 	_on_StartDialog_confirmed()
 	
 
