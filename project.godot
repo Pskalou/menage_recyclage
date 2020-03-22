@@ -21,7 +21,7 @@ config/icon="res://icon.png"
 
 [autoload]
 
-Singleton="*res://Singleton.gd"
+Singleton="*res://scripts/Singleton.gd"
 
 [display]
 
