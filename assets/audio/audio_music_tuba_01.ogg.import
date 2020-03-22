@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/audio_music_tuba_01.ogg-334ff25e24d691b941f01c3509030391.oggstr"
+
+[deps]
+
+source_file="res://assets/audio/audio_music_tuba_01.ogg"
+dest_files=[ "res://.import/audio_music_tuba_01.ogg-334ff25e24d691b941f01c3509030391.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

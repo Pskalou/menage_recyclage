@@ -1,18 +1,39 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://scripts/Poubelles.gd" type="Script" id=1]
 [ext_resource path="res://scripts/Tetes.gd" type="Script" id=2]
 [ext_resource path="res://scripts/World.gd" type="Script" id=3]
-[ext_resource path="res://assets/audio/pop_01.wav" type="AudioStream" id=4]
+[ext_resource path="res://assets/audio/audio_pop_02.wav" type="AudioStream" id=4]
+[ext_resource path="res://assets/audio/audio_clic_01.wav" type="AudioStream" id=5]
+[ext_resource path="res://assets/audio/audio_clic_11.wav" type="AudioStream" id=6]
+[ext_resource path="res://assets/audio/audio_clic_12.wav" type="AudioStream" id=7]
+[ext_resource path="res://assets/audio/audio_clic_05.wav" type="AudioStream" id=8]
+[ext_resource path="res://assets/audio/audio_clic_08.wav" type="AudioStream" id=9]
+[ext_resource path="res://assets/audio/audio_clic_02.wav" type="AudioStream" id=10]
+[ext_resource path="res://assets/audio/audio_clic_03.wav" type="AudioStream" id=11]
+[ext_resource path="res://assets/audio/audio_clic_13.wav" type="AudioStream" id=12]
+[ext_resource path="res://assets/audio/audio_clic_04.wav" type="AudioStream" id=13]
+[ext_resource path="res://assets/audio/audio_clic_10.wav" type="AudioStream" id=14]
+[ext_resource path="res://assets/audio/audio_clic_06.wav" type="AudioStream" id=15]
+[ext_resource path="res://assets/audio/audio_clic_07.wav" type="AudioStream" id=16]
+[ext_resource path="res://assets/audio/audio_clic_09.wav" type="AudioStream" id=17]
+[ext_resource path="res://assets/audio/audio_pop_03.wav" type="AudioStream" id=18]
+[ext_resource path="res://assets/audio/audio_pop_04.wav" type="AudioStream" id=19]
+[ext_resource path="res://assets/audio/audio_pop_01.wav" type="AudioStream" id=20]
+[ext_resource path="res://assets/fond.png" type="Texture" id=21]
 
 [node name="World" type="Node2D"]
 script = ExtResource( 3 )
 
+[node name="Fonds" type="Node2D" parent="."]
+z_index = -2
+
+[node name="fond" type="Sprite" parent="Fonds"]
+texture = ExtResource( 21 )
+centered = false
+
 [node name="Tetes" type="Node2D" parent="."]
 script = ExtResource( 2 )
-
-[node name="pop_1" type="AudioStreamPlayer" parent="Tetes"]
-stream = ExtResource( 4 )
 
 [node name="Poubelles" type="Node2D" parent="."]
 z_index = -1
@@ -69,4 +90,61 @@ Commencer une nouvelle partie?"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Audio" type="Node" parent="."]
+
+[node name="clics" type="Node" parent="Audio"]
+
+[node name="clic_01" type="AudioStreamPlayer" parent="Audio/clics"]
+stream = ExtResource( 5 )
+
+[node name="clic_02" type="AudioStreamPlayer" parent="Audio/clics"]
+stream = ExtResource( 10 )
+
+[node name="clic_03" type="AudioStreamPlayer" parent="Audio/clics"]
+stream = ExtResource( 11 )
+
+[node name="clic_04" type="AudioStreamPlayer" parent="Audio/clics"]
+stream = ExtResource( 13 )
+
+[node name="clic_05" type="AudioStreamPlayer" parent="Audio/clics"]
+stream = ExtResource( 8 )
+
+[node name="clic_06" type="AudioStreamPlayer" parent="Audio/clics"]
+stream = ExtResource( 15 )
+
+[node name="clic_07" type="AudioStreamPlayer" parent="Audio/clics"]
+stream = ExtResource( 16 )
+
+[node name="clic_08" type="AudioStreamPlayer" parent="Audio/clics"]
+stream = ExtResource( 9 )
+
+[node name="clic_09" type="AudioStreamPlayer" parent="Audio/clics"]
+stream = ExtResource( 17 )
+
+[node name="clic_10" type="AudioStreamPlayer" parent="Audio/clics"]
+stream = ExtResource( 14 )
+
+[node name="clic_11" type="AudioStreamPlayer" parent="Audio/clics"]
+stream = ExtResource( 6 )
+
+[node name="clic_12" type="AudioStreamPlayer" parent="Audio/clics"]
+stream = ExtResource( 7 )
+
+[node name="clic_13" type="AudioStreamPlayer" parent="Audio/clics"]
+stream = ExtResource( 12 )
+
+[node name="pops" type="Node" parent="Audio"]
+
+[node name="pop_01" type="AudioStreamPlayer" parent="Audio/pops"]
+stream = ExtResource( 20 )
+
+[node name="pop_02" type="AudioStreamPlayer" parent="Audio/pops"]
+stream = ExtResource( 4 )
+
+[node name="pop_03" type="AudioStreamPlayer" parent="Audio/pops"]
+stream = ExtResource( 18 )
+
+[node name="pop_04" type="AudioStreamPlayer" parent="Audio/pops"]
+stream = ExtResource( 19 )
 [connection signal="confirmed" from="GUI/StartDialog" to="." method="_on_StartDialog_confirmed"]

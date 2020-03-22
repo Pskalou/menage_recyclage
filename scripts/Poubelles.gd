@@ -9,4 +9,6 @@ func _ready():
 		poubelles.append(poubelle_scene.instance())
 		poubelles[-1].id= i
 		poubelles[-1].set_position(Vector2(100+i*275,425))
+		poubelles[-1].z_index=1
 		add_child(poubelles[-1])
+		

@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/gni_1.wav-7e752120036ba5fc7e251e993b4986ee.sample"
+path="res://.import/audio_pop_03.wav-f68ae2b282da9c4c0ac8f7b2098917da.sample"
 
 [deps]
 
-source_file="res://assets/audio/gni_1.wav"
-dest_files=[ "res://.import/gni_1.wav-7e752120036ba5fc7e251e993b4986ee.sample" ]
+source_file="res://assets/audio/audio_pop_03.wav"
+dest_files=[ "res://.import/audio_pop_03.wav-f68ae2b282da9c4c0ac8f7b2098917da.sample" ]
 
 [params]
 

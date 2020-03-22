@@ -16,15 +16,25 @@ var duree_niv2= 3
 var coef_niv2= 0.8
 var duree_niv3= 2.5
 var coef_niv3= 0.7
-var duree_niv4= 5#2
-var coef_niv4= 1#0.6
+var duree_niv4= 2
+var coef_niv4= 0.6
 var duree
 
 
 var index= 0
 
 
+var audio_clics = []
+var audio_pops = []
+func _populate_audio():
+	for e in get_node("Audio/clics").get_children():
+		audio_clics.append(e)
+	for e in get_node("Audio/pops").get_children():
+		audio_pops.append(e)
+	
+
 func _ready():
+	_populate_audio()
 	Singleton.connect("increase_score", self, "increase_score")
 	Singleton.connect("decrease_score", self, "decrease_score")
 	Singleton.connect("mauvaise_poubelle", self, "_on_mauvaise_poubelle")
@@ -45,8 +55,20 @@ func _ready():
 	$GUI/StartDialog.popup_centered(Vector2(250,100))
 
 
+func play_pop(id=null):
+	if id == null:
+		var random_index= randi() % audio_pops.size()
+		audio_pops[random_index].play()
+		printt("audio:", random_index)
+	else:
+		audio_pops[id].play()
+
+
 func _on_deltatimer_timeout():
-	$Tetes/pop_1.play()
+	# get_node("Audio/clic_01").play()
+	# audio_pops[1].play()
+	# $Tetes/pop_1.play()
+	play_pop()
 	Singleton.emit_signal("nouvelle_tete")
 #	printt("BOOM", "score", score)
 
@@ -72,7 +94,7 @@ func _on_timer_timeout():
 	
 	else:
 		timer.start(duree_niv4 * coef_niv4)
-		_nouvelle_tetes(0)
+		_nouvelle_tetes(3)
 
 
 func _nouvelle_tetes(nb_total_tete=1, coef_reducteur=0.5):
