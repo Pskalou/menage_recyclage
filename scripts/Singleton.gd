@@ -53,6 +53,7 @@ func init_game():
     max_poubelles= len(poubelles)
 
 
+    
 func init_dict():
     var temp= []
     if with_boubou:
@@ -65,6 +66,14 @@ func init_dict():
         for e in tetes_pelpel:
             temp.append(e)
     
-    for _i in range(len(temp)):
-        tetes[_i]= temp[_i]
+    var i= 0
+    while temp != [] :
+        randomize()
+        # print(temp)
+        var index= randi() % len(temp)
+        tetes[i]= temp[index]
+        i = i + 1
+        temp.remove(index)
     
+    # print(tetes)
+        
