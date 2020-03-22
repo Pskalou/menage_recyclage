@@ -11,7 +11,7 @@ script = ExtResource( 3 )
 [node name="Tetes" type="Node2D" parent="."]
 script = ExtResource( 2 )
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Tetes"]
+[node name="pop_1" type="AudioStreamPlayer" parent="Tetes"]
 stream = ExtResource( 4 )
 
 [node name="Poubelles" type="Node2D" parent="."]
@@ -52,12 +52,11 @@ __meta__ = {
 }
 
 [node name="StartDialog" type="AcceptDialog" parent="GUI"]
-visible = true
 show_behind_parent = true
-margin_left = 364.0
-margin_top = 247.0
-margin_right = 856.0
-margin_bottom = 407.0
+margin_left = 247.935
+margin_top = 224.39
+margin_right = 739.935
+margin_bottom = 384.39
 popup_exclusive = true
 window_title = "Ménage et recyclage !"
 dialog_text = "Pour gagner, tu dois faire le ménage et supprimer tous les intrus.

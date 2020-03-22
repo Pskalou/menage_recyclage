@@ -23,33 +23,16 @@ var duree
 
 var index= 0
 
+
 func _ready():
 	Singleton.connect("increase_score", self, "increase_score")
 	Singleton.connect("decrease_score", self, "decrease_score")
 	Singleton.connect("mauvaise_poubelle", self, "_on_mauvaise_poubelle")
 	
-	
 	score= Singleton.score
 	score_label= get_node("GUI/Score")
 	chrono_label= get_node("GUI/Chrono")
 	nbtete_label= get_node("GUI/Nbtetes")
-	
-	
-	
-	_update_score()
-	
-	deltatimer = Timer.new()
-	deltatimer.connect("timeout", self, "_on_deltatimer_timeout")
-	add_child(deltatimer)
-	deltatimer.set_one_shot(true)
-	deltatimer2 = Timer.new()
-	deltatimer2.connect("timeout", self, "_on_deltatimer_timeout")
-	add_child(deltatimer2)
-	deltatimer2.set_one_shot(true)
-	deltatimer3 = Timer.new()
-	deltatimer3.connect("timeout", self, "_on_deltatimer_timeout")
-	add_child(deltatimer3)
-	deltatimer3.set_one_shot(true)
 	
 	timer = Timer.new()
 	timer.connect("timeout", self, "_on_timer_timeout")
@@ -57,11 +40,13 @@ func _ready():
 	timer.set_one_shot(true)
 	timer.stop()
 	
+	_update_score()
+
 	$GUI/StartDialog.popup_centered(Vector2(250,100))
 
 
 func _on_deltatimer_timeout():
-	$Tetes/AudioStreamPlayer.play()
+	$Tetes/pop_1.play()
 	Singleton.emit_signal("nouvelle_tete")
 #	printt("BOOM", "score", score)
 
