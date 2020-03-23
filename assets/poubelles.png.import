@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/noé_jeu_2.png-52551596129531bc0453e89c55e8fb1d.stex"
+path="res://.import/poubelles.png-4a5b4d8dd0da75182a12ece1de3fcd29.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sources/tetes/noé_jeu_2.png"
-dest_files=[ "res://.import/noé_jeu_2.png-52551596129531bc0453e89c55e8fb1d.stex" ]
+source_file="res://assets/poubelles.png"
+dest_files=[ "res://.import/poubelles.png-4a5b4d8dd0da75182a12ece1de3fcd29.stex" ]
 
 [params]
 

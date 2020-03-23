@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://assets/poubelle_bleue_o.png" type="Texture" id=1]
 [ext_resource path="res://assets/poubelle_bleue_f.png" type="Texture" id=2]
@@ -9,32 +9,93 @@
 [ext_resource path="res://assets/poubelle_verte_f.png" type="Texture" id=7]
 [ext_resource path="res://assets/poubelle_verte_o.png" type="Texture" id=8]
 [ext_resource path="res://assets/poubelle_rouge_o.png" type="Texture" id=9]
+[ext_resource path="res://assets/poubelles.png" type="Texture" id=10]
 
-[sub_resource type="SpriteFrames" id=1]
+[sub_resource type="AtlasTexture" id=1]
+flags = 4
+atlas = ExtResource( 10 )
+region = Rect2( 410, 441, 205, 441 )
+
+[sub_resource type="AtlasTexture" id=2]
+flags = 4
+atlas = ExtResource( 10 )
+region = Rect2( 615, 441, 205, 441 )
+
+[sub_resource type="AtlasTexture" id=3]
+flags = 4
+atlas = ExtResource( 10 )
+region = Rect2( 0, 441, 205, 441 )
+
+[sub_resource type="AtlasTexture" id=4]
+flags = 4
+atlas = ExtResource( 10 )
+region = Rect2( 205, 441, 205, 441 )
+
+[sub_resource type="AtlasTexture" id=5]
+flags = 4
+atlas = ExtResource( 10 )
+region = Rect2( 410, 0, 205, 441 )
+
+[sub_resource type="AtlasTexture" id=6]
+flags = 4
+atlas = ExtResource( 10 )
+region = Rect2( 615, 0, 205, 441 )
+
+[sub_resource type="AtlasTexture" id=7]
+flags = 4
+atlas = ExtResource( 10 )
+region = Rect2( 205, 0, 205, 441 )
+
+[sub_resource type="AtlasTexture" id=8]
+flags = 4
+atlas = ExtResource( 10 )
+region = Rect2( 0, 0, 205, 441 )
+
+[sub_resource type="SpriteFrames" id=9]
 animations = [ {
-"frames": [ ExtResource( 2 ), ExtResource( 1 ) ],
+"frames": [ SubResource( 1 ), SubResource( 2 ) ],
 "loop": true,
 "name": "bleue",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 4 ), ExtResource( 5 ) ],
+"frames": [ ExtResource( 6 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "_rouge",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 3 ), SubResource( 4 ) ],
+"loop": true,
+"name": "rouge",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 5 ), SubResource( 6 ) ],
 "loop": true,
 "name": "jaune",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 7 ), ExtResource( 8 ) ],
+"frames": [ ExtResource( 2 ), ExtResource( 1 ) ],
+"loop": true,
+"name": "_bleue",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 4 ), ExtResource( 5 ) ],
+"loop": true,
+"name": "_jaune",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 7 ), SubResource( 8 ) ],
 "loop": true,
 "name": "verte",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 6 ), ExtResource( 9 ) ],
+"frames": [ ExtResource( 7 ), ExtResource( 8 ) ],
 "loop": true,
-"name": "rouge",
+"name": "_verte",
 "speed": 5.0
 } ]
 
-[sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 71.7865, 23.1994 )
+[sub_resource type="RectangleShape2D" id=10]
+extents = Vector2( 22.326, 81.0375 )
 
 [node name="Poubelle" type="Area2D"]
 collision_layer = 4
@@ -43,11 +104,11 @@ script = ExtResource( 3 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 scale = Vector2( 0.6, 0.6 )
-frames = SubResource( 1 )
+frames = SubResource( 9 )
 animation = "verte"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 6.9834, -25.8385 )
-shape = SubResource( 2 )
+position = Vector2( -1.81915, 43.6553 )
+shape = SubResource( 10 )
 [connection signal="area_entered" from="." to="." method="_on_Poubelle_area_entered"]
 [connection signal="area_exited" from="." to="." method="_on_Poubelle_area_exited"]

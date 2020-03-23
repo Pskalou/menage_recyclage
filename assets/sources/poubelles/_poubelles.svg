@@ -11,15 +11,12 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="297.54422mm"
-   height="320.2489mm"
-   viewBox="0 0 297.54422 320.2489"
+   height="312.86578mm"
+   viewBox="0 0 297.54422 312.86578"
    version="1.1"
    id="svg8"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
-   sodipodi:docname="poubelles.svg"
-   inkscape:export-filename="/home/bouscadilla/godot/Ménage et recyclage/assets/poubelles.png"
-   inkscape:export-xdpi="70"
-   inkscape:export-ydpi="70">
+   sodipodi:docname="objets.svg">
   <defs
      id="defs2">
     <clipPath
@@ -379,6 +376,17 @@
     </clipPath>
     <clipPath
        clipPathUnits="userSpaceOnUse"
+       id="clipPath2497">
+      <rect
+         y="52.096428"
+         x="2.6970172"
+         height="156.43289"
+         width="74.386055"
+         id="rect2499"
+         style="opacity:0.2;vector-effect:none;fill:#192a4c;fill-opacity:1;stroke:none;stroke-width:0.24314895;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
        id="clipPath2501">
       <rect
          y="-236.84462"
@@ -390,6 +398,28 @@
     </clipPath>
     <clipPath
        clipPathUnits="userSpaceOnUse"
+       id="clipPath2505">
+      <rect
+         y="-14.291523"
+         x="-300.14954"
+         height="156.43289"
+         width="74.386055"
+         id="rect2507"
+         style="opacity:0.2;vector-effect:none;fill:#192a4c;fill-opacity:1;stroke:none;stroke-width:0.24314895;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath2509">
+      <rect
+         y="82.657066"
+         x="123.50262"
+         height="156.43289"
+         width="74.386055"
+         id="rect2511"
+         style="opacity:0.2;vector-effect:none;fill:#192a4c;fill-opacity:1;stroke:none;stroke-width:0.24314895;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
        id="clipPath2513">
       <rect
          y="-235.23921"
@@ -397,6 +427,17 @@
          height="156.43289"
          width="74.386055"
          id="rect2515"
+         style="opacity:0.2;vector-effect:none;fill:#192a4c;fill-opacity:1;stroke:none;stroke-width:0.24314895;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath2517">
+      <rect
+         y="53.974571"
+         x="-120.30183"
+         height="156.43289"
+         width="74.386055"
+         id="rect2519"
          style="opacity:0.2;vector-effect:none;fill:#192a4c;fill-opacity:1;stroke:none;stroke-width:0.24314895;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
     </clipPath>
     <clipPath
@@ -432,170 +473,6 @@
          id="rect1122-9-5-9-8-6-6"
          style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.05833328;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
     </clipPath>
-    <clipPath
-       clipPathUnits="userSpaceOnUse"
-       id="clipPath997">
-      <rect
-         style="opacity:0.2;vector-effect:none;fill:#192a4c;fill-opacity:1;stroke:none;stroke-width:0.25447452;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-         id="rect999"
-         width="74.386055"
-         height="171.34515"
-         x="7.9888091"
-         y="42.042233" />
-    </clipPath>
-    <clipPath
-       clipPathUnits="userSpaceOnUse"
-       id="clipPath1029">
-      <rect
-         style="opacity:0.2;vector-effect:none;fill:#192a4c;fill-opacity:1;stroke:none;stroke-width:0.25447452;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-         id="rect1031"
-         width="74.386055"
-         height="171.34515"
-         x="-114.48089"
-         y="47.624561" />
-    </clipPath>
-    <clipPath
-       clipPathUnits="userSpaceOnUse"
-       id="clipPath1096">
-      <rect
-         style="opacity:0.2;vector-effect:none;fill:#192a4c;fill-opacity:1;stroke:none;stroke-width:0.25447452;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-         id="rect1098"
-         width="74.386055"
-         height="171.34515"
-         x="129.32356"
-         y="76.307068" />
-    </clipPath>
-    <clipPath
-       clipPathUnits="userSpaceOnUse"
-       id="clipPath1076-7">
-      <rect
-         style="opacity:0.2;vector-effect:none;fill:#192a4c;fill-opacity:1;stroke:none;stroke-width:0.25447452;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-         id="rect1078-0"
-         width="74.386055"
-         height="171.34515"
-         x="-294.3605"
-         y="-20.952501" />
-    </clipPath>
-    <clipPath
-       clipPathUnits="userSpaceOnUse"
-       id="clipPath2038-3-9">
-      <path
-         sodipodi:nodetypes="cccczcscccccccccccccccccc"
-         inkscape:connector-curvature="0"
-         id="path2040-6-3"
-         d="m -297.52459,-426.26447 c -0.0421,1.38928 -0.0678,2.21533 0.37888,2.98908 0.44675,0.77375 1.01039,1.55768 1.01039,1.55768 9.59842,0.13547 16.10148,-0.26133 24.6988,-0.19177 5.89918,0.0695 18.97648,0.0372 24.88073,0.10414 5.90425,0.0669 10.67163,-0.34811 10.67163,-0.34811 0,0 0.89307,-0.11906 1.42892,-0.77399 0.53584,-0.65492 0.89306,-1.25031 0.71445,-2.67922 -0.17861,-1.42891 0.23815,-1.84568 -0.71445,-2.32196 -0.95261,-0.47633 -3.2746,-1.42893 -3.2746,-1.42893 l -2.50059,-0.17862 -1.60753,-1.78613 -4.88212,-1.66706 -3.15551,-0.23815 -3.33413,-2.5006 -26.25627,-0.0595 -1.42891,1.36938 -1.48846,0.77399 c -2.33384,0.32075 -3.68385,0.58372 -6.60871,1.13122 l -1.42891,1.01217 c -0.89308,1.25029 -1.30982,1.84568 -1.30982,1.84568 l -4.16769,0.17859 c 0,0 -0.53584,-0.17859 -1.1312,0.53586 -0.59539,0.71446 -0.4949,2.67629 -0.4949,2.67629 z"
-         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-    </clipPath>
-    <clipPath
-       clipPathUnits="userSpaceOnUse"
-       id="clipPath2034-6-6">
-      <path
-         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="m -90.676548,149.76237 c 0,0 -4.767461,0.41519 -10.671702,0.3483 -5.90426,-0.0669 -18.98149,-0.0349 -24.88064,-0.10438 -8.59735,-0.0696 -15.10035,0.32719 -24.69878,0.19172 0,0 -0.3085,-0.003 -0.73742,0.42579 -0.42889,0.42892 -0.48315,3.91089 -0.48315,3.91089 0,0 -0.25302,0.0418 0.25217,0.58912 0.5052,0.54729 0.75809,1.51567 0.75809,1.51567 l 4.43642,20.74859 3.2148,46.26126 -2.38125,-0.1788 v -7.14478 c 0,0 -0.35735,-0.4761 -0.77412,-0.9524 -0.41677,-0.4763 -0.29755,-0.59531 -2.02417,-0.59531 -1.72659,0 -2.38165,0.83352 -2.44118,1.1312 -0.0595,0.29768 -0.11887,7.20421 -0.11887,7.20421 v 11.5502 c 0,0 0.17864,1.48822 0.83354,1.78593 0.65492,0.29769 0.83315,0.41693 1.60716,0.47646 0.77398,0.0595 2.3223,-0.71445 2.61998,-1.13119 0.29768,-0.41678 0.35708,-7.91838 0.35708,-7.91838 l 2.73886,0.11886 0.23823,8.27598 c 0,0 -0.17869,1.07161 0.59532,2.2624 0.77398,1.19075 1.54762,2.20302 4.10773,2.44117 2.56016,0.23816 35.24696,-0.11938 35.24696,-0.11938 0,0 2.3813,-0.17872 2.917136,-0.77409 0.53585,-0.59539 1.786342,-3.45313 1.845884,-4.22714 0.0595,-0.77399 0.118856,-7.91837 0.118856,-7.91837 l 0.119372,5.59655 c 0,0 -0.05968,1.13098 0.654741,2.08359 0.714459,0.95261 1.84559,1.31 2.56005,1.31 0.714449,0 1.726364,-0.59555 2.083594,-1.31 0.357229,-0.71445 1.131231,-14.05059 0.83354,-16.13442 -0.29769,-2.08381 -0.595056,-3.75103 -1.011825,-4.10827 -0.416769,-0.35724 -1.666901,-0.9525 -2.321822,-0.89297 -0.65492,0.0595 -1.964737,1.1312 -1.964737,1.1312 l 2.976562,-41.02179 3.691247,-18.39733 c 0,0 0.595347,-0.23807 1.131197,-0.59531 0.53584,-0.35721 0.774338,-1.48857 0.655257,-2.44118 -0.119071,-0.95263 0.297759,-1.54773 -0.595313,-2.38125 -0.893069,-0.83354 -1.488797,-1.01235 -1.488797,-1.01235 z"
-         id="path2036-7-0"
-         inkscape:connector-curvature="0" />
-    </clipPath>
-    <clipPath
-       clipPathUnits="userSpaceOnUse"
-       id="clipPath1147">
-      <rect
-         y="-20.952501"
-         x="-294.36047"
-         height="171.34515"
-         width="74.386055"
-         id="rect1149"
-         style="opacity:0.2;vector-effect:none;fill:#192a4c;fill-opacity:1;stroke:none;stroke-width:0.25447452;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-    </clipPath>
-    <clipPath
-       clipPathUnits="userSpaceOnUse"
-       id="clipPath2123-20">
-      <path
-         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="m -72.647207,-396.33602 c 0.193498,0.0893 0.398198,0.20484 0.596347,0.32764 -0.198149,-0.1228 -0.402849,-0.23834 -0.596347,-0.32764 z m -32.091063,1.25005 c 0,0 -0.33853,0.0114 -0.86972,0.0403 0.53119,-0.0288 0.86972,-0.0398 0.86972,-0.0398 0,0 0,0 0,0 z m -1.79266,0.0977 c -0.68724,0.0481 -1.49452,0.11687 -2.27479,0.21339 0.78027,-0.0965 1.58755,-0.16526 2.27479,-0.21339 z m 51.690388,5.01878 c 0.05912,0.0431 0.115988,0.0911 0.17105,0.14266 -0.05514,-0.0516 -0.111839,-0.0995 -0.17105,-0.14266 z m -63.293808,5.24364 c 0,0 -0.89313,0.17812 -1.36943,0.53536 -0.47631,0.35724 -0.71468,3.57238 -0.71468,3.57238 0,0 0.17873,1.01219 0.77411,1.36943 0.59538,0.35724 0.89297,1.1906 0.89297,1.1906 l 4.46536,22.86272 2.97708,46.32066 -2.38177,-0.17878 -0.41651,-7.91837 c 0,0 -0.35743,-0.41677 -1.01234,-1.1312 -0.65492,-0.71448 -0.95248,-0.71456 -2.02417,-0.77412 -1.07168,-0.0595 -1.66712,0.47636 -2.20296,1.07175 -0.53585,0.59539 -0.53579,1.72683 -0.59532,2.97709 -0.0595,1.25029 0.23823,13.872 0.23823,13.872 0,0 -0.11933,2.14368 0.41651,2.91767 0.53585,0.77398 0.95285,1.7264 1.54823,1.78596 0.59538,0.0595 1.0716,-0.17859 1.72651,-0.29768 0.65493,-0.11904 1.60743,-1.01198 1.72651,-1.48828 0.11907,-0.47628 0.65526,-7.68067 0.65526,-7.68067 l 2.61948,0.0594 0.29765,6.72827 c 0,0 0.53607,1.96427 1.54823,3.33365 1.01213,1.36937 1.01209,1.66724 2.26239,2.14354 1.25031,0.47631 17.980289,1.25027 23.576856,1.13118 5.596572,-0.11907 15.122469,0.95266 17.146759,-1.13118 2.024293,-2.08383 1.905307,-4.10829 1.905307,-4.10829 0,0 -0.05956,0.89318 1.131197,0.77412 1.19076,-0.11909 2.679311,-1.25021 2.738853,-1.72651 0.05954,-0.4763 0.952614,-9.28812 0.833538,-10.24073 -0.119078,-0.9526 0.238186,-5.17966 -0.297656,-6.48951 -0.535842,-1.30985 -1.429007,-3.15534 -1.905307,-3.45302 -0.476303,-0.29771 -1.369428,-0.47647 -1.369428,-0.47647 l 3.929478,-47.03482 2.798276,-11.2531 1.488802,-0.59531 c 0,0 0.416695,-3e-5 0.59531,-0.53586 0.178612,-0.53586 0.118856,-2.4407 0.118856,-2.4407 0,0 0.4171,-1.31024 -0.178284,-1.72702 -0.595381,-0.41677 -1.845884,-0.71416 -1.845884,-0.71416 -5.81447,0.17674 -13.90695,0.003 -20.054586,0.0341 -6.147636,0.0309 -21.823312,0.0613 -29.394067,0.0429 -6.35168,-0.0282 -10.41941,0.65839 -12.64936,-1.32704 z"
-         id="path2125-2"
-         inkscape:connector-curvature="0" />
-    </clipPath>
-    <clipPath
-       clipPathUnits="userSpaceOnUse"
-       id="clipPath2119-3">
-      <path
-         inkscape:connector-curvature="0"
-         id="path2121-7"
-         d="m 23.577049,-126.25576 c 0,1.36938 -0.17861,1.548 0,1.84568 0.17862,0.29771 0.416771,0.89307 0.952611,1.36938 0.535839,0.4763 1.19076,0.77398 1.19076,0.77398 2.229951,1.98546 6.297689,1.29932 12.649369,1.32752 7.570759,0.0183 23.246385,-0.0124 29.394023,-0.0433 6.147636,-0.0309 14.240291,0.14285 20.054761,-0.0339 0,0 0.595376,-0.23815 1.19076,-0.71446 0.595376,-0.4763 1.547987,-2.20292 1.428909,-2.85784 -0.119076,-0.6549 -0.595379,-2.50058 -1.607524,-3.03644 -1.012145,-0.53583 -2.917362,-0.41674 -2.917362,-0.41674 l -2.917362,-0.83355 c 0,0 -0.654918,-1.42891 -0.952611,-1.66706 -0.297688,-0.23815 -9.109316,-2.20292 -9.109316,-2.20292 0,0 -0.952609,-0.77398 -1.726602,-1.1312 -0.773994,-0.35724 -1.369372,-0.71445 -2.143368,-1.01216 -0.773994,-0.29768 -26.375337,-0.0595 -26.375337,-0.0595 0,0 -1.36938,0.29768 -2.083829,0.83352 -0.714462,0.53583 -1.488451,1.48846 -1.488451,1.48846 0,0 -5.41796,0.1786 -6.90641,0.95261 -1.488451,0.77398 -2.26245,2.56011 -2.26245,2.56011 l -4.286739,0.29771 c 0,0 -0.714452,-0.17862 -1.131221,0.0595 -0.416761,0.23815 -0.952611,1.42891 -0.952611,1.66706 z"
-         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         sodipodi:nodetypes="ccscczccccccccsccccccccsc" />
-    </clipPath>
-    <clipPath
-       clipPathUnits="userSpaceOnUse"
-       id="clipPath1197">
-      <rect
-         y="76.307068"
-         x="129.32356"
-         height="171.34515"
-         width="74.386055"
-         id="rect1199"
-         style="opacity:0.2;vector-effect:none;fill:#192a4c;fill-opacity:1;stroke:none;stroke-width:0.25447452;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-    </clipPath>
-    <clipPath
-       clipPathUnits="userSpaceOnUse"
-       id="clipPath1907-9-3">
-      <path
-         sodipodi:nodetypes="zccsscccsccsscccsccscccsccccscccccsczzz"
-         inkscape:connector-curvature="0"
-         id="path1909-4-6"
-         d="m -120.21488,125.48839 c -4.60106,-0.0495 -12.02003,-0.16004 -12.02003,-0.16004 l -1.68399,1.0946 c 0,0 -0.2526,0.58939 -0.2105,2.06288 0.0421,1.4735 -0.0421,1.68399 0.3789,2.10499 0.421,0.421 1.47349,1.05249 1.47349,1.05249 l 3.62058,17.68189 2.86278,41.42614 c 0,0 -1.05249,-0.92619 -2.31548,-0.92619 -1.263,0 -1.89449,0.79989 -2.27339,1.93658 -0.3789,1.1367 -0.2947,17.85029 -0.2947,17.85029 0,0 0.2947,2.39968 2.35759,2.44179 2.06288,0.0421 2.90488,-0.5052 3.03118,-1.4314 0.1263,-0.92619 0.58939,-3.74687 0.58939,-3.74687 l 0.2947,5.89396 c 0,0 -0.1263,0.6315 0.6315,1.59979 0.75779,0.9683 1.68399,2.02079 5.89396,2.18919 4.20998,0.1684 31.658997,0.0842 31.658997,0.0842 0,0 2.652289,0.0421 4.12578,-0.9262 1.473491,-0.96829 2.273379,-3.66267 2.31548,-4.29417 0.0421,-0.63149 0.4631,-8.04105 0.4631,-8.04105 l 2.441779,-0.0421 -0.0842,7.11485 c 0,0 0.1684,1.72609 2.399689,1.68399 2.231284,-0.0421 2.441784,-0.63149 2.694382,-1.17879 0.2526,-0.5473 0.336799,-15.9558 0.336799,-15.9558 0,0 0.252597,-3.15748 -0.2105,-3.78897 -0.463095,-0.6315 -1.052492,-1.2209 -2.483879,-1.26299 -1.55769,0.21049 -1.928231,0.57259 -2.396461,1.38359 -0.468231,0.811 -0.17163,7.54155 -0.17163,7.54155 l -2.48388,-0.0421 3.115379,-46.43601 4.715169,-21.26036 c 0,0 -0.02103,0.0211 0.484148,-0.48415 0.505198,-0.5052 0.527306,-1.6917 0.402592,-3.11743 -0.124714,-1.42573 -0.0026,-2.29239 -0.549941,-2.62918 -0.547296,-0.3368 -5.531464,0.46105 -8.956059,0.48008 -3.424595,0.019 -11.547345,0.0647 -15.729844,-0.0296 -4.182502,-0.0943 -19.82182,0.18008 -24.42288,0.13057 z"
-         style="opacity:1;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-    </clipPath>
-    <clipPath
-       clipPathUnits="userSpaceOnUse"
-       id="clipPath1903-1-1">
-      <path
-         style="opacity:1;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="m -115.29063,111.59112 -0.89297,1.07177 c 0,0 -0.59525,-0.17887 -1.19063,0.41651 -0.59538,0.59538 -1.31,1.07177 -1.31,1.07177 0,0 -2.6199,-0.11892 -4.3465,0.47646 -1.7266,0.59538 -3.63168,1.25009 -3.98891,1.78593 -0.35722,0.53584 -1.01234,1.4888 -1.01234,1.4888 0,0 -0.89257,-0.0597 -1.66656,0.11886 -0.774,0.17861 -2.41019,0.44493 -2.41019,0.44493 -0.3789,0.21049 -1.01047,-0.0841 -1.51567,0.96842 -0.5052,1.05249 -0.92591,1.76786 -0.58911,3.11505 0.33679,1.34719 0.25268,2.10488 0.88418,2.35748 0.63149,0.2526 1.09451,0.42116 1.09451,0.42116 0,0 7.41888,0.1107 12.01994,0.1602 4.60106,0.0495 20.240297,-0.22504 24.422796,-0.13074 4.182502,0.0943 12.305186,0.049 15.729786,0.03 3.424592,-0.019 8.408747,-0.81739 8.956043,-0.48059 -0.547293,-0.3368 0.337031,-0.33677 0.589629,-1.26297 0.252598,-0.92619 0.547021,-4.50432 -0.04237,-5.00951 -0.589397,-0.5052 -1.852129,-1.13661 -3.283519,-1.09451 -1.431391,0.0421 -2.568321,0.33641 -2.568321,0.33641 l -1.599385,-2.3151 c 0,0 0.109571,-0.81502 -1.855185,-1.05317 -1.964759,-0.23815 -5.239472,-0.41651 -5.239472,-0.41651 l -3.274732,-2.50062 z m -14.28699,78.77607 c -0.0454,0.0428 -0.0887,0.0878 -0.13074,0.13487 0.042,-0.0471 0.0859,-0.0921 0.13126,-0.13487 -1e-4,9e-5 -5.3e-4,-9e-5 -5.3e-4,0 z"
-         id="path1905-5-2"
-         inkscape:connector-curvature="0" />
-    </clipPath>
-    <clipPath
-       clipPathUnits="userSpaceOnUse"
-       id="clipPath1247">
-      <rect
-         y="42.042221"
-         x="7.9888282"
-         height="171.34515"
-         width="74.386055"
-         id="rect1249"
-         style="opacity:0.2;vector-effect:none;fill:#192a4c;fill-opacity:1;stroke:none;stroke-width:0.25447452;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-    </clipPath>
-    <clipPath
-       clipPathUnits="userSpaceOnUse"
-       id="clipPath1848-7-5">
-      <path
-         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="m -130.9521,-37.053859 c -0.0102,0.279559 -0.0262,0.51566 -0.0289,0.724509 0.003,-0.208849 0.0187,-0.44495 0.0289,-0.724509 z m 65.091109,1.913578 c -0.03704,0.11662 0.0011,0.208672 0.171048,0.25218 -0.147339,-0.0589 -0.191805,-0.14754 -0.171048,-0.25218 z m 0.294039,0.313682 c 0.216083,0.32761 -4.457393,1.182799 -6.493145,1.0697 -6.767441,-0.260162 -17.700701,-0.181052 -36.913503,-0.0594 -1.05564,0.2828 -15.29058,0.12808 -19.88613,-0.0599 0,0 -0.77374,-0.11889 -1.25005,0.71468 -0.4763,0.83349 -0.23823,3.572391 -0.23823,3.572391 0,0 -0.17846,0.59496 0.47646,1.071258 0.65492,0.476321 2.02416,0.77411 2.02416,0.77411 l 2.61948,12.264881 3.39411,46.14189 c 0,0 -0.95296,-0.0592 -1.4888,0.417031 -0.53584,0.4763 -1.90521,4.107928 -1.96474,9.04957 -0.0595,4.941678 0.41703,9.526034 0.41703,9.526034 0,0 -0.17868,0.774214 0.59531,1.845885 0.77399,1.071689 1.30954,1.726406 2.67891,1.785937 1.36938,0.0595 1.54823,0.119372 1.54823,0.119372 0,0 -0.11895,1.24995 0.77411,2.143022 0.89307,0.893048 0.11881,1.845678 6.84661,1.964738 6.72779,0.119089 31.912262,-0.118856 31.912262,-0.118856 0,0 1.84567,-0.178621 2.798281,-0.833541 0.952608,-0.654931 3.631819,-4.822444 3.631819,-4.822444 0,0 0.357195,-6.728047 0.297656,-7.144787 -0.0595,-0.416761 2.441194,-0.59531 2.441194,-0.59531 l 0.476456,6.847128 c 0,0 -0.05948,1.785834 2.500623,1.845366 2.560129,0.0596 2.679393,-0.535708 2.977078,-1.190625 0.297693,-0.654921 0.595312,-17.861439 0.595312,-17.861439 0,0 0.118814,-3.03638 -3.215306,-3.09594 -3.334131,-0.0595 -2.976563,4.881869 -2.976563,4.881869 v 5.358339 l -2.500622,-0.118858 3.393591,-48.5236609 4.28656,-21.5526801 1.369425,-0.952399 -0.1788,-3.572391 c 0,0 -0.412856,-0.6125 -0.948778,-0.8909 z"
-         id="path1850-1-0"
-         inkscape:connector-curvature="0" />
-    </clipPath>
-    <clipPath
-       clipPathUnits="userSpaceOnUse"
-       id="clipPath1844-1-3">
-      <path
-         inkscape:connector-curvature="0"
-         id="path1846-7-6"
-         d="m -183.25812,-366.25318 c -0.71446,0.9526 -1.01215,1.42891 -1.01215,2.73875 0,1.30985 -0.23815,1.78615 0.47631,2.50061 0.71445,0.71445 1.60752,1.13122 1.60752,1.13122 4.59555,0.18802 18.83006,0.3423 19.88569,0.0595 19.21281,-0.12162 30.14613,-0.20066 36.91357,0.0595 2.18151,0.1212 7.39405,-0.86929 6.37057,-1.13122 -0.62122,-0.15899 0.4763,-0.95261 0.83353,-1.30982 0.35723,-0.35724 0.41677,-3.81045 0.41677,-3.81045 0,0 0.53584,0.4763 -0.41677,-0.53583 -0.95261,-1.01214 -3.03644,-1.0717 -3.63182,-1.0717 -0.59538,0 -2.02429,0.17862 -2.02429,0.17862 -0.32129,-0.87322 -0.56798,-1.74645 -1.42891,-2.61967 -1.73279,-0.92706 -5.27904,-0.51599 -7.91856,-0.77398 l -2.32198,-2.61969 -27.86378,-0.35722 c 0,0 -0.83354,0.23815 -0.89307,0.65493 -0.0595,0.41674 -1.07169,0.59536 -1.66707,0.77398 -0.59538,0.17862 -9.407,2.79829 -9.407,2.79829 0,0 -1.07169,0.41677 -1.60753,1.30984 -0.53584,0.89305 -6.31103,2.02428 -6.31103,2.02428 z"
-         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         sodipodi:nodetypes="csscccscccsccccccsccc" />
-    </clipPath>
-    <clipPath
-       clipPathUnits="userSpaceOnUse"
-       id="clipPath1309">
-      <rect
-         y="47.624561"
-         x="-114.4809"
-         height="171.34515"
-         width="74.386055"
-         id="rect1311"
-         style="opacity:0.2;vector-effect:none;fill:#192a4c;fill-opacity:1;stroke:none;stroke-width:0.25447452;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-    </clipPath>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -604,18 +481,18 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.54370524"
-     inkscape:cx="216.59913"
-     inkscape:cy="388.96869"
+     inkscape:zoom="0.35485335"
+     inkscape:cx="1195.0418"
+     inkscape:cy="270.59615"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      showguides="true"
      inkscape:guide-bbox="true"
-     inkscape:window-width="1280"
-     inkscape:window-height="1000"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-width="1920"
+     inkscape:window-height="1029"
+     inkscape:window-x="1280"
+     inkscape:window-y="27"
      inkscape:window-maximized="1"
      fit-margin-top="0"
      fit-margin-left="0"
@@ -629,7 +506,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -637,21 +514,14 @@
      inkscape:label="Calque 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-307.28374,34.131715)">
+     transform="translate(-376.40365,35.960289)">
     <g
        id="g2371"
-       transform="translate(326.73229,43.219446)"
-       clip-path="url(#clipPath1096)"
+       transform="translate(476.0592,37.815525)"
+       clip-path="url(#clipPath2509)"
        inkscape:export-filename="/home/bouscadilla/godot/Ménage et recyclage/assets/poubelle_bleue_f.png"
        inkscape:export-xdpi="81.18499"
        inkscape:export-ydpi="81.18499">
-      <ellipse
-         style="opacity:1;fill:#447821;fill-opacity:0.98431373;stroke:none;stroke-width:2.99999976;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99215686"
-         id="path940-5-2"
-         cx="166.9386"
-         cy="236.16289"
-         rx="37.21656"
-         ry="6.7348456" />
       <rect
          y="82.657074"
          x="123.50262"
@@ -683,19 +553,51 @@
          width="285.75" />
     </g>
     <g
+       id="g2366"
+       transform="translate(448.09269,-88.056714)"
+       clip-path="url(#clipPath2497)"
+       inkscape:export-filename="/home/bouscadilla/godot/Ménage et recyclage/assets/poubelle_verte_f.png"
+       inkscape:export-xdpi="81.18499"
+       inkscape:export-ydpi="81.18499">
+      <rect
+         y="52.096405"
+         x="2.6970119"
+         height="156.43289"
+         width="74.386055"
+         id="rect2165-0-85-5"
+         style="opacity:0;vector-effect:none;fill:#192a4c;fill-opacity:1;stroke:none;stroke-width:0.24314895;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <image
+         sodipodi:absref="/home/bouscadilla/godot/Ménage et recyclage/assets/sources/poubelles/4_poubelles.jpg"
+         xlink:href="4_poubelles.jpg"
+         transform="translate(147.1541,-8.3345324)"
+         style="opacity:1"
+         clip-path="url(#clipPath1907-9)"
+         y="34.859703"
+         x="-212.1096"
+         id="image1591-4-90"
+         preserveAspectRatio="none"
+         height="190.85278"
+         width="286.27917" />
+      <image
+         sodipodi:absref="/home/bouscadilla/godot/Ménage et recyclage/assets/sources/poubelles/4_poubelles.jpg"
+         xlink:href="4_poubelles.jpg"
+         transform="translate(147.15401,-8.3344224)"
+         style="opacity:1"
+         clip-path="url(#clipPath1903-1)"
+         y="34.859703"
+         x="-212.1096"
+         id="image1591-4-6-9"
+         preserveAspectRatio="none"
+         height="190.85277"
+         width="286.27917" />
+    </g>
+    <g
        id="g2361"
-       transform="translate(421.76463,72.163617)"
-       clip-path="url(#clipPath1029)"
+       transform="translate(571.09153,66.498024)"
+       clip-path="url(#clipPath2517)"
        inkscape:export-filename="/home/bouscadilla/godot/Ménage et recyclage/assets/poubelle_rouge_f.png"
        inkscape:export-xdpi="81.18499"
        inkscape:export-ydpi="81.18499">
-      <ellipse
-         style="opacity:1;fill:#447821;fill-opacity:0.98431373;stroke:none;stroke-width:2.99999976;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99215686"
-         id="path940-3"
-         cx="-77.203239"
-         cy="206.95705"
-         rx="37.21656"
-         ry="6.7348456" />
       <rect
          y="53.974571"
          x="-120.30183"
@@ -729,19 +631,14 @@
          transform="translate(71.793436,478.77185)" />
     </g>
     <g
+       id="g970" />
+    <g
        id="g2356"
-       transform="translate(824.80238,-19.840171)"
-       clip-path="url(#clipPath1147)"
+       transform="translate(899.71135,-21.668764)"
+       clip-path="url(#clipPath2505)"
        inkscape:export-filename="/home/bouscadilla/godot/Ménage et recyclage/assets/poubelle_jaune_f.png"
        inkscape:export-xdpi="81.18499"
        inkscape:export-ydpi="81.18499">
-      <ellipse
-         style="opacity:1;fill:#447821;fill-opacity:0.98431373;stroke:none;stroke-width:2.99999976;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99215686"
-         id="path940-5-9"
-         cx="-256.9053"
-         cy="138.74942"
-         rx="37.21656"
-         ry="6.7348456" />
       <rect
          y="-14.291544"
          x="-300.14954"
@@ -759,9 +656,7 @@
          preserveAspectRatio="none"
          height="190.5"
          width="285.75"
-         transform="rotate(-69.225095,51.614815,-192.1818)"
-         inkscape:transform-center-x="-4.1466789"
-         inkscape:transform-center-y="5.746498" />
+         transform="translate(7.82434,472.89302)" />
       <image
          sodipodi:absref="/home/bouscadilla/godot/Ménage et recyclage/assets/sources/poubelles/4_poubelles.jpg"
          xlink:href="4_poubelles.jpg"
@@ -775,238 +670,186 @@
          width="285.75" />
     </g>
     <g
-       id="g2361-1"
-       transform="translate(496.1507,72.163617)"
-       clip-path="url(#clipPath1309)"
-       inkscape:export-filename="/home/bouscadilla/godot/Ménage et recyclage/assets/poubelle_rouge_f.png"
+       id="g2377"
+       transform="translate(431.38908,355.71181)"
+       clip-path="url(#clipPath2513)"
+       inkscape:export-filename="/home/bouscadilla/godot/Ménage et recyclage/assets/poubelle_bleue_o.png"
        inkscape:export-xdpi="81.18499"
        inkscape:export-ydpi="81.18499">
-      <ellipse
-         style="opacity:1;fill:#447821;fill-opacity:0.98431373;stroke:none;stroke-width:2.99999976;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99215686"
-         id="path940-3-0"
-         cx="-77.203239"
-         cy="206.95705"
-         rx="37.21656"
-         ry="6.7348456" />
       <rect
-         y="53.974571"
-         x="-120.30183"
+         y="-235.23921"
+         x="93.786682"
          height="156.43289"
          width="74.386055"
-         id="rect2165-0-4-6"
+         id="rect2165-0-0"
          style="opacity:0;vector-effect:none;fill:#192a4c;fill-opacity:1;stroke:none;stroke-width:0.24314895;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-      <image
-         sodipodi:absref="/home/bouscadilla/godot/Ménage et recyclage/assets/sources/poubelles/4_poubelles.jpg"
-         xlink:href="4_poubelles.jpg"
-         clip-path="url(#clipPath1848-7-5)"
-         width="285.75"
-         height="190.5"
-         preserveAspectRatio="none"
-         id="image1591-8-2-6-1-3"
-         x="-142.08852"
-         y="-124.28402"
-         style="fill:#808080"
-         transform="translate(18.466289,152.76506)" />
-      <image
-         sodipodi:absref="/home/bouscadilla/godot/Ménage et recyclage/assets/sources/poubelles/4_poubelles.jpg"
-         xlink:href="4_poubelles.jpg"
-         transform="rotate(-71.225014,188.83541,-173.25427)"
-         clip-path="url(#clipPath1844-1-3)"
-         width="285.75"
-         height="190.5"
-         preserveAspectRatio="none"
-         id="image1591-8-2-5-2"
-         x="-195.41547"
-         y="-450.29068"
-         style="fill:#808080"
-         inkscape:transform-center-x="-48.51891"
-         inkscape:transform-center-y="-119.47896" />
-    </g>
-    <g
-       id="g970" />
-    <g
-       id="g2356-6"
-       transform="translate(750.41636,-19.840171)"
-       clip-path="url(#clipPath1076-7)"
-       inkscape:export-filename="/home/bouscadilla/godot/Ménage et recyclage/assets/poubelle_jaune_f.png"
-       inkscape:export-xdpi="81.18499"
-       inkscape:export-ydpi="81.18499">
-      <ellipse
-         style="opacity:1;fill:#447821;fill-opacity:0.98431373;stroke:none;stroke-width:2.99999976;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99215686"
-         id="path940-5-9-2"
-         cx="-256.9053"
-         cy="138.74942"
-         rx="37.21656"
-         ry="6.7348456" />
-      <rect
-         y="-14.291544"
-         x="-300.14954"
-         height="156.43289"
-         width="74.386055"
-         id="rect2165-0-8-6-6"
-         style="opacity:0;vector-effect:none;fill:#192a4c;fill-opacity:1;stroke:none;stroke-width:0.24314895;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-      <image
-         sodipodi:absref="/home/bouscadilla/godot/Ménage et recyclage/assets/sources/poubelles/4_poubelles.jpg"
-         xlink:href="4_poubelles.jpg"
-         transform="translate(7.82434,472.89302)"
-         width="285.75"
-         height="190.5"
-         preserveAspectRatio="none"
-         id="image1591-4-9-7-5-1"
-         x="-441.6626"
-         y="-512.29462"
-         clip-path="url(#clipPath2038-3-9)" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path2163"
+         d="m 103.91282,-170.34212 0.17414,3.43303 c 0,0 63.91011,-0.1312 62.91699,-2.40711 -0.99312,-2.27592 -0.99312,-2.27596 -0.99312,-2.27596 0,0 -30.05036,-0.87819 -36.44166,-0.87819 -6.39131,0 -26.31226,0.33201 -26.31226,0.33201 z"
+         style="fill:#192a4c;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
       <image
          sodipodi:absref="/home/bouscadilla/godot/Ménage et recyclage/assets/sources/poubelles/4_poubelles.jpg"
          xlink:href="4_poubelles.jpg"
          width="285.75"
          height="190.5"
          preserveAspectRatio="none"
-         id="image1591-4-9-6-8"
-         x="-296.45483"
-         y="59.621296"
-         clip-path="url(#clipPath2034-6-6)"
-         transform="translate(-137.38342,-99.022909)" />
-    </g>
-    <g
-       id="g2371-5"
-       transform="translate(401.11834,43.219446)"
-       clip-path="url(#clipPath1197)"
-       inkscape:export-filename="/home/bouscadilla/godot/Ménage et recyclage/assets/poubelle_bleue_f.png"
-       inkscape:export-xdpi="81.18499"
-       inkscape:export-ydpi="81.18499">
-      <ellipse
-         style="opacity:1;fill:#447821;fill-opacity:0.98431373;stroke:none;stroke-width:2.99999976;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99215686"
-         id="path940-5-2-9"
-         cx="166.9386"
-         cy="236.16289"
-         rx="37.21656"
-         ry="6.7348456" />
-      <rect
-         y="82.657074"
-         x="123.50262"
-         height="156.43289"
-         width="74.386055"
-         id="rect2165-0-0-7-2"
-         style="opacity:0;vector-effect:none;fill:#192a4c;fill-opacity:1;stroke:none;stroke-width:0.24314895;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-      <image
-         sodipodi:absref="/home/bouscadilla/godot/Ménage et recyclage/assets/sources/poubelles/4_poubelles.jpg"
-         xlink:href="4_poubelles.jpg"
-         clip-path="url(#clipPath2123-20)"
-         y="-473.92496"
+         id="image1591-4-9-5-3-3"
          x="-329.13531"
-         id="image1591-4-9-5-3-2"
-         preserveAspectRatio="none"
-         height="190.5"
-         width="285.75"
-         transform="matrix(-1,0,0,1,77.592428,531.03002)" />
+         y="-473.92496"
+         clip-path="url(#clipPath2123-2)"
+         transform="matrix(-1,0,0,1,47.876484,213.13373)" />
       <image
          sodipodi:absref="/home/bouscadilla/godot/Ménage et recyclage/assets/sources/poubelles/4_poubelles.jpg"
          xlink:href="4_poubelles.jpg"
+         inkscape:transform-center-y="-123.85959"
+         inkscape:transform-center-x="-38.454307"
          width="285.75"
          height="190.5"
          preserveAspectRatio="none"
-         id="image1591-4-9-5-8"
+         id="image1591-4-9-5-9"
          x="-185.2804"
          y="-211.46556"
-         clip-path="url(#clipPath2119-3)"
-         transform="matrix(-0.43625458,0.89982328,0.89982328,0.43625458,282.74289,120.66755)"
-         inkscape:transform-center-x="-62.611736"
-         inkscape:transform-center-y="-113.88997" />
+         clip-path="url(#clipPath2119-8)"
+         transform="matrix(-0.25881905,0.96592583,0.96592583,0.25881905,244.2795,-223.44834)" />
     </g>
     <g
-       id="g2366-9"
-       transform="translate(299.29491,-85.936222)"
-       clip-path="url(#clipPath1247)"
-       inkscape:export-filename="/home/bouscadilla/godot/Ménage et recyclage/assets/poubelle_verte_f.png"
+       id="g2383"
+       transform="translate(388.71845,203.75106)"
+       clip-path="url(#clipPath2493)"
+       inkscape:export-filename="/home/bouscadilla/godot/Ménage et recyclage/assets/poubelle_verte_o.png"
        inkscape:export-xdpi="81.18499"
        inkscape:export-ydpi="81.18499">
-      <ellipse
-         style="opacity:1;fill:#447821;fill-opacity:0.98431373;stroke:none;stroke-width:3;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99215686"
-         id="path940-31"
-         cx="45.351551"
-         cy="204.55357"
-         rx="37.21656"
-         ry="6.7348456" />
       <rect
-         y="52.096405"
-         x="2.6970119"
+         y="-239.71136"
+         x="-12.314799"
          height="156.43289"
          width="74.386055"
-         id="rect2165-0-85-5-9"
+         id="rect2165-0-85"
          style="opacity:0;vector-effect:none;fill:#192a4c;fill-opacity:1;stroke:none;stroke-width:0.24314895;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="csscccc"
+         inkscape:connector-curvature="0"
+         id="path2161"
+         d="m 59.749126,-172.65865 c 0,0 2.054241,-2.23032 0.997775,-2.69986 -0.528234,-0.23477 -15.90571,-0.88132 -31.151128,-0.94002 -15.245418,-0.0587 -30.35877755,0.47048 -30.35877755,0.47048 l -0.11738532,4.40195 H 50.240914 Z"
+         style="fill:#1b3f1d;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
       <image
          sodipodi:absref="/home/bouscadilla/godot/Ménage et recyclage/assets/sources/poubelles/4_poubelles.jpg"
          xlink:href="4_poubelles.jpg"
-         width="286.27917"
-         height="190.85278"
-         preserveAspectRatio="none"
-         id="image1591-4-90-4"
-         x="-212.1096"
-         y="34.859703"
-         clip-path="url(#clipPath1907-9-3)"
+         transform="translate(132.14229,-300.14229)"
          style="opacity:1"
-         transform="translate(147.1541,-8.3345324)" />
-      <image
-         sodipodi:absref="/home/bouscadilla/godot/Ménage et recyclage/assets/sources/poubelles/4_poubelles.jpg"
-         xlink:href="4_poubelles.jpg"
-         width="286.27917"
-         height="190.85277"
-         preserveAspectRatio="none"
-         id="image1591-4-6-9-7"
-         x="-212.1096"
-         y="34.859703"
-         clip-path="url(#clipPath1903-1-1)"
-         style="opacity:1"
-         transform="rotate(-79.530838,-60.067152,29.463508)"
-         inkscape:transform-center-x="-18.941673"
-         inkscape:transform-center-y="-57.176358" />
-    </g>
-    <g
-       id="g2366"
-       transform="translate(373.68099,-85.936222)"
-       clip-path="url(#clipPath997)"
-       inkscape:export-filename="/home/bouscadilla/godot/Ménage et recyclage/assets/poubelle_verte_f.png"
-       inkscape:export-xdpi="81.18499"
-       inkscape:export-ydpi="81.18499">
-      <ellipse
-         style="opacity:1;fill:#447821;fill-opacity:0.98431373;stroke:none;stroke-width:3;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99215686"
-         id="path940"
-         cx="45.351551"
-         cy="204.55357"
-         rx="37.21656"
-         ry="6.7348456" />
-      <rect
-         y="52.096405"
-         x="2.6970119"
-         height="156.43289"
-         width="74.386055"
-         id="rect2165-0-85-5"
-         style="opacity:0;vector-effect:none;fill:#192a4c;fill-opacity:1;stroke:none;stroke-width:0.24314895;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-      <image
-         sodipodi:absref="/home/bouscadilla/godot/Ménage et recyclage/assets/sources/poubelles/4_poubelles.jpg"
-         xlink:href="4_poubelles.jpg"
-         transform="translate(147.1541,-8.3345324)"
-         style="opacity:1"
-         clip-path="url(#clipPath1907-9)"
+         clip-path="url(#clipPath1907)"
          y="34.859703"
          x="-212.1096"
-         id="image1591-4-90"
+         id="image1591-4"
          preserveAspectRatio="none"
          height="190.85278"
          width="286.27917" />
       <image
          sodipodi:absref="/home/bouscadilla/godot/Ménage et recyclage/assets/sources/poubelles/4_poubelles.jpg"
          xlink:href="4_poubelles.jpg"
-         transform="translate(147.15401,-8.3344224)"
+         inkscape:transform-center-y="-59.383166"
+         inkscape:transform-center-x="-21.229606"
+         transform="rotate(-75,-261.32974,-111.02728)"
          style="opacity:1"
-         clip-path="url(#clipPath1903-1)"
+         clip-path="url(#clipPath1903)"
          y="34.859703"
          x="-212.1096"
-         id="image1591-4-6-9"
+         id="image1591-4-6"
          preserveAspectRatio="none"
          height="190.85277"
          width="286.27917" />
+    </g>
+    <g
+       id="g2389"
+       transform="translate(486.76473,355.43019)"
+       clip-path="url(#clipPath2521)"
+       inkscape:export-filename="/home/bouscadilla/godot/Ménage et recyclage/assets/poubelle_rouge_o.png"
+       inkscape:export-xdpi="81.18499"
+       inkscape:export-ydpi="81.18499">
+      <rect
+         y="-234.9576"
+         x="-110.36108"
+         height="156.43289"
+         width="74.386055"
+         id="rect2165-0"
+         style="opacity:0;vector-effect:none;fill:#192a4c;fill-opacity:1;stroke:none;stroke-width:0.24314895;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="ccssccc"
+         inkscape:connector-curvature="0"
+         id="path2157"
+         d="m -98.850901,-169.72049 32.192828,0.42025 c 0,0 22.873488,-0.0575 24.699576,-0.30648 0.913043,-0.12451 2.598202,0.0462 3.570886,-0.2655 0.972685,-0.3117 1.227707,-1.12141 1.227707,-1.12141 l -63.292776,-0.108 z"
+         style="fill:#422a27;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.26458332;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <image
+         sodipodi:absref="/home/bouscadilla/godot/Ménage et recyclage/assets/sources/poubelles/4_poubelles.jpg"
+         xlink:href="4_poubelles.jpg"
+         transform="translate(28.407048,-136.1671)"
+         style="fill:#808080"
+         y="-124.28402"
+         x="-142.08852"
+         id="image1591-8-2-6"
+         preserveAspectRatio="none"
+         height="190.5"
+         width="285.75"
+         clip-path="url(#clipPath1848)" />
+      <image
+         sodipodi:absref="/home/bouscadilla/godot/Ménage et recyclage/assets/sources/poubelles/4_poubelles.jpg"
+         xlink:href="4_poubelles.jpg"
+         inkscape:transform-center-y="-122.77056"
+         inkscape:transform-center-x="-38.822368"
+         style="fill:#808080"
+         y="-450.29068"
+         x="-195.41547"
+         id="image1591-8-2"
+         preserveAspectRatio="none"
+         height="190.5"
+         width="285.75"
+         clip-path="url(#clipPath1844)"
+         transform="rotate(-75,-16.606631,-319.10404)" />
+    </g>
+    <g
+       id="g2395"
+       transform="translate(743.50539,200.88434)"
+       clip-path="url(#clipPath2501)"
+       inkscape:export-filename="/home/bouscadilla/godot/Ménage et recyclage/assets/poubelle_jaune_o.png"
+       inkscape:export-xdpi="81.18499"
+       inkscape:export-ydpi="81.18499">
+      <rect
+         y="-236.84465"
+         x="-218.32962"
+         height="156.43289"
+         width="74.386055"
+         id="rect2165-0-8"
+         style="opacity:0;vector-effect:none;fill:#192a4c;fill-opacity:1;stroke:none;stroke-width:0.24314895;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path2159"
+         d="m -146.24004,-171.81364 h -61.59066 l 3.16941,3.9091 56.81449,-0.17608 z"
+         style="fill:#735420;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <image
+         sodipodi:absref="/home/bouscadilla/godot/Ménage et recyclage/assets/sources/poubelles/4_poubelles.jpg"
+         xlink:href="4_poubelles.jpg"
+         transform="translate(-55.563491,-321.57601)"
+         clip-path="url(#clipPath2034)"
+         y="59.621296"
+         x="-296.45483"
+         id="image1591-4-9"
+         preserveAspectRatio="none"
+         height="190.5"
+         width="285.75" />
+      <image
+         sodipodi:absref="/home/bouscadilla/godot/Ménage et recyclage/assets/sources/poubelles/4_poubelles.jpg"
+         xlink:href="4_poubelles.jpg"
+         inkscape:transform-center-y="4.7805"
+         inkscape:transform-center-x="-3.7646851"
+         transform="rotate(-75,-87.197561,-355.16169)"
+         clip-path="url(#clipPath2038)"
+         y="-512.29462"
+         x="-441.6626"
+         id="image1591-4-9-7"
+         preserveAspectRatio="none"
+         height="190.5"
+         width="285.75" />
     </g>
   </g>
 </svg>

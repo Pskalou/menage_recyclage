@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/00_tete..svg-42340140eb9b299850f63755f5b0b756.stex"
+path="res://.import/noe_jeu_2.png-870508eab2621a0e6afcb1cb25b73eee.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sources/tetes/00_tete..svg"
-dest_files=[ "res://.import/00_tete..svg-42340140eb9b299850f63755f5b0b756.stex" ]
+source_file="res://assets/sources/tetes/noe_jeu_2.png"
+dest_files=[ "res://.import/noe_jeu_2.png-870508eab2621a0e6afcb1cb25b73eee.stex" ]
 
 [params]
 
