@@ -29,6 +29,7 @@ script = ExtResource( 3 )
 z_index = -2
 
 [node name="fond" type="Sprite" parent="Fonds"]
+position = Vector2( 0, -1.22772 )
 texture = ExtResource( 21 )
 centered = false
 
