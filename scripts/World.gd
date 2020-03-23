@@ -58,7 +58,7 @@ func _ready():
 	
 	_update_score()
 
-	$GUI/Debut_partie.popup_centered(Vector2(250,100))
+	$GUI/Debut_partie.popup_centered(Vector2(200,100))
 
 
 func _on_game_over():
@@ -74,7 +74,7 @@ func _on_game_over():
 	texte += str(Singleton.score) + " points."
 	texte += "\n\nEncore une partie ?"
 	$GUI/Fin_partie.dialog_text = texte
-	$GUI/Fin_partie.popup_centered(Vector2(350,100))
+	$GUI/Fin_partie.popup_centered(Vector2(200,100))
 
 
 
