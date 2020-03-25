@@ -41,7 +41,9 @@ var over_list = {}
 
 func init_game():
     score= 0
-    tetes_pelpel= ["guigui", "noe"]
+
+    # TODO diminuer la tete1 de noe
+    tetes_pelpel= ["guigui", "noe", "lucia"]
     tetes_boubou= []
     tetes_bouscadilla= ["titi", "juju"]
     

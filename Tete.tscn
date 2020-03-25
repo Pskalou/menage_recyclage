@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=2]
+[gd_scene load_steps=32 format=2]
 
 [ext_resource path="res://scripts/Tete.gd" type="Script" id=1]
 [ext_resource path="res://assets/tete_guigui_1.png" type="Texture" id=2]
@@ -10,6 +10,8 @@
 [ext_resource path="res://assets/tete_noe_1.png" type="Texture" id=8]
 [ext_resource path="res://assets/tete_noe_0.png" type="Texture" id=9]
 [ext_resource path="res://assets/explosion.png" type="Texture" id=10]
+[ext_resource path="res://assets/tete_lucia_0.png" type="Texture" id=11]
+[ext_resource path="res://assets/tete_lucia_1.png" type="Texture" id=12]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 46.5643
@@ -35,6 +37,11 @@ animations = [ {
 "frames": [ ExtResource( 9 ), ExtResource( 8 ) ],
 "loop": true,
 "name": "noe",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 11 ), ExtResource( 12 ) ],
+"loop": true,
+"name": "lucia",
 "speed": 5.0
 } ]
 
@@ -137,8 +144,9 @@ position = Vector2( -3.39618, -1.13206 )
 shape = SubResource( 1 )
 
 [node name="sprite" type="AnimatedSprite" parent="."]
+position = Vector2( 0, -2.64374 )
 frames = SubResource( 2 )
-animation = "noe"
+animation = "lucia"
 
 [node name="explosion" type="AnimatedSprite" parent="."]
 visible = false
