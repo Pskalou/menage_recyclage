@@ -12,7 +12,6 @@ func _ready():
 
 
 func _on_nouvelle_tete():
-	Singleton.nb_tetes += 1
 	printt("Tetes._on_nouvelle_tete:","nb_tete:",Singleton.nb_tetes)
 	if Singleton.nb_tetes < Singleton.fin_partie_max_tete:
 		add_tete(randi())
@@ -22,6 +21,9 @@ func _on_nouvelle_tete():
 
 
 func add_tete(id=null):
+	if Singleton.max_tetes == 0:
+		return
+	Singleton.nb_tetes += 1
 	if id == null:
 		id = randi() % (Singleton.max_tetes)
 		printt("choix aléatoire de tête:",id)

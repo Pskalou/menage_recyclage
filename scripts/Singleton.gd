@@ -11,13 +11,21 @@ signal bad_poubelle
 signal game_over
 signal play_clic
 
+signal jeux_arcade
+signal jeux_tutoriel
+signal jeux_histoire
+
+signal init_poubelles
+
+
 var score
 var tetes = {}
 var poubelles= {0:"bleue", 1:"jaune", 2:"verte", 3:"rouge"}
 var fin_partie_max_tete
-var with_pelpel:bool
-var with_boubou:bool
-var with_bouscadilla:bool
+var with_bouscadilla= true
+var with_pelpel = false
+var with_boubou = false
+var with_rourou = false
 var tetes_pelpel
 var tetes_bouscadilla
 var tetes_boubou
@@ -41,9 +49,6 @@ func init_game():
     tetes= {}
     fin_partie_max_tete = 30
 
-    with_pelpel = true
-    with_boubou = false
-    with_bouscadilla= true
     
     init_dict()
     
@@ -51,6 +56,8 @@ func init_game():
     over_list = {}
     max_tetes= len(tetes)
     max_poubelles= len(poubelles)
+
+    emit_signal("init_poubelles")
 
 
     

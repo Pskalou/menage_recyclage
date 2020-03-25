@@ -1,14 +1,6 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=13 format=2]
 
-[ext_resource path="res://assets/poubelle_bleue_o.png" type="Texture" id=1]
-[ext_resource path="res://assets/poubelle_bleue_f.png" type="Texture" id=2]
 [ext_resource path="res://scripts/Poubelle.gd" type="Script" id=3]
-[ext_resource path="res://assets/poubelle_jaune_f.png" type="Texture" id=4]
-[ext_resource path="res://assets/poubelle_jaune_o.png" type="Texture" id=5]
-[ext_resource path="res://assets/poubelle_rouge_f.png" type="Texture" id=6]
-[ext_resource path="res://assets/poubelle_verte_f.png" type="Texture" id=7]
-[ext_resource path="res://assets/poubelle_verte_o.png" type="Texture" id=8]
-[ext_resource path="res://assets/poubelle_rouge_o.png" type="Texture" id=9]
 [ext_resource path="res://assets/poubelles.png" type="Texture" id=10]
 
 [sub_resource type="AtlasTexture" id=1]
@@ -58,11 +50,6 @@ animations = [ {
 "name": "bleue",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 6 ), ExtResource( 9 ) ],
-"loop": true,
-"name": "_rouge",
-"speed": 5.0
-}, {
 "frames": [ SubResource( 3 ), SubResource( 4 ) ],
 "loop": true,
 "name": "rouge",
@@ -73,24 +60,9 @@ animations = [ {
 "name": "jaune",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 2 ), ExtResource( 1 ) ],
-"loop": true,
-"name": "_bleue",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 4 ), ExtResource( 5 ) ],
-"loop": true,
-"name": "_jaune",
-"speed": 5.0
-}, {
 "frames": [ SubResource( 7 ), SubResource( 8 ) ],
 "loop": true,
 "name": "verte",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 7 ), ExtResource( 8 ) ],
-"loop": true,
-"name": "_verte",
 "speed": 5.0
 } ]
 

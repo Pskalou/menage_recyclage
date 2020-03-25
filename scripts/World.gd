@@ -42,8 +42,9 @@ func _ready():
 	Singleton.connect("mauvaise_poubelle", self, "_on_mauvaise_poubelle")
 	Singleton.connect("game_over", self, "_on_game_over")
 	Singleton.connect("play_clic", self, "_play_clic")
+	Singleton.connect("jeux_arcade", self, "_on_jeux_arcade")
 	
-	Singleton.init_game()
+	# Singleton.init_game()
 
 	score= Singleton.score
 	score_label= get_node("GUI/Score")
@@ -58,7 +59,7 @@ func _ready():
 	
 	_update_score()
 
-	$GUI/Debut_partie.popup_centered(Vector2(200,100))
+	# $GUI/Debut_partie.popup_centered(Vector2(200,100))
 
 
 func _on_game_over():
@@ -184,20 +185,39 @@ func _process(delta):
 	pass
 
 
-
+# TODO fonction à effacer car liée à l'ancien menu tutoriel
 func _on_StartDialog_confirmed():
 #	Singleton.emit_signal("begin_game")
 	for element in get_node("Tetes").get_children():
 		element.queue_free()
 	
+
 	Singleton.init_game()
+
 
 	duree= duree_init
 	timer.start(duree)
 	_update_chrono()
 	
 	_nouvelle_tetes(3, 0.3)
-	pass # Replace with function body.
+
+
+func _on_jeux_arcade():
+	print("nouvelle partie en cours de chargement")
+	for element in get_node("Tetes").get_children():
+		element.queue_free()
+	
+
+	Singleton.init_game()
+
+	get_node("Menu_accueil").set_visible(false)
+
+	duree= duree_init
+	timer.start(duree)
+	_update_chrono()
+	
+	_nouvelle_tetes(3, 0.3)
+	
 
 
 func _on_mauvaise_poubelle(id):
