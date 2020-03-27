@@ -43,7 +43,12 @@ func _ready():
 	Singleton.connect("game_over", self, "_on_game_over")
 	Singleton.connect("play_clic", self, "_play_clic")
 	Singleton.connect("jeux_arcade", self, "_on_jeux_arcade")
+
+	# pause_menu.gd (faire pause, reprendre le jeux, retour accueil)
+	Singleton.connect("main_menu", self, "_on_main_menu")
+	Singleton.connect("fin_pause", self, "_on_fin_pause")
 	
+
 	# Singleton.init_game()
 
 	score= Singleton.score
@@ -207,10 +212,10 @@ func _on_jeux_arcade():
 	for element in get_node("Tetes").get_children():
 		element.queue_free()
 	
-
 	Singleton.init_game()
 
-	get_node("Menu_accueil").set_visible(false)
+	get_node("Main_menu").set_visible(false)
+	get_node("Pause_menu").set_visible(false)
 
 	duree= duree_init
 	timer.start(duree)
@@ -276,3 +281,11 @@ func _on_mauvaise_poubelle(id):
 
 
 ######### Histoire
+
+
+func _on_Options_mouse_entered():
+	pass # Replace with function body.
+
+
+func _on_Options_mouse_exited():
+	pass # Replace with function body.

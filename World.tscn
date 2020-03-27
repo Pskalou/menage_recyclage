@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=2]
+[gd_scene load_steps=25 format=2]
 
 [ext_resource path="res://scripts/Poubelles.gd" type="Script" id=1]
 [ext_resource path="res://scripts/Tetes.gd" type="Script" id=2]
@@ -22,6 +22,7 @@
 [ext_resource path="res://assets/audio/audio_pop_01.wav" type="AudioStream" id=20]
 [ext_resource path="res://assets/fond.png" type="Texture" id=21]
 [ext_resource path="res://assets/Theme.tres" type="Theme" id=22]
+[ext_resource path="res://Pause_menu.tscn" type="PackedScene" id=23]
 [ext_resource path="res://Main_menu.tscn" type="PackedScene" id=25]
 
 [node name="World" type="Control"]
@@ -54,10 +55,10 @@ __meta__ = {
 }
 
 [node name="Score" type="Label" parent="GUI"]
-margin_left = 65.0
-margin_top = 21.0
-margin_right = 105.0
-margin_bottom = 35.0
+margin_left = 28.4349
+margin_top = 12.1357
+margin_right = 106.435
+margin_bottom = 32.1357
 theme = ExtResource( 22 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Score : 10"
@@ -65,26 +66,11 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="CheckButton" type="CheckButton" parent="GUI/Score"]
-margin_left = 147.0
-margin_top = -12.0
-margin_right = 261.0
-margin_bottom = 28.0
-theme = ExtResource( 22 )
-custom_colors/font_color = Color( 0, 0, 0, 1 )
-custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
-custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
-pressed = true
-text = "Tutoriel"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [node name="Chrono" type="Label" parent="GUI"]
-margin_left = 388.385
-margin_top = 16.7722
-margin_right = 428.385
-margin_bottom = 36.7722
+margin_left = 344.064
+margin_top = 14.5561
+margin_right = 546.064
+margin_bottom = 34.5561
 theme = ExtResource( 22 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Compte à rebours... 3.5s"
@@ -93,13 +79,29 @@ __meta__ = {
 }
 
 [node name="Nbtetes" type="Label" parent="GUI"]
-margin_left = 779.613
-margin_top = 23.327
-margin_right = 931.613
-margin_bottom = 43.327
+margin_left = 30.5824
+margin_top = 35.5154
+margin_right = 182.582
+margin_bottom = 55.5154
 theme = ExtResource( 22 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Nombre de tetes : "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="GUI"]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="Options" type="Label" parent="GUI/TextureRect"]
+margin_left = 927.183
+margin_top = 15.108
+margin_right = 992.183
+margin_bottom = 35.108
+theme = ExtResource( 22 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Options"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -195,8 +197,13 @@ stream = ExtResource( 18 )
 [node name="pop_04" type="AudioStreamPlayer" parent="Audio/pops"]
 stream = ExtResource( 19 )
 
-[node name="Menu_accueil" parent="." instance=ExtResource( 25 )]
-margin_right = 1024.0
-margin_bottom = 570.0
+[node name="Pause_menu" parent="." instance=ExtResource( 23 )]
+visible = false
+rect_min_size = Vector2( 1024, 600 )
+
+[node name="Main_menu" parent="." instance=ExtResource( 25 )]
+rect_min_size = Vector2( 1024, 600 )
+[connection signal="mouse_entered" from="GUI/TextureRect/Options" to="." method="_on_Options_mouse_entered"]
+[connection signal="mouse_exited" from="GUI/TextureRect/Options" to="." method="_on_Options_mouse_exited"]
 [connection signal="confirmed" from="GUI/Debut_partie" to="." method="_on_StartDialog_confirmed"]
 [connection signal="confirmed" from="GUI/Fin_partie" to="." method="_on_Fin_partie_confirmed"]

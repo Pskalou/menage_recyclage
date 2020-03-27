@@ -11,9 +11,15 @@ signal bad_poubelle
 signal game_over
 signal play_clic
 
+# from main_menu.gd → world.gd
 signal jeux_arcade
 signal jeux_tutoriel
 signal jeux_histoire
+signal exit
+
+# from pause_menu.gd → world.gd
+signal fin_pause
+signal main_menu
 
 signal init_poubelles
 
@@ -44,7 +50,7 @@ func init_game():
 
     # TODO diminuer la tete1 de noe
     tetes_pelpel= ["guigui", "noe", "lucia"]
-    tetes_boubou= []
+    tetes_boubou= ["bruno", "cecile", "lolo", "marius"]
     tetes_bouscadilla= ["titi", "juju"]
     
     

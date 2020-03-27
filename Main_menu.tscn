@@ -11,10 +11,9 @@
 size = 50
 font_data = ExtResource( 3 )
 
-[node name="MarginContainer" type="MarginContainer"]
+[node name="Main_menu" type="MarginContainer"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_right = -153.0
 rect_min_size = Vector2( 1024, 0 )
 custom_constants/margin_right = 100
 custom_constants/margin_top = 100
@@ -33,13 +32,13 @@ centered = false
 margin_left = 100.0
 margin_top = 100.0
 margin_right = 924.0
-margin_bottom = 500.0
+margin_bottom = 511.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer"]
 margin_right = 410.0
-margin_bottom = 400.0
+margin_bottom = 411.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
@@ -58,15 +57,14 @@ margin_bottom = 133.0
 [node name="CenterContainer" type="CenterContainer" parent="HBoxContainer/VBoxContainer"]
 margin_top = 137.0
 margin_right = 410.0
-margin_bottom = 280.0
+margin_bottom = 291.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="Modes_jeux" type="VBoxContainer" parent="HBoxContainer/VBoxContainer/CenterContainer"]
 margin_left = 119.0
-margin_top = 15.0
 margin_right = 291.0
-margin_bottom = 128.0
+margin_bottom = 154.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme = ExtResource( 4 )
@@ -101,15 +99,23 @@ mouse_filter = 1
 mouse_default_cursor_shape = 2
 text = "Jeux histoire"
 
+[node name="Quitter" type="Label" parent="HBoxContainer/VBoxContainer/CenterContainer/Modes_jeux"]
+margin_top = 123.0
+margin_right = 172.0
+margin_bottom = 154.0
+mouse_filter = 1
+mouse_default_cursor_shape = 2
+text = "Quitter"
+
 [node name="HSeparator5" type="HSeparator" parent="HBoxContainer/VBoxContainer"]
-margin_top = 284.0
+margin_top = 295.0
 margin_right = 410.0
-margin_bottom = 288.0
+margin_bottom = 299.0
 
 [node name="Familles" type="VBoxContainer" parent="HBoxContainer/VBoxContainer"]
-margin_top = 292.0
+margin_top = 303.0
 margin_right = 410.0
-margin_bottom = 400.0
+margin_bottom = 411.0
 
 [node name="CenterContainer" type="CenterContainer" parent="HBoxContainer/VBoxContainer/Familles"]
 margin_right = 410.0
@@ -170,15 +176,15 @@ text = "Boubou"
 [node name="CenterContainer" type="CenterContainer" parent="HBoxContainer"]
 margin_left = 414.0
 margin_right = 824.0
-margin_bottom = 400.0
+margin_bottom = 411.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="TextureRect" type="TextureRect" parent="HBoxContainer/CenterContainer"]
 margin_left = 36.0
-margin_top = 54.0
+margin_top = 59.0
 margin_right = 374.0
-margin_bottom = 346.0
+margin_bottom = 351.0
 size_flags_horizontal = 15
 size_flags_vertical = 15
 texture = ExtResource( 2 )
@@ -190,6 +196,8 @@ stretch_mode = 5
 [connection signal="mouse_exited" from="HBoxContainer/VBoxContainer/CenterContainer/Modes_jeux/Arcade" to="." method="_on_Nouvelle_partie_mouse_exited"]
 [connection signal="mouse_entered" from="HBoxContainer/VBoxContainer/CenterContainer/Modes_jeux/Histoire" to="." method="_on_Histoire_mouse_entered"]
 [connection signal="mouse_exited" from="HBoxContainer/VBoxContainer/CenterContainer/Modes_jeux/Histoire" to="." method="_on_Histoire_mouse_exited"]
+[connection signal="mouse_entered" from="HBoxContainer/VBoxContainer/CenterContainer/Modes_jeux/Quitter" to="." method="_on_Quitter_mouse_entered"]
+[connection signal="mouse_exited" from="HBoxContainer/VBoxContainer/CenterContainer/Modes_jeux/Quitter" to="." method="_on_Quitter_mouse_exited"]
 [connection signal="pressed" from="HBoxContainer/VBoxContainer/Familles/HBoxContainer/VBoxContainer/Bouscadilla" to="." method="_on_Bouscadilla_pressed"]
 [connection signal="pressed" from="HBoxContainer/VBoxContainer/Familles/HBoxContainer/VBoxContainer/Pelpel" to="." method="_on_Pelpel_pressed"]
 [connection signal="pressed" from="HBoxContainer/VBoxContainer/Familles/HBoxContainer/VBoxContainer2/Rourou" to="." method="_on_Rourou_pressed"]

@@ -4,11 +4,14 @@ extends MarginContainer
 var tutoriel_label
 var histoire_label
 var arcade_label
+var quitter_label
 
 
 var over_tutoriel:bool
 var over_histoire:bool
 var over_arcade:bool
+var over_quitter:bool
+
 func _ready():
 	tutoriel_label= get_node("HBoxContainer/VBoxContainer/CenterContainer/Modes_jeux/Tutoriel")
 	over_tutoriel= false
@@ -16,7 +19,10 @@ func _ready():
 	over_histoire= false
 	arcade_label= get_node("HBoxContainer/VBoxContainer/CenterContainer/Modes_jeux/Arcade")
 	over_arcade= false
+	quitter_label= get_node("HBoxContainer/VBoxContainer/CenterContainer/Modes_jeux/Quitter")
+	over_quitter= false
 	
+
 
 
 
@@ -34,6 +40,9 @@ func _on_CenterContainer_gui_input(event):
 			elif over_tutoriel:
 				Singleton.emit_signal("jeux_tutoriel")
 				print("lancement jeux tutoriel")
+			elif over_quitter:
+				Singleton.emit_signal("exit")
+				print("quitter le jeux")
 			
 
 
@@ -71,6 +80,14 @@ func _on_Nouvelle_partie_mouse_entered():
 func _on_Nouvelle_partie_mouse_exited():
 	over_arcade= false
 	_on_label_exited(arcade_label)
+
+
+func _on_Quitter_mouse_entered():
+	over_quitter= true
+	_on_label_entered(quitter_label)
+func _on_Quitter_mouse_exited():
+	over_quitter= false
+	_on_label_exited(quitter_label)
 
 
 func _on_Pelpel_pressed():

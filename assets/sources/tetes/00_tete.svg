@@ -16,7 +16,10 @@
    version="1.1"
    id="svg8"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
-   sodipodi:docname="00_tete.svg">
+   sodipodi:docname="00_tete.svg"
+   inkscape:export-filename="/home/bouscadilla/Documents/Code/godot/Menage_et_recyclage/assets/sources/tetes/00_tete.svg.png"
+   inkscape:export-xdpi="34"
+   inkscape:export-ydpi="34">
   <defs
      id="defs2">
     <clipPath
@@ -603,6 +606,116 @@
          rx="56.049755"
          ry="59.271011" />
     </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1120-0-7-1-8-3-3-94-3">
+      <rect
+         y="-295.6702"
+         x="370.49332"
+         height="184.11871"
+         width="184.11871"
+         id="rect1122-9-5-9-8-6-6-7-6"
+         style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.05833328;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1120-0-7-1-8-3-3-94-9">
+      <rect
+         y="-295.6702"
+         x="370.49332"
+         height="184.11871"
+         width="184.11871"
+         id="rect1122-9-5-9-8-6-6-7-3"
+         style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.05833328;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1120-0-7-1-8-3-3-94-7">
+      <rect
+         y="-295.6702"
+         x="370.49332"
+         height="184.11871"
+         width="184.11871"
+         id="rect1122-9-5-9-8-6-6-7-5"
+         style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.05833328;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1120-0-7-1-8-3-3-94-94">
+      <rect
+         y="-295.6702"
+         x="370.49332"
+         height="184.11871"
+         width="184.11871"
+         id="rect1122-9-5-9-8-6-6-7-7"
+         style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.05833328;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1120-0-7-1-8-3-3-94-0">
+      <rect
+         y="-295.6702"
+         x="370.49332"
+         height="184.11871"
+         width="184.11871"
+         id="rect1122-9-5-9-8-6-6-7-61"
+         style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.05833328;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1120-0-7-1-8-3-3-94-74">
+      <rect
+         y="-295.6702"
+         x="370.49332"
+         height="184.11871"
+         width="184.11871"
+         id="rect1122-9-5-9-8-6-6-7-4"
+         style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.05833328;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1120-0-7-1-8-3-3-94-2">
+      <rect
+         y="-295.6702"
+         x="370.49332"
+         height="184.11871"
+         width="184.11871"
+         id="rect1122-9-5-9-8-6-6-7-66"
+         style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.05833328;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1120-0-7-1-8-3-3-94-06">
+      <rect
+         y="-295.6702"
+         x="370.49332"
+         height="184.11871"
+         width="184.11871"
+         id="rect1122-9-5-9-8-6-6-7-1"
+         style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.05833328;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1120-0-7-1-8-3-3-94-73">
+      <rect
+         y="-295.6702"
+         x="370.49332"
+         height="184.11871"
+         width="184.11871"
+         id="rect1122-9-5-9-8-6-6-7-65"
+         style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.05833328;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1120-0-7-1-8-3-3-94-8">
+      <rect
+         y="-295.6702"
+         x="370.49332"
+         height="184.11871"
+         width="184.11871"
+         id="rect1122-9-5-9-8-6-6-7-56"
+         style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.05833328;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </clipPath>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -611,9 +724,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.20534209"
-     inkscape:cx="2908.9239"
-     inkscape:cy="891.53947"
+     inkscape:zoom="0.23044807"
+     inkscape:cx="2518.1798"
+     inkscape:cy="-263.0607"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -727,15 +840,15 @@
       <image
          sodipodi:absref="/home/bouscadilla/Documents/Code/godot/Menage_et_recyclage/assets/sources/tetes/guillaume_jeu_1.png"
          xlink:href="guillaume_jeu_1.png"
-         style="opacity:1"
-         y="-309.06061"
-         x="287.20465"
-         id="image18"
-         preserveAspectRatio="none"
-         height="251.968"
-         width="335.95734"
+         inkscape:transform-center-y="111.45517"
          inkscape:transform-center-x="87.639959"
-         inkscape:transform-center-y="111.45517" />
+         width="335.95734"
+         height="251.968"
+         preserveAspectRatio="none"
+         id="image18"
+         x="287.20465"
+         y="-309.06061"
+         style="opacity:1" />
     </g>
     <g
        id="g983-3"
@@ -816,14 +929,14 @@
       <image
          sodipodi:absref="/home/bouscadilla/Documents/Code/godot/Menage_et_recyclage/assets/sources/tetes/guillaume_jeu_2.png"
          xlink:href="guillaume_jeu_2.png"
-         transform="rotate(-7.1210545)"
-         style="opacity:1"
-         y="-245.98422"
-         x="291.19589"
-         id="image29"
-         preserveAspectRatio="none"
+         width="350.87939"
          height="263.15955"
-         width="350.87939" />
+         preserveAspectRatio="none"
+         id="image29"
+         x="291.19589"
+         y="-245.98422"
+         style="opacity:1"
+         transform="rotate(-7.1210545)" />
     </g>
     <g
        id="g983-3-9"
@@ -902,14 +1015,14 @@
         <image
            sodipodi:absref="/home/bouscadilla/Documents/Code/godot/Menage_et_recyclage/assets/sources/tetes/thilou_jeu_2.png"
            xlink:href="thilou_jeu_2.png"
-           transform="rotate(3.5333001)"
-           style="opacity:1"
-           y="-298.29868"
-           x="371.54919"
-           id="image73"
-           preserveAspectRatio="none"
+           width="168.2599"
            height="166.40781"
-           width="168.2599" />
+           preserveAspectRatio="none"
+           id="image73"
+           x="371.54919"
+           y="-298.29868"
+           style="opacity:1"
+           transform="rotate(3.5333001)" />
       </g>
     </g>
     <g
@@ -991,14 +1104,14 @@
       <image
          sodipodi:absref="/home/bouscadilla/Documents/Code/godot/Menage_et_recyclage/assets/sources/tetes/juliette_jeu_1.png"
          xlink:href="juliette_jeu_1.png"
-         transform="rotate(2.9959263)"
-         style="opacity:1"
-         y="-321.61743"
-         x="383.10889"
-         id="image40"
-         preserveAspectRatio="none"
+         width="144.25882"
          height="192.34508"
-         width="144.25882" />
+         preserveAspectRatio="none"
+         id="image40"
+         x="383.10889"
+         y="-321.61743"
+         style="opacity:1"
+         transform="rotate(2.9959263)" />
     </g>
     <g
        id="g983-3-9-4-0"
@@ -1079,14 +1192,14 @@
       <image
          sodipodi:absref="/home/bouscadilla/Documents/Code/godot/Menage_et_recyclage/assets/sources/tetes/thilou_jeu_1.png"
          xlink:href="thilou_jeu_1.png"
-         transform="rotate(4.0646483)"
-         style="opacity:1"
-         y="-295.95728"
-         x="374.93912"
-         id="image62"
-         preserveAspectRatio="none"
+         width="155.38712"
          height="165.6552"
-         width="155.38712" />
+         preserveAspectRatio="none"
+         id="image62"
+         x="374.93912"
+         y="-295.95728"
+         style="opacity:1"
+         transform="rotate(4.0646483)" />
     </g>
     <g
        id="g983-3-9-4-5"
@@ -1167,14 +1280,14 @@
       <image
          sodipodi:absref="/home/bouscadilla/Documents/Code/godot/Menage_et_recyclage/assets/sources/tetes/juliette_jeu_2.png"
          xlink:href="juliette_jeu_2.png"
-         transform="rotate(21.077377)"
-         style="opacity:1"
-         y="-442.06467"
-         x="307.93741"
-         id="image51"
-         preserveAspectRatio="none"
+         width="144.07535"
          height="192.10048"
-         width="144.07535" />
+         preserveAspectRatio="none"
+         id="image51"
+         x="307.93741"
+         y="-442.06467"
+         style="opacity:1"
+         transform="rotate(21.077377)" />
     </g>
     <g
        id="g983-3-9-4-4-7-0-7"
@@ -1255,17 +1368,17 @@
       <image
          sodipodi:absref="/home/bouscadilla/Documents/Code/godot/Menage_et_recyclage/assets/sources/tetes/noe_jeu_2.png"
          xlink:href="noe_jeu_2.png"
-         inkscape:transform-center-y="25.215358"
-         inkscape:transform-center-x="3.7268411"
-         style="opacity:1"
-         y="7.1225195"
-         x="839.48651"
-         id="image876"
-         preserveAspectRatio="none"
-         height="127"
-         width="169.33333"
+         transform="matrix(1.5454453,-0.38399754,0.38399754,1.5454453,-1011.1911,60.480175)"
          clip-path="url(#clipPath881-1)"
-         transform="matrix(1.5454453,-0.38399754,0.38399754,1.5454453,-1011.1911,60.480175)" />
+         width="169.33333"
+         height="127"
+         preserveAspectRatio="none"
+         id="image876"
+         x="839.48651"
+         y="7.1225195"
+         style="opacity:1"
+         inkscape:transform-center-x="3.7268411"
+         inkscape:transform-center-y="25.215358" />
     </g>
     <g
        id="g983-3-9-4-4-7-0-6"
@@ -1346,15 +1459,15 @@
       <image
          sodipodi:absref="/home/bouscadilla/Documents/Code/godot/Menage_et_recyclage/assets/sources/tetes/noe_jeu_1.png"
          xlink:href="noe_jeu_1.png"
-         style="opacity:1"
-         y="16.162132"
-         x="713.8902"
-         id="image865"
-         preserveAspectRatio="none"
-         height="127"
-         width="169.33333"
+         transform="matrix(1.6427643,0.09470303,-0.09470303,1.6427643,-855.24937,-390.62827)"
          clip-path="url(#clipPath887-0)"
-         transform="matrix(1.6427643,0.09470303,-0.09470303,1.6427643,-855.24937,-390.62827)" />
+         width="169.33333"
+         height="127"
+         preserveAspectRatio="none"
+         id="image865"
+         x="713.8902"
+         y="16.162132"
+         style="opacity:1" />
     </g>
     <g
        id="g983-3-9-4-4-7-0-9"
@@ -1435,22 +1548,26 @@
       <image
          sodipodi:absref="/home/bouscadilla/Documents/Code/godot/Menage_et_recyclage/assets/sources/tetes/lucia_jeu_2.png"
          xlink:href="lucia_jeu_2.png"
-         style="opacity:1"
-         y="-596.06317"
-         x="996.38177"
-         id="image952"
-         preserveAspectRatio="none"
-         height="251.968"
-         width="335.95734"
+         transform="matrix(0.79241286,0.07776681,-0.07776681,0.79241286,-495.0031,116.64557)"
          clip-path="url(#clipPath957-7)"
-         transform="matrix(0.79241286,0.07776681,-0.07776681,0.79241286,-495.0031,116.64557)" />
+         width="335.95734"
+         height="251.968"
+         preserveAspectRatio="none"
+         id="image952"
+         x="996.38177"
+         y="-596.06317"
+         style="opacity:1" />
     </g>
     <g
        id="g983-3-9-4-4-7-0-8"
-       transform="translate(867.13091,-138.11483)"
-       clip-path="url(#clipPath1120-0-7-1-8-3-3-94)">
+       transform="translate(-53.462593,230.12263)"
+       clip-path="url(#clipPath1120-0-7-1-8-3-3-94)"
+       inkscape:export-filename="/home/bouscadilla/Documents/Code/godot/Menage_et_recyclage/assets/tete_cecile_0.png"
+       inkscape:export-xdpi="34"
+       inkscape:export-ydpi="34">
       <g
-         id="g1118-6-2-7-3-5-6-4">
+         id="g1118-6-2-7-3-5-6-4"
+         style="opacity:0">
         <rect
            y="-295.67023"
            x="370.49329"
@@ -1517,6 +1634,19 @@
            rx="2.7982867"
            ry="11.624683" />
       </g>
+      <image
+         sodipodi:absref="/home/bouscadilla/Documents/Code/godot/Menage_et_recyclage/assets/sources/tetes/tete_cecile_0.png"
+         xlink:href="tete_cecile_0.png"
+         transform="rotate(-1.5288334)"
+         inkscape:transform-center-y="-0.79024693"
+         inkscape:transform-center-x="-14.394337"
+         style="opacity:1"
+         y="-251.38243"
+         x="419.43488"
+         id="image637"
+         preserveAspectRatio="none"
+         height="107.97948"
+         width="94.19487" />
     </g>
     <g
        id="g983-3-9-4-4-7-0"
@@ -1597,15 +1727,862 @@
       <image
          sodipodi:absref="/home/bouscadilla/Documents/Code/godot/Menage_et_recyclage/assets/sources/tetes/lucia_jeu_1.png"
          xlink:href="lucia_jeu_1.png"
-         style="opacity:1"
-         y="-652.42468"
-         x="1089.4589"
-         id="image941"
-         preserveAspectRatio="none"
-         height="127"
-         width="169.33333"
+         transform="matrix(1.6386099,0.10062241,-0.10062241,1.6386099,-1513.3791,680.03309)"
          clip-path="url(#clipPath963-5)"
-         transform="matrix(1.6386099,0.10062241,-0.10062241,1.6386099,-1513.3791,680.03309)" />
+         width="169.33333"
+         height="127"
+         preserveAspectRatio="none"
+         id="image941"
+         x="1089.4589"
+         y="-652.42468"
+         style="opacity:1" />
+    </g>
+    <g
+       id="g983-3-9-4-4-7-0-8-7"
+       transform="translate(130.65612,230.12263)"
+       clip-path="url(#clipPath1120-0-7-1-8-3-3-94-3)"
+       inkscape:export-filename="/home/bouscadilla/Documents/Code/godot/Menage_et_recyclage/assets/tete_bruno_0.png"
+       inkscape:export-xdpi="34"
+       inkscape:export-ydpi="34">
+      <g
+         id="g1118-6-2-7-3-5-6-4-5"
+         style="opacity:0">
+        <rect
+           y="-295.67023"
+           x="370.49329"
+           height="184.11871"
+           width="184.11871"
+           id="rect961-0-2-8-14-3-2-5-3"
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.08962178;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.0938462;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path76-6-8-4-9-5-6-0-5"
+           cx="459.65198"
+           cy="-204.15814"
+           rx="30.378256"
+           ry="45.365757" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:0.82845062;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path888-2-9-5-2-6-1-3-6"
+           cx="447.73102"
+           cy="-209.95312"
+           rx="6.8427367"
+           ry="3.3447642" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:0.82845062;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path888-3-61-7-0-0-2-8-6-2"
+           cx="474.82083"
+           cy="-209.93837"
+           rx="6.8427367"
+           ry="3.3447642"
+           inkscape:transform-center-x="17.146949"
+           inkscape:transform-center-y="1.9052165" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.05833328;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path905-8-3-3-6-9-7-1-9"
+           cx="461.54382"
+           cy="-179.99075"
+           rx="14.229586"
+           ry="3.9890471" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.05833328;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path907-7-6-6-8-1-9-0-1"
+           cx="461.9606"
+           cy="-190.4099"
+           rx="9.2879305"
+           ry="0.7144562" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.05833328;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path909-9-1-1-9-2-2-6-2"
+           cx="462.07968"
+           cy="-202.19843"
+           rx="0.7144562"
+           ry="10.240539" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.05833328;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path911-20-2-0-2-7-0-3-7"
+           cx="429.57193"
+           cy="-197.86691"
+           rx="4.6439652"
+           ry="12.100987" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.05833328;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path913-2-9-6-66-0-2-2-0"
+           cx="491.67007"
+           cy="-198.34322"
+           rx="2.7982867"
+           ry="11.624683" />
+      </g>
+      <image
+         sodipodi:absref="/home/bouscadilla/Documents/Code/godot/Menage_et_recyclage/assets/sources/tetes/tete_bruno_0.png"
+         xlink:href="tete_bruno_0.png"
+         transform="rotate(-1.6571975)"
+         inkscape:transform-center-y="-5.3421794"
+         inkscape:transform-center-x="-12.014082"
+         style="opacity:1"
+         y="-259.89169"
+         x="420.80063"
+         id="image659"
+         preserveAspectRatio="none"
+         height="117.13341"
+         width="89.617157" />
+    </g>
+    <g
+       id="g983-3-9-4-4-7-0-8-6"
+       transform="translate(314.77483,230.12263)"
+       clip-path="url(#clipPath1120-0-7-1-8-3-3-94-9)"
+       inkscape:export-filename="/home/bouscadilla/Documents/Code/godot/Menage_et_recyclage/assets/tete_lolo_0.png"
+       inkscape:export-xdpi="34"
+       inkscape:export-ydpi="34">
+      <g
+         id="g1118-6-2-7-3-5-6-4-0"
+         style="opacity:0">
+        <rect
+           y="-295.67023"
+           x="370.49329"
+           height="184.11871"
+           width="184.11871"
+           id="rect961-0-2-8-14-3-2-5-6"
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.08962178;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.0938462;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path76-6-8-4-9-5-6-0-2"
+           cx="459.65198"
+           cy="-204.15814"
+           rx="30.378256"
+           ry="45.365757" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:0.82845062;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path888-2-9-5-2-6-1-3-61"
+           cx="447.73102"
+           cy="-209.95312"
+           rx="6.8427367"
+           ry="3.3447642" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:0.82845062;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path888-3-61-7-0-0-2-8-6-8"
+           cx="474.82083"
+           cy="-209.93837"
+           rx="6.8427367"
+           ry="3.3447642"
+           inkscape:transform-center-x="17.146949"
+           inkscape:transform-center-y="1.9052165" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.05833328;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path905-8-3-3-6-9-7-1-7"
+           cx="461.54382"
+           cy="-179.99075"
+           rx="14.229586"
+           ry="3.9890471" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.05833328;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path907-7-6-6-8-1-9-0-9"
+           cx="461.9606"
+           cy="-190.4099"
+           rx="9.2879305"
+           ry="0.7144562" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.05833328;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path909-9-1-1-9-2-2-6-20"
+           cx="462.07968"
+           cy="-202.19843"
+           rx="0.7144562"
+           ry="10.240539" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.05833328;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path911-20-2-0-2-7-0-3-2"
+           cx="429.57193"
+           cy="-197.86691"
+           rx="4.6439652"
+           ry="12.100987" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.05833328;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path913-2-9-6-66-0-2-2-3"
+           cx="491.67007"
+           cy="-198.34322"
+           rx="2.7982867"
+           ry="11.624683" />
+      </g>
+      <image
+         sodipodi:absref="/home/bouscadilla/Documents/Code/godot/Menage_et_recyclage/assets/sources/tetes/tete_eloise_0.png"
+         xlink:href="tete_eloise_0.png"
+         transform="rotate(-6.8564369)"
+         inkscape:transform-center-y="-0.40907488"
+         inkscape:transform-center-x="-6.5619233"
+         style="opacity:1"
+         y="-208.21263"
+         x="427.51694"
+         id="image615"
+         preserveAspectRatio="none"
+         height="107.32236"
+         width="96.621605" />
+    </g>
+    <g
+       id="g983-3-9-4-4-7-0-8-9"
+       transform="translate(498.89354,230.12263)"
+       clip-path="url(#clipPath1120-0-7-1-8-3-3-94-7)"
+       inkscape:export-filename="/home/bouscadilla/Documents/Code/godot/Menage_et_recyclage/assets/tete_marius_0.png"
+       inkscape:export-xdpi="34"
+       inkscape:export-ydpi="34">
+      <g
+         id="g1118-6-2-7-3-5-6-4-2"
+         style="opacity:0">
+        <rect
+           y="-295.67023"
+           x="370.49329"
+           height="184.11871"
+           width="184.11871"
+           id="rect961-0-2-8-14-3-2-5-2"
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.08962178;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.0938462;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path76-6-8-4-9-5-6-0-8"
+           cx="459.65198"
+           cy="-204.15814"
+           rx="30.378256"
+           ry="45.365757" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:0.82845062;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path888-2-9-5-2-6-1-3-9"
+           cx="447.73102"
+           cy="-209.95312"
+           rx="6.8427367"
+           ry="3.3447642" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:0.82845062;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path888-3-61-7-0-0-2-8-6-7"
+           cx="474.82083"
+           cy="-209.93837"
+           rx="6.8427367"
+           ry="3.3447642"
+           inkscape:transform-center-x="17.146949"
+           inkscape:transform-center-y="1.9052165" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.05833328;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path905-8-3-3-6-9-7-1-3"
+           cx="461.54382"
+           cy="-179.99075"
+           rx="14.229586"
+           ry="3.9890471" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.05833328;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path907-7-6-6-8-1-9-0-6"
+           cx="461.9606"
+           cy="-190.4099"
+           rx="9.2879305"
+           ry="0.7144562" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.05833328;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path909-9-1-1-9-2-2-6-1"
+           cx="462.07968"
+           cy="-202.19843"
+           rx="0.7144562"
+           ry="10.240539" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.05833328;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path911-20-2-0-2-7-0-3-29"
+           cx="429.57193"
+           cy="-197.86691"
+           rx="4.6439652"
+           ry="12.100987" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.05833328;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path913-2-9-6-66-0-2-2-31"
+           cx="491.67007"
+           cy="-198.34322"
+           rx="2.7982867"
+           ry="11.624683" />
+      </g>
+      <image
+         sodipodi:absref="/home/bouscadilla/Documents/Code/godot/Menage_et_recyclage/assets/sources/tetes/tete_marius_0.png"
+         xlink:href="tete_marius_0.png"
+         transform="rotate(1.3765459)"
+         inkscape:transform-center-y="-0.58022115"
+         inkscape:transform-center-x="-4.4279883"
+         style="opacity:1"
+         y="-274.02267"
+         x="391.78299"
+         id="image593"
+         preserveAspectRatio="none"
+         height="106.25234"
+         width="111.07326" />
+    </g>
+    <g
+       id="g983-3-9-4-4-7-0-8-8"
+       transform="translate(683.01225,230.12263)"
+       clip-path="url(#clipPath1120-0-7-1-8-3-3-94-94)">
+      <g
+         id="g1118-6-2-7-3-5-6-4-4">
+        <rect
+           y="-295.67023"
+           x="370.49329"
+           height="184.11871"
+           width="184.11871"
+           id="rect961-0-2-8-14-3-2-5-5"
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.08962178;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.0938462;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path76-6-8-4-9-5-6-0-0"
+           cx="459.65198"
+           cy="-204.15814"
+           rx="30.378256"
+           ry="45.365757" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:0.82845062;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path888-2-9-5-2-6-1-3-3"
+           cx="447.73102"
+           cy="-209.95312"
+           rx="6.8427367"
+           ry="3.3447642" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:0.82845062;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path888-3-61-7-0-0-2-8-6-6"
+           cx="474.82083"
+           cy="-209.93837"
+           rx="6.8427367"
+           ry="3.3447642"
+           inkscape:transform-center-x="17.146949"
+           inkscape:transform-center-y="1.9052165" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.05833328;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path905-8-3-3-6-9-7-1-1"
+           cx="461.54382"
+           cy="-179.99075"
+           rx="14.229586"
+           ry="3.9890471" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.05833328;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path907-7-6-6-8-1-9-0-0"
+           cx="461.9606"
+           cy="-190.4099"
+           rx="9.2879305"
+           ry="0.7144562" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.05833328;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path909-9-1-1-9-2-2-6-6"
+           cx="462.07968"
+           cy="-202.19843"
+           rx="0.7144562"
+           ry="10.240539" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.05833328;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path911-20-2-0-2-7-0-3-3"
+           cx="429.57193"
+           cy="-197.86691"
+           rx="4.6439652"
+           ry="12.100987" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.05833328;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path913-2-9-6-66-0-2-2-2"
+           cx="491.67007"
+           cy="-198.34322"
+           rx="2.7982867"
+           ry="11.624683" />
+      </g>
+    </g>
+    <g
+       id="g983-3-9-4-4-7-0-8-5"
+       transform="translate(-53.462624,414.24131)"
+       clip-path="url(#clipPath1120-0-7-1-8-3-3-94-0)"
+       inkscape:export-filename="/home/bouscadilla/Documents/Code/godot/Menage_et_recyclage/assets/tete_cecile_1.png"
+       inkscape:export-xdpi="34"
+       inkscape:export-ydpi="34">
+      <g
+         id="g1118-6-2-7-3-5-6-4-54"
+         style="opacity:0">
+        <rect
+           y="-295.67023"
+           x="370.49329"
+           height="184.11871"
+           width="184.11871"
+           id="rect961-0-2-8-14-3-2-5-7"
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.08962178;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.0938462;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path76-6-8-4-9-5-6-0-6"
+           cx="459.65198"
+           cy="-204.15814"
+           rx="30.378256"
+           ry="45.365757" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:0.82845062;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path888-2-9-5-2-6-1-3-5"
+           cx="447.73102"
+           cy="-209.95312"
+           rx="6.8427367"
+           ry="3.3447642" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:0.82845062;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path888-3-61-7-0-0-2-8-6-69"
+           cx="474.82083"
+           cy="-209.93837"
+           rx="6.8427367"
+           ry="3.3447642"
+           inkscape:transform-center-x="17.146949"
+           inkscape:transform-center-y="1.9052165" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.05833328;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path905-8-3-3-6-9-7-1-37"
+           cx="461.54382"
+           cy="-179.99075"
+           rx="14.229586"
+           ry="3.9890471" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.05833328;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path907-7-6-6-8-1-9-0-4"
+           cx="461.9606"
+           cy="-190.4099"
+           rx="9.2879305"
+           ry="0.7144562" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.05833328;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path909-9-1-1-9-2-2-6-5"
+           cx="462.07968"
+           cy="-202.19843"
+           rx="0.7144562"
+           ry="10.240539" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.05833328;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path911-20-2-0-2-7-0-3-25"
+           cx="429.57193"
+           cy="-197.86691"
+           rx="4.6439652"
+           ry="12.100987" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.05833328;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path913-2-9-6-66-0-2-2-4"
+           cx="491.67007"
+           cy="-198.34322"
+           rx="2.7982867"
+           ry="11.624683" />
+      </g>
+      <image
+         sodipodi:absref="/home/bouscadilla/Documents/Code/godot/Menage_et_recyclage/assets/sources/tetes/tete_cecile_1.png"
+         xlink:href="tete_cecile_1.png"
+         transform="rotate(0.47936728)"
+         inkscape:transform-center-y="1.6894444"
+         inkscape:transform-center-x="-10.211551"
+         style="opacity:1"
+         y="-274.1539"
+         x="406.88589"
+         id="image626"
+         preserveAspectRatio="none"
+         height="123.86657"
+         width="98.012062" />
+    </g>
+    <g
+       id="g983-3-9-4-4-7-0-8-3"
+       transform="translate(130.65612,414.24134)"
+       clip-path="url(#clipPath1120-0-7-1-8-3-3-94-74)"
+       inkscape:export-filename="/home/bouscadilla/Documents/Code/godot/Menage_et_recyclage/assets/tete_bruno_1.png"
+       inkscape:export-xdpi="34"
+       inkscape:export-ydpi="34">
+      <g
+         id="g1118-6-2-7-3-5-6-4-07"
+         style="opacity:0">
+        <rect
+           y="-295.67023"
+           x="370.49329"
+           height="184.11871"
+           width="184.11871"
+           id="rect961-0-2-8-14-3-2-5-8"
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.08962178;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.0938462;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path76-6-8-4-9-5-6-0-68"
+           cx="459.65198"
+           cy="-204.15814"
+           rx="30.378256"
+           ry="45.365757" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:0.82845062;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path888-2-9-5-2-6-1-3-8"
+           cx="447.73102"
+           cy="-209.95312"
+           rx="6.8427367"
+           ry="3.3447642" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:0.82845062;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path888-3-61-7-0-0-2-8-6-4"
+           cx="474.82083"
+           cy="-209.93837"
+           rx="6.8427367"
+           ry="3.3447642"
+           inkscape:transform-center-x="17.146949"
+           inkscape:transform-center-y="1.9052165" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.05833328;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path905-8-3-3-6-9-7-1-31"
+           cx="461.54382"
+           cy="-179.99075"
+           rx="14.229586"
+           ry="3.9890471" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.05833328;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path907-7-6-6-8-1-9-0-49"
+           cx="461.9606"
+           cy="-190.4099"
+           rx="9.2879305"
+           ry="0.7144562" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.05833328;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path909-9-1-1-9-2-2-6-206"
+           cx="462.07968"
+           cy="-202.19843"
+           rx="0.7144562"
+           ry="10.240539" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.05833328;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path911-20-2-0-2-7-0-3-8"
+           cx="429.57193"
+           cy="-197.86691"
+           rx="4.6439652"
+           ry="12.100987" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.05833328;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path913-2-9-6-66-0-2-2-9"
+           cx="491.67007"
+           cy="-198.34322"
+           rx="2.7982867"
+           ry="11.624683" />
+      </g>
+      <image
+         sodipodi:absref="/home/bouscadilla/Documents/Code/godot/Menage_et_recyclage/assets/sources/tetes/tete_bruno_1.png"
+         xlink:href="tete_bruno_1.png"
+         inkscape:transform-center-y="0.27086581"
+         inkscape:transform-center-x="-13.994543"
+         style="opacity:1"
+         y="-268.10605"
+         x="414.77463"
+         id="image648"
+         preserveAspectRatio="none"
+         height="116.25578"
+         width="93.155273" />
+    </g>
+    <g
+       id="g983-3-9-4-4-7-0-8-4"
+       transform="translate(314.77485,414.24134)"
+       clip-path="url(#clipPath1120-0-7-1-8-3-3-94-2)"
+       inkscape:export-filename="/home/bouscadilla/Documents/Code/godot/Menage_et_recyclage/assets/tete_lolo_1.png"
+       inkscape:export-xdpi="34"
+       inkscape:export-ydpi="34">
+      <g
+         id="g1118-6-2-7-3-5-6-4-9"
+         style="opacity:0">
+        <rect
+           y="-295.67023"
+           x="370.49329"
+           height="184.11871"
+           width="184.11871"
+           id="rect961-0-2-8-14-3-2-5-50"
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.08962178;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.0938462;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path76-6-8-4-9-5-6-0-4"
+           cx="459.65198"
+           cy="-204.15814"
+           rx="30.378256"
+           ry="45.365757" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:0.82845062;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path888-2-9-5-2-6-1-3-87"
+           cx="447.73102"
+           cy="-209.95312"
+           rx="6.8427367"
+           ry="3.3447642" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:0.82845062;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path888-3-61-7-0-0-2-8-6-1"
+           cx="474.82083"
+           cy="-209.93837"
+           rx="6.8427367"
+           ry="3.3447642"
+           inkscape:transform-center-x="17.146949"
+           inkscape:transform-center-y="1.9052165" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.05833328;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path905-8-3-3-6-9-7-1-72"
+           cx="461.54382"
+           cy="-179.99075"
+           rx="14.229586"
+           ry="3.9890471" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.05833328;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path907-7-6-6-8-1-9-0-7"
+           cx="461.9606"
+           cy="-190.4099"
+           rx="9.2879305"
+           ry="0.7144562" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.05833328;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path909-9-1-1-9-2-2-6-22"
+           cx="462.07968"
+           cy="-202.19843"
+           rx="0.7144562"
+           ry="10.240539" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.05833328;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path911-20-2-0-2-7-0-3-6"
+           cx="429.57193"
+           cy="-197.86691"
+           rx="4.6439652"
+           ry="12.100987" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.05833328;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path913-2-9-6-66-0-2-2-1"
+           cx="491.67007"
+           cy="-198.34322"
+           rx="2.7982867"
+           ry="11.624683" />
+      </g>
+      <image
+         sodipodi:absref="/home/bouscadilla/Documents/Code/godot/Menage_et_recyclage/assets/sources/tetes/tete_eloise_1.png"
+         xlink:href="tete_eloise_1.png"
+         inkscape:transform-center-y="-0.64582067"
+         inkscape:transform-center-x="-2.2244934"
+         style="opacity:1"
+         y="-271.34351"
+         x="-502.48572"
+         id="image604"
+         preserveAspectRatio="none"
+         height="121.63778"
+         width="106.11557"
+         transform="scale(-1,1)" />
+    </g>
+    <g
+       id="g983-3-9-4-4-7-0-8-59"
+       transform="translate(498.89354,414.24134)"
+       clip-path="url(#clipPath1120-0-7-1-8-3-3-94-06)"
+       inkscape:export-filename="/home/bouscadilla/Documents/Code/godot/Menage_et_recyclage/assets/tete_marius_1.png"
+       inkscape:export-xdpi="34"
+       inkscape:export-ydpi="34">
+      <g
+         id="g1118-6-2-7-3-5-6-4-49"
+         style="opacity:0">
+        <rect
+           y="-295.67023"
+           x="370.49329"
+           height="184.11871"
+           width="184.11871"
+           id="rect961-0-2-8-14-3-2-5-0"
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.08962178;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.0938462;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path76-6-8-4-9-5-6-0-9"
+           cx="459.65198"
+           cy="-204.15814"
+           rx="30.378256"
+           ry="45.365757" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:0.82845062;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path888-2-9-5-2-6-1-3-1"
+           cx="447.73102"
+           cy="-209.95312"
+           rx="6.8427367"
+           ry="3.3447642" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:0.82845062;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path888-3-61-7-0-0-2-8-6-77"
+           cx="474.82083"
+           cy="-209.93837"
+           rx="6.8427367"
+           ry="3.3447642"
+           inkscape:transform-center-x="17.146949"
+           inkscape:transform-center-y="1.9052165" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.05833328;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path905-8-3-3-6-9-7-1-11"
+           cx="461.54382"
+           cy="-179.99075"
+           rx="14.229586"
+           ry="3.9890471" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.05833328;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path907-7-6-6-8-1-9-0-5"
+           cx="461.9606"
+           cy="-190.4099"
+           rx="9.2879305"
+           ry="0.7144562" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.05833328;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path909-9-1-1-9-2-2-6-9"
+           cx="462.07968"
+           cy="-202.19843"
+           rx="0.7144562"
+           ry="10.240539" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.05833328;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path911-20-2-0-2-7-0-3-77"
+           cx="429.57193"
+           cy="-197.86691"
+           rx="4.6439652"
+           ry="12.100987" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.05833328;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path913-2-9-6-66-0-2-2-6"
+           cx="491.67007"
+           cy="-198.34322"
+           rx="2.7982867"
+           ry="11.624683" />
+      </g>
+      <image
+         sodipodi:absref="/home/bouscadilla/Documents/Code/godot/Menage_et_recyclage/assets/sources/tetes/tete_marius_1.png"
+         xlink:href="tete_marius_1.png"
+         inkscape:transform-center-y="18.126427"
+         inkscape:transform-center-x="-5.5386378"
+         style="opacity:1"
+         y="-244.74385"
+         x="392.49319"
+         id="image582"
+         preserveAspectRatio="none"
+         height="105.83825"
+         width="122.75836" />
+    </g>
+    <g
+       id="g983-3-9-4-4-7-0-8-63"
+       transform="translate(683.01225,414.24134)"
+       clip-path="url(#clipPath1120-0-7-1-8-3-3-94-73)">
+      <g
+         id="g1118-6-2-7-3-5-6-4-94">
+        <rect
+           y="-295.67023"
+           x="370.49329"
+           height="184.11871"
+           width="184.11871"
+           id="rect961-0-2-8-14-3-2-5-81"
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.08962178;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.0938462;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path76-6-8-4-9-5-6-0-29"
+           cx="459.65198"
+           cy="-204.15814"
+           rx="30.378256"
+           ry="45.365757" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:0.82845062;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path888-2-9-5-2-6-1-3-39"
+           cx="447.73102"
+           cy="-209.95312"
+           rx="6.8427367"
+           ry="3.3447642" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:0.82845062;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path888-3-61-7-0-0-2-8-6-0"
+           cx="474.82083"
+           cy="-209.93837"
+           rx="6.8427367"
+           ry="3.3447642"
+           inkscape:transform-center-x="17.146949"
+           inkscape:transform-center-y="1.9052165" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.05833328;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path905-8-3-3-6-9-7-1-8"
+           cx="461.54382"
+           cy="-179.99075"
+           rx="14.229586"
+           ry="3.9890471" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.05833328;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path907-7-6-6-8-1-9-0-8"
+           cx="461.9606"
+           cy="-190.4099"
+           rx="9.2879305"
+           ry="0.7144562" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.05833328;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path909-9-1-1-9-2-2-6-50"
+           cx="462.07968"
+           cy="-202.19843"
+           rx="0.7144562"
+           ry="10.240539" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.05833328;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path911-20-2-0-2-7-0-3-9"
+           cx="429.57193"
+           cy="-197.86691"
+           rx="4.6439652"
+           ry="12.100987" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.05833328;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path913-2-9-6-66-0-2-2-63"
+           cx="491.67007"
+           cy="-198.34322"
+           rx="2.7982867"
+           ry="11.624683" />
+      </g>
+    </g>
+    <g
+       id="g983-3-9-4-4-7-0-8-1"
+       transform="translate(867.1309,-138.11486)"
+       clip-path="url(#clipPath1120-0-7-1-8-3-3-94-8)">
+      <g
+         id="g1118-6-2-7-3-5-6-4-1">
+        <rect
+           y="-295.67023"
+           x="370.49329"
+           height="184.11871"
+           width="184.11871"
+           id="rect961-0-2-8-14-3-2-5-59"
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.08962178;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.0938462;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path76-6-8-4-9-5-6-0-84"
+           cx="459.65198"
+           cy="-204.15814"
+           rx="30.378256"
+           ry="45.365757" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:0.82845062;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path888-2-9-5-2-6-1-3-81"
+           cx="447.73102"
+           cy="-209.95312"
+           rx="6.8427367"
+           ry="3.3447642" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:0.82845062;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path888-3-61-7-0-0-2-8-6-03"
+           cx="474.82083"
+           cy="-209.93837"
+           rx="6.8427367"
+           ry="3.3447642"
+           inkscape:transform-center-x="17.146949"
+           inkscape:transform-center-y="1.9052165" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.05833328;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path905-8-3-3-6-9-7-1-0"
+           cx="461.54382"
+           cy="-179.99075"
+           rx="14.229586"
+           ry="3.9890471" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.05833328;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path907-7-6-6-8-1-9-0-44"
+           cx="461.9606"
+           cy="-190.4099"
+           rx="9.2879305"
+           ry="0.7144562" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.05833328;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path909-9-1-1-9-2-2-6-4"
+           cx="462.07968"
+           cy="-202.19843"
+           rx="0.7144562"
+           ry="10.240539" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.05833328;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path911-20-2-0-2-7-0-3-4"
+           cx="429.57193"
+           cy="-197.86691"
+           rx="4.6439652"
+           ry="12.100987" />
+        <ellipse
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.09405942;stroke:#000000;stroke-width:1.05833328;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path913-2-9-6-66-0-2-2-7"
+           cx="491.67007"
+           cy="-198.34322"
+           rx="2.7982867"
+           ry="11.624683" />
+      </g>
     </g>
   </g>
 </svg>
