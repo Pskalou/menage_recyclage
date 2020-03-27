@@ -18,6 +18,7 @@ signal jeux_histoire
 signal exit
 
 # from pause_menu.gd → world.gd
+signal debut_pause
 signal fin_pause
 signal main_menu
 
@@ -92,3 +93,13 @@ func init_dict():
     
     # print(tetes)
         
+
+
+
+func _on_label_entered(bouton_label:Label):
+	var new_theme= load('res://assets/Theme_20_invert.tres')
+	bouton_label.theme= new_theme
+	
+func _on_label_exited(bouton_label):
+	var new_theme= load('res://assets/Theme_20.tres')
+	bouton_label.theme= new_theme

@@ -27,6 +27,7 @@ var index= 0
 var audio_clics = []
 var audio_pops = []
 
+var options_label
 
 func _populate_audio():
 	for e in get_node("Audio/clics").get_children():
@@ -43,10 +44,13 @@ func _ready():
 	Singleton.connect("game_over", self, "_on_game_over")
 	Singleton.connect("play_clic", self, "_play_clic")
 	Singleton.connect("jeux_arcade", self, "_on_jeux_arcade")
+	Singleton.connect("jeux_tutoriel", self, "_on_jeux_tutoriel")
 
 	# pause_menu.gd (faire pause, reprendre le jeux, retour accueil)
 	Singleton.connect("main_menu", self, "_on_main_menu")
+	Singleton.connect("debut_pause", self, "_on_debut_pause")
 	Singleton.connect("fin_pause", self, "_on_fin_pause")
+	Singleton.connect("exit", self, "_on_exit")
 	
 
 	# Singleton.init_game()
@@ -55,6 +59,7 @@ func _ready():
 	score_label= get_node("GUI/Score")
 	chrono_label= get_node("GUI/Chrono")
 	nbtete_label= get_node("GUI/Nbtetes")
+	options_label= get_node("GUI/Options")
 	
 	timer = Timer.new()
 	timer.connect("timeout", self, "_on_timer_timeout")
@@ -64,7 +69,16 @@ func _ready():
 	
 	_update_score()
 
-	# $GUI/Debut_partie.popup_centered(Vector2(200,100))
+	get_node("Main_menu").set_visible(true)
+	get_node("Pause_menu").set_visible(false)
+
+
+func _on_jeux_tutoriel():
+	$GUI/Debut_partie.popup_centered(Vector2(200,100))
+
+
+func _on_exit():
+	get_tree().quit()
 
 
 func _on_game_over():
@@ -73,8 +87,7 @@ func _on_game_over():
 	for e in get_node("Tetes").get_children():
 		e.input_pickable = false
 
-	var texte = "Plus de " + str(Singleton.fin_partie_max_tete)
-	texte += " intrus ?!? C'est Beaucoup trop."
+	var texte = "Déjà fini ?!?"
 	texte += "\n\nDommage pour toi..."
 	texte += "\n\nTon score est de "
 	texte += str(Singleton.score) + " points."
@@ -83,12 +96,48 @@ func _on_game_over():
 	$GUI/Fin_partie.popup_centered(Vector2(200,100))
 
 
+	for e in get_node("Tetes").get_children():
+		e.queue_free()
+	
+	for e in get_node("Poubelles").get_children():
+		e.queue_free()
+
+
+
+
+func _input(event):
+	if(event.is_action_pressed("ui_cancel")):
+		if is_paused:
+			_on_fin_pause()
+		elif get_node("Main_menu").visible == false :
+			_on_debut_pause()
+
+
+
+var is_paused= false
+
+func _on_debut_pause():
+	is_paused= true
+	get_node("Pause_menu").set_visible(true)
+	timer.set_paused(true)
+
+
+func _on_fin_pause():
+	is_paused= false
+	get_node("Pause_menu").set_visible(false)
+	timer.set_paused(false)
+
+
+func _on_main_menu():
+	_on_game_over()
+
 
 func  _on_Fin_partie_confirmed():
 	printt("fin de partie")
 	_update_nbtete_label()
 	_update_score()
-	_on_StartDialog_confirmed()
+	get_node("Main_menu").set_visible(true)
+	get_node("Pause_menu").set_visible(false)
 	
 
 
@@ -190,22 +239,6 @@ func _process(delta):
 	pass
 
 
-# TODO fonction à effacer car liée à l'ancien menu tutoriel
-func _on_StartDialog_confirmed():
-#	Singleton.emit_signal("begin_game")
-	for element in get_node("Tetes").get_children():
-		element.queue_free()
-	
-
-	Singleton.init_game()
-
-
-	duree= duree_init
-	timer.start(duree)
-	_update_chrono()
-	
-	_nouvelle_tetes(3, 0.3)
-
 
 func _on_jeux_arcade():
 	print("nouvelle partie en cours de chargement")
@@ -219,6 +252,7 @@ func _on_jeux_arcade():
 
 	duree= duree_init
 	timer.start(duree)
+	_update_score()
 	_update_chrono()
 	
 	_nouvelle_tetes(3, 0.3)
@@ -282,10 +316,24 @@ func _on_mauvaise_poubelle(id):
 
 ######### Histoire
 
+var over_options_label= false
 
 func _on_Options_mouse_entered():
+	Singleton._on_label_entered(options_label)
+	over_options_label= true
 	pass # Replace with function body.
 
 
 func _on_Options_mouse_exited():
+	Singleton._on_label_exited(options_label)
+	over_options_label= false
 	pass # Replace with function body.
+
+
+func _on_Options_gui_input(event):
+	if event is InputEventMouseButton:
+		if event.button_index == BUTTON_LEFT and event.pressed:
+			if over_options_label:
+				Singleton.emit_signal("debut_pause")
+				print("option menu")
+

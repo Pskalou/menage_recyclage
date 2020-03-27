@@ -25,36 +25,31 @@ func _on_CenterContainer_gui_input(event):
 		if event.button_index == BUTTON_LEFT and event.pressed:
 			if over_reprendre_label:
 				Singleton.emit_signal("fin_pause")
+				_on_Reprendre_mouse_exited()
 				print("fin de pause: emit_signal('fin_pause')")
 			elif over_retour_label:
 				Singleton.emit_signal("main_menu")
+				_on_Retour_mouse_exited()
 				print("fin de pause: emit_signal('main_menu')")
 			
 
 
-func _on_label_entered(bouton_label:Label):
-	var new_theme= load('res://assets/Theme_20_invert.tres')
-	bouton_label.theme= new_theme
-	
-func _on_label_exited(bouton_label):
-	var new_theme= load('res://assets/Theme_20.tres')
-	bouton_label.theme= new_theme
 
 
 func _on_Reprendre_mouse_entered():
 	over_reprendre_label= true
-	_on_label_entered(reprendre_label)
+	Singleton._on_label_entered(reprendre_label)
 
 func _on_Reprendre_mouse_exited():
 	over_reprendre_label= false
-	_on_label_exited(reprendre_label)
+	Singleton._on_label_exited(reprendre_label)
 
 
 func _on_Retour_mouse_entered():
 	over_retour_label= true
-	_on_label_entered(retour_label)
+	Singleton._on_label_entered(retour_label)
 	
 func _on_Retour_mouse_exited():
 	over_retour_label= false
-	_on_label_exited(retour_label)
+	Singleton._on_label_exited(retour_label)
 

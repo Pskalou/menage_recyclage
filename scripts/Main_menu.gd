@@ -33,61 +33,56 @@ func _on_CenterContainer_gui_input(event):
 		if event.button_index == BUTTON_LEFT and event.pressed:
 			if over_arcade:
 				Singleton.emit_signal("jeux_arcade")
+				_on_Nouvelle_partie_mouse_exited()
 				print("lancement jeux arcade")
 			elif over_histoire:
 				Singleton.emit_signal("jeux_histoire")
+				_on_Histoire_mouse_exited()
 				print("lancement jeux histoire")
 			elif over_tutoriel:
 				Singleton.emit_signal("jeux_tutoriel")
+				_on_Tutoriel_mouse_exited()
 				print("lancement jeux tutoriel")
 			elif over_quitter:
 				Singleton.emit_signal("exit")
+				_on_Quitter_mouse_exited()
 				print("quitter le jeux")
 			
 
 
-func _on_label_entered(bouton_label:Label):
-	var new_theme= load('res://assets/Theme_20_invert.tres')
-	bouton_label.theme= new_theme
-	
-func _on_label_exited(bouton_label):
-	var new_theme= load('res://assets/Theme_20.tres')
-	bouton_label.theme= new_theme
-
-
 func _on_Tutoriel_mouse_entered():
 	over_tutoriel= true
-	_on_label_entered(tutoriel_label)
+	Singleton._on_label_entered(tutoriel_label)
 
 func _on_Tutoriel_mouse_exited():
 	over_tutoriel= false
-	_on_label_exited(tutoriel_label)
+	Singleton._on_label_exited(tutoriel_label)
 
 
 func _on_Histoire_mouse_entered():
 	over_histoire= true
-	_on_label_entered(histoire_label)
+	Singleton._on_label_entered(histoire_label)
 	
 func _on_Histoire_mouse_exited():
 	over_histoire= false
-	_on_label_exited(histoire_label)
+	Singleton._on_label_exited(histoire_label)
 
 
 func _on_Nouvelle_partie_mouse_entered():
 	over_arcade= true
-	_on_label_entered(arcade_label)
+	Singleton._on_label_entered(arcade_label)
 
 func _on_Nouvelle_partie_mouse_exited():
 	over_arcade= false
-	_on_label_exited(arcade_label)
+	Singleton._on_label_exited(arcade_label)
 
 
 func _on_Quitter_mouse_entered():
 	over_quitter= true
-	_on_label_entered(quitter_label)
+	Singleton._on_label_entered(quitter_label)
 func _on_Quitter_mouse_exited():
 	over_quitter= false
-	_on_label_exited(quitter_label)
+	Singleton._on_label_exited(quitter_label)
 
 
 func _on_Pelpel_pressed():

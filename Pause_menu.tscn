@@ -86,7 +86,7 @@ margin_right = 256.0
 margin_bottom = 102.0
 mouse_filter = 1
 mouse_default_cursor_shape = 2
-text = "Retour à l'accueil"
+text = "Abandonner... :-("
 __meta__ = {
 "_edit_use_anchors_": false
 }
