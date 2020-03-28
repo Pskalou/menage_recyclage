@@ -10,6 +10,7 @@ var tete:AnimatedSprite
 
 func set_id(current_id):
 	self.id = current_id % len(tetes)
+	printt("tete.gd : id = ", self.id)
 
 
 func _ready():
@@ -54,7 +55,9 @@ func _input_event(viewport, event, shape_idx):
 			maxIndex= maxNode.get_index()
 	
 	tete_over = self.get_index() == maxIndex
-		
+
+func good_poubelle_id():
+	return self.id % Singleton.max_poubelles
 
 func _input(event):
 	if event is InputEventMouseButton and event.button_index == BUTTON_LEFT:
@@ -69,7 +72,7 @@ func _input(event):
 		# arrête de déplacer la tete
 		if dragging and !event.pressed:
 			dragging= false
-			Singleton.emit_signal("tete_lachee", self, id)
+			Singleton.emit_signal("tete_lachee", self, good_poubelle_id())
 			printt("jouer son: pop")
 			Singleton.emit_signal("play_clic")
 

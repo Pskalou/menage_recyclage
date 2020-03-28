@@ -12,7 +12,7 @@ func _ready():
 func init():
 	var poubelles=[]
 	
-	for i in range (4):
+	for i in range (Singleton.max_poubelles):
 		poubelles.append(poubelle_scene.instance())
 		poubelles[-1].id= i
 		poubelles[-1].set_position(Vector2(100+i*275,465))

@@ -19,8 +19,10 @@ func _on_tete_lachee(area, current_id):
 	if tete == area:
 		if self.id == current_id:
 			Singleton.emit_signal("good_poubelle", area, current_id)
+			printt("poubelle id:",self.id , "tete id:",current_id)
 		else:
 			Singleton.emit_signal("bad_poubelle", area, current_id)	
+			printt("poubelle id:",self.id , "tete id:",current_id)
 
 
 var tete:Area2D

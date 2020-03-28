@@ -14,7 +14,7 @@ func _ready():
 func _on_nouvelle_tete():
 	printt("Tetes._on_nouvelle_tete:","nb_tete:",Singleton.nb_tetes)
 	if Singleton.nb_tetes < Singleton.fin_partie_max_tete:
-		add_tete(randi())
+		add_tete()#randi())
 	else:
 		printt("game over")
 		Singleton.emit_signal("game_over")
