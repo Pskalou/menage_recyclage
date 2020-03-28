@@ -91,7 +91,7 @@ func init_dict():
         i = i + 1
         temp.remove(index)
     
-    # print(tetes)
+    print(tetes)
         
 
 
