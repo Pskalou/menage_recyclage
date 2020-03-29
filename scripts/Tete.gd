@@ -56,7 +56,8 @@ func _input_event(viewport, event, shape_idx):
 	
 	tete_over = self.get_index() == maxIndex
 
-func good_poubelle_id():
+# retourne l'id de la poubelle associée à la tête
+func _good_poubelle_id():
 	return self.id % Singleton.max_poubelles
 
 func _input(event):
@@ -72,7 +73,7 @@ func _input(event):
 		# arrête de déplacer la tete
 		if dragging and !event.pressed:
 			dragging= false
-			Singleton.emit_signal("tete_lachee", self, good_poubelle_id())
+			Singleton.emit_signal("tete_lachee", self, _good_poubelle_id())
 			printt("jouer son: pop")
 			Singleton.emit_signal("play_clic")
 
