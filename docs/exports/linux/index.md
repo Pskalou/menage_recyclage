@@ -11,5 +11,5 @@ Pour installer la version Linux,
 
 ## Fichiers à télécharger
 
-* [menage.pck](https://pskalou.github.io/menage_recyclage/exports/linux/menage.pck)
-* [menage.x86_64](https://pskalou.github.io/menage_recyclage/exports/linux/menage.x86_64)
+* [menage.pck](./menage.pck)
+* [menage.x86_64](./menage.x86_64)
