@@ -203,7 +203,6 @@ visible = false
 rect_min_size = Vector2( 1024, 600 )
 
 [node name="Main_menu" parent="." instance=ExtResource( 25 )]
-visible = false
 rect_min_size = Vector2( 1024, 600 )
 [connection signal="gui_input" from="GUI/Options" to="." method="_on_Options_gui_input"]
 [connection signal="mouse_entered" from="GUI/Options" to="." method="_on_Options_mouse_entered"]
