@@ -59,7 +59,7 @@ func _ready():
 	score_label= get_node("GUI/Score")
 	chrono_label= get_node("GUI/Chrono")
 	nbtete_label= get_node("GUI/Nbtetes")
-	options_label= get_node("GUI/Options")
+	options_label= get_node("GUI/Options_label")
 	
 	timer = Timer.new()
 	timer.connect("timeout", self, "_on_timer_timeout")
@@ -331,10 +331,7 @@ func _on_Options_mouse_exited():
 	pass # Replace with function body.
 
 
-func _on_Options_gui_input(event):
-	if event is InputEventMouseButton:
-		if event.button_index == BUTTON_LEFT and event.pressed:
-			if over_options_label:
-				Singleton.emit_signal("debut_pause")
-				print("option menu")
+func _on_Options_pressed():
+	Singleton.emit_signal("debut_pause")
+	print("option menu")
 
