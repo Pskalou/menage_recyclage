@@ -101,22 +101,37 @@ func add_tete(id=null):
 
 func _on_good_poubelle(tete_node, tete_id):
 #	printt("supprime", tete_node, "id:",tete_id)
-	Singleton.over_list.erase(tete_node)
+	# Singleton.over_list.erase(tete_node)
 	tete_node.queue_free()
 	Singleton.nb_tetes = max(Singleton.nb_tetes - 1, 0)
 	
 	Singleton.emit_signal("increase_score")
 
 
+var Explosion = preload("res://Explosion.tscn")
+
 func _on_bad_poubelle(tete_node, tete_id):
-	tete_node.input_pickable = false
-	tete_node.z_index = 3
-	tete_node.get_node("sprite").set_visible(false)
-	tete_node.get_node("explosion").set_frame(0)
-	tete_node.get_node("explosion").set_visible(true)
-	tete_node.get_node("explosion").play()
-	
+
+	# tete_node.input_pickable = false
+	# tete_node.z_index = 10
+	# tete_node.get_node("sprite").set_visible(false)
+	# tete_node.get_node("explosion").set_frame(0)
+	# tete_node.get_node("explosion").set_visible(true)
+	# tete_node.get_node("explosion").play()
+
+	# récupération de la position de la tête
+	var pos= tete_node.get_position()
+
+	# suppression de la tête
+	tete_node.queue_free()
+
+	# animation de l'explosion
+	var explosion= Explosion.instance()
+	explosion.set_position(pos)
+	add_child(explosion)
+	explosion.play()
+
+
 	# Annonce à World que la poubelle est mauvaise	
 	Singleton.emit_signal("mauvaise_poubelle", tete_id)
 	Singleton.nb_tetes = Singleton.nb_tetes - 1
-

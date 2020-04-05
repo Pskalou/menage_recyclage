@@ -30,9 +30,3 @@ func get_poubelle_id():
 # retourne l'id de la tête
 func get_id():
 	return self.id
-
-# supprime la tête du jeu en fin d'animation 
-# lorsque le signal est reçu
-func _on_explosion_animation_finished():
-	self.queue_free()
-

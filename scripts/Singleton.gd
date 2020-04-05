@@ -31,7 +31,6 @@ var score
 var tetes = {}
 var poubelles
 
-var fin_partie_max_tete
 var with_bouscadilla= true
 var with_pelpel = false
 var with_boubou = false
@@ -42,7 +41,6 @@ var max_poubelles
 
 
 var nb_tetes= 0
-var over_list = {}
 
 
 # initialise une partie avec pour paramètres :
@@ -53,19 +51,18 @@ var over_list = {}
 # TODO diminuer la tete1 de noe
 
 # définition des varibales (à mettre à jour si nouvelle têtes ou poubelles)
+# les sprites
 var tetes_pelpel= ["guigui", "noe", "lucia"]
 var tetes_boubou= ["bruno", "cecile", "lolo", "marius"]
 var tetes_bouscadilla= ["titi", "juju"]
 var tetes_rourou= []
-
 var poubelles_disponibles= ["bleue", "jaune", "verte", "rouge"]
-
+# condition de fin de partie
+var fin_partie_max_tete = 30
 
 
 func init_game(nb_tete= INF, nb_poubelle= INF):
     score= 0
-
-    fin_partie_max_tete = 30
 
     # initialiser le dictionnaire des têtes
     # paramètre : nb de tête maxi
@@ -75,9 +72,7 @@ func init_game(nb_tete= INF, nb_poubelle= INF):
     # paramètre : nb de poubelles à utiliser
     init_dict_poubelles(nb_poubelle)
 
-    
     nb_tetes= 0
-    over_list = {}
     max_tetes= len(tetes)
     max_poubelles= len(poubelles)
 
@@ -85,6 +80,15 @@ func init_game(nb_tete= INF, nb_poubelle= INF):
 
     # signal pour World (et la gestion de l'audio)
     emit_signal("randomize_audio")
+
+func update_game(nb_tete= INF, nb_poubelle= INF):
+    # initialiser le dictionnaire des têtes
+    # paramètre : nb de tête maxi
+    init_dict_tetes(nb_tete)
+
+    # initialise le dictionnaire des poubelles
+    # paramètre : nb de poubelles à utiliser
+    init_dict_poubelles(nb_poubelle)
 
 
 

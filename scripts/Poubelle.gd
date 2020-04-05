@@ -17,12 +17,14 @@ func _ready():
 
 func _on_tete_lachee(tete_lachee, poubelle_id):
 	if tete == tete_lachee:
+		# bonne poubelle
 		if self.id == poubelle_id:
 			Singleton.emit_signal("good_poubelle", tete_lachee, poubelle_id)
 			# printt("poubelle id:",self.id , "tete id:",current_id)
 			# joue un pop
 			# signal à destination de World
 			Singleton.emit_signal("play_pop")
+		# mauvaise poubelle
 		else:
 			Singleton.emit_signal("bad_poubelle", tete_lachee, poubelle_id)	
 			# printt("poubelle id:",self.id , "tete id:",current_id)
