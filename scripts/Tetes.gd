@@ -49,11 +49,11 @@ func _input(event):
 			tete_to_move.tete.set_frame(0)
 			tete_to_move.tete.set_scale(Vector2(1,1))
 			# signaler que la tete est posée
+			# à destination de Poubelle
 			Singleton.emit_signal("tete_lachee", tete_to_move, tete_to_move.get_poubelle_id()) 
 			# vider la liste des têtes déplaçables
 			sprites_list = []
-			# joue un son
-			Singleton.emit_signal("play_clic", tete_to_move.get_id())
+
 	if event is InputEventMouseMotion:
 		if is_dragging():
 			# fait la grimace

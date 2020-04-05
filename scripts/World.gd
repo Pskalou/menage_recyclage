@@ -46,7 +46,9 @@ func _ready():
 	Singleton.connect("decrease_score", self, "decrease_score")
 	Singleton.connect("mauvaise_poubelle", self, "_on_mauvaise_poubelle")
 	Singleton.connect("game_over", self, "_on_game_over")
+	# audio
 	Singleton.connect("play_clic", self, "_play_clic")
+	Singleton.connect("play_pop", self, "_play_pop")
 	Singleton.connect("jeux_arcade", self, "_on_jeux_arcade")
 	Singleton.connect("jeux_tutoriel", self, "_on_jeux_tutoriel")
 
@@ -152,7 +154,7 @@ func  _on_Fin_partie_confirmed():
 	
 
 
-func play_pop(id=null):
+func _play_pop(id=null):
 	if id == null:
 		var random_index= randi() % audio_pops.size()
 		audio_pops[random_index].play()
@@ -172,7 +174,7 @@ func _play_clic(id=null):
 
 
 func _on_deltatimer_timeout():
-	play_pop()
+	_play_pop()
 	Singleton.emit_signal("nouvelle_tete")
 
 
