@@ -9,6 +9,67 @@ func _ready():
 	Singleton.connect("nouvelle_tete", self, "_on_nouvelle_tete")
 	Singleton.connect("good_poubelle", self, "_on_good_poubelle")
 	Singleton.connect("bad_poubelle", self, "_on_bad_poubelle")
+	Singleton.connect("update_sprites_touched", self, "_update_sprites_list")
+
+
+var sprites_list= []
+var tete_to_move
+var goog_poubelle_id
+
+func _update_sprites_list(sprite):
+	# ajoute la tête à déplacer dans la liste des têtes déplaçables
+	sprites_list.append(sprite)
+	print("tete_id=%d et poubelle_id=%d"%[sprite.get_id(), sprite.get_poubelle_id()])
+	tete_to_move= choose_over_head()
+
+
+# définir la tête à déplacer dans la liste des têtes 
+func choose_over_head():
+	var id= 0
+	var head= null
+	for e in sprites_list:
+		if e.get_instance_id() > id:
+			id= e.get_instance_id()
+			head= e
+	return head
+
+# fonction utilisée pour savoir s'il y a des têtes à déplacer
+func is_dragging():
+	if sprites_list == []:
+		return false
+	else:
+		return true
+
+
+func _input(event):
+	if event is InputEventMouseButton and not event.is_pressed():
+		# si on était en train de déplacer une tête
+		if is_dragging():
+			# arrête la grimace
+			tete_to_move.tete.set_frame(0)
+			tete_to_move.tete.set_scale(Vector2(1,1))
+			# signaler que la tete est posée
+			Singleton.emit_signal("tete_lachee", tete_to_move, tete_to_move.get_poubelle_id()) 
+			# vider la liste des têtes déplaçables
+			sprites_list = []
+			# joue un son
+			Singleton.emit_signal("play_clic")
+	if event is InputEventMouseMotion:
+		if is_dragging():
+			# fait la grimace
+			tete_to_move.tete.set_frame(1)
+			tete_to_move.tete.set_scale(Vector2(1.2,1.2))
+			# déplacer la tête du dessus
+			tete_to_move.position= event.position
+			# empêche la tête de sortir du cadre
+			if tete_to_move.position.x < 100:
+				tete_to_move.position.x= 100
+			if tete_to_move.position.x> 950:
+				tete_to_move.position.x= 950
+			if tete_to_move.position.y < 100:
+				tete_to_move.position.y= 100
+			if tete_to_move.position.y > 500:
+				tete_to_move.position.y= 500
 
 
 func _on_nouvelle_tete():

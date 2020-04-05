@@ -1,6 +1,6 @@
 extends Node
 
-
+signal update_sprites_touched
 signal increase_score
 signal decrease_score
 signal tete_lachee
