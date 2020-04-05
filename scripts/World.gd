@@ -10,18 +10,7 @@ var deltatimer
 var deltatimer2
 var deltatimer3
 
-var duree_init= 2
-var coef_init= 0.6
-var duree_niv2= 3
-var coef_niv2= 0.8
-var duree_niv3= 2.5
-var coef_niv3= 0.7
-var duree_niv4= 2
-var coef_niv4= 0.6
-var duree
 
-
-var index= 0
 
 
 var audio_clics = []
@@ -84,7 +73,6 @@ func _ready():
 	get_node("Main_menu").set_visible(true)
 	get_node("Pause_menu").set_visible(false)
 	
-
 
 func _on_jeux_tutoriel():
 	$GUI/Debut_partie.popup_centered(Vector2(200,100))
@@ -218,7 +206,7 @@ func _update_chrono():
 
 
 func _update_nbtete_label():
-	nbtete_label.set_text("Nombre total d'intrus : " + str(Singleton.nb_tetes))
+	nbtete_label.set_text("Fin de partie dans " + str(Singleton.fin_partie_max_tete - Singleton.nb_tetes) + " têtes")
 	pass
 
 
@@ -228,56 +216,83 @@ func _process(delta):
 	pass
 
 
+func _on_mauvaise_poubelle(id):
+	Singleton.emit_signal("decrease_score")
+	_nouvelle_tetes(3, 0.3)
+
 
 func _on_jeux_arcade():
 	print("nouvelle partie en cours de chargement")
 	for element in get_node("Tetes").get_children():
 		element.queue_free()
 	
-	Singleton.init_game(3, 2)
+	Singleton.init_game()
+	index= 0
+	bonus= 0
 
 	get_node("Main_menu").set_visible(false)
 	get_node("Pause_menu").set_visible(false)
 
 	duree= duree_init
+	# fin de la pause si le chrono a début démarré à une partie précédente
+	timer.set_paused(false)
 	timer.start(duree)
 	_update_score()
 	_update_chrono()
-	
-	_nouvelle_tetes(3, 0.3)
-	
 
-
-func _on_mauvaise_poubelle(id):
-	Singleton.emit_signal("decrease_score")
 	_nouvelle_tetes(3, 0.3)
 
 
+var duree_init= 2
+var coef_init= 0.6
+var duree_niv2= 3
+var coef_niv2= 0.8
+var duree_niv3= 2.5
+var coef_niv3= 0.7
+var duree_niv4= 2
+var coef_niv4= 0.6
+var duree
 
+
+var index= 0
+var bonus= 0
 
 # définition des niveaux
 func _on_timer_timeout():
 	index += 1
-	var score= Singleton.score
+
+	var tempo
+	var nb_tete
 	
-	if score < 3 :
-		timer.start(duree)
-	
-	elif score < 6:
-		timer.start(duree * coef_init)
-		_nouvelle_tetes(1)
+	if index < 5 :
+		tempo= duree
+		nb_tete= 1
+
+	elif index < 10:
+		tempo= duree* coef_init
+		nb_tete= 1
 		
-	elif score < 9:
-		timer.start(duree_niv2 * coef_niv2)
-		_nouvelle_tetes(2)
+	elif index < 15:
+		tempo= duree_niv2 * coef_niv2
+		nb_tete= 2
 		
-	elif score < 12:
-		timer.start(duree_niv3 * coef_niv3)
-		_nouvelle_tetes(2)
+	elif index < 20:
+		tempo= duree_niv3 * coef_niv3
+		nb_tete= 2
 	
+	elif index < 30:
+		tempo= duree_niv4 * coef_niv4
+		nb_tete= 3
+
 	else:
-		timer.start(duree_niv4 * coef_niv4)
-		_nouvelle_tetes(3)
+		index= 0
+		bonus += 3
+		tempo= duree
+		nb_tete= 1
+
+	printt("index:", index, "bonus:", bonus)
+	timer.start(tempo)
+	_nouvelle_tetes(nb_tete + bonus)
 
 
 

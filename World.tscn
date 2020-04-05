@@ -81,14 +81,13 @@ __meta__ = {
 }
 
 [node name="Nbtetes" type="Label" parent="GUI"]
-visible = false
 margin_left = 30.5824
 margin_top = 35.5154
 margin_right = 182.582
 margin_bottom = 55.5154
 theme = ExtResource( 22 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "Nombre de tetes : "
+text = "Game over dans 30 têtes"
 __meta__ = {
 "_edit_use_anchors_": false
 }

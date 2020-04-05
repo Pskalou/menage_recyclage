@@ -62,7 +62,10 @@ var fin_partie_max_tete = 30
 
 
 func init_game(nb_tete= INF, nb_poubelle= INF):
+    # score actuel
     score= 0
+    # nombre de têtes sur la scène
+    nb_tetes= 0
 
     # initialiser le dictionnaire des têtes
     # paramètre : nb de tête maxi
@@ -72,24 +75,44 @@ func init_game(nb_tete= INF, nb_poubelle= INF):
     # paramètre : nb de poubelles à utiliser
     init_dict_poubelles(nb_poubelle)
 
-    nb_tetes= 0
+    # mise à jour du nombre maximal de tete
+    # et de poubelles
     max_tetes= len(tetes)
     max_poubelles= len(poubelles)
 
+    # affichage des poubelles
+    # → Poubelles.gd
     emit_signal("init_poubelles")
 
-    # signal pour World (et la gestion de l'audio)
+    # mélange des différents sons
+    # → World.gd
     emit_signal("randomize_audio")
+
 
 func update_game(nb_tete= INF, nb_poubelle= INF):
     # initialiser le dictionnaire des têtes
     # paramètre : nb de tête maxi
-    init_dict_tetes(nb_tete)
+    update_dict_tetes(nb_tete)
 
     # initialise le dictionnaire des poubelles
     # paramètre : nb de poubelles à utiliser
-    init_dict_poubelles(nb_poubelle)
+    update_dict_poubelles(nb_poubelle)
 
+    # mise à jour du nombre maximal de tete
+    # et de poubelles
+    max_tetes= len(tetes)
+    max_poubelles= len(poubelles)
+
+    # affichage des poubelles
+    # → Poubelles.gd
+    emit_signal("init_poubelles")
+
+    
+func update_dict_tetes(nb_tete):
+    pass
+
+func update_dict_poubelles(nb_poubelle):
+    pass
 
 
 # initialise le dictionnaire des poubelles
