@@ -234,7 +234,7 @@ func _on_jeux_arcade():
 	for element in get_node("Tetes").get_children():
 		element.queue_free()
 	
-	Singleton.init_game()
+	Singleton.init_game(3, 2)
 
 	get_node("Main_menu").set_visible(false)
 	get_node("Pause_menu").set_visible(false)

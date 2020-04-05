@@ -15,20 +15,20 @@ func _ready():
 	sprite.set_animation(poubelles[id])
 
 
-func _on_tete_lachee(area, current_id):
-	if tete == area:
-		if self.id == current_id:
-			Singleton.emit_signal("good_poubelle", area, current_id)
+func _on_tete_lachee(tete_lachee, poubelle_id):
+	if tete == tete_lachee:
+		if self.id == poubelle_id:
+			Singleton.emit_signal("good_poubelle", tete_lachee, poubelle_id)
 			# printt("poubelle id:",self.id , "tete id:",current_id)
 			# joue un pop
 			# signal à destination de World
 			Singleton.emit_signal("play_pop")
 		else:
-			Singleton.emit_signal("bad_poubelle", area, current_id)	
+			Singleton.emit_signal("bad_poubelle", tete_lachee, poubelle_id)	
 			# printt("poubelle id:",self.id , "tete id:",current_id)
 			# joue un cris
 			# signal à destination de World
-			Singleton.emit_signal("play_clic", current_id)
+			Singleton.emit_signal("play_clic", tete_lachee.get_id())
 
 
 var tete:Area2D
