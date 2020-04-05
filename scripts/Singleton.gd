@@ -10,6 +10,7 @@ signal good_poubelle
 signal bad_poubelle
 signal game_over
 signal play_clic
+signal randomize_audio
 
 # from main_menu.gd → world.gd
 signal jeux_arcade
@@ -27,7 +28,8 @@ signal init_poubelles
 
 var score
 var tetes = {}
-var poubelles= {0:"bleue", 1:"jaune", 2:"verte", 3:"rouge"}
+var poubelles
+
 var fin_partie_max_tete
 var with_bouscadilla= true
 var with_pelpel = false
@@ -36,8 +38,10 @@ var with_rourou = false
 var tetes_pelpel
 var tetes_bouscadilla
 var tetes_boubou
+var tetes_rourou
 
 
+var poubelles_disponibles
 var max_tetes
 var max_poubelles
 
@@ -46,20 +50,33 @@ var nb_tetes= 0
 var over_list = {}
 
 
-func init_game():
+# initialise une partie avec pour paramètres :
+#   * nb têtes à piocher
+#   * nb poubelles disponibles
+func init_game(nb_tete= INF, nb_poubelle= INF):
+
     score= 0
 
     # TODO diminuer la tete1 de noe
     tetes_pelpel= ["guigui", "noe", "lucia"]
     tetes_boubou= ["bruno", "cecile", "lolo", "marius"]
     tetes_bouscadilla= ["titi", "juju"]
+    tetes_rourou= []
+
+    poubelles_disponibles= ["bleue", "jaune", "verte", "rouge"]
     
     
     tetes= {}
     fin_partie_max_tete = 30
 
-    
-    init_dict()
+    # initialiser le dictionnaire des têtes
+    # paramètre : nb de tête maxi
+    init_dict_tetes(nb_tete)
+
+    # initialise le dictionnaire des poubelles
+    # paramètre : nb de poubelles à utiliser
+    init_dict_poubelles(nb_poubelle)
+
     
     nb_tetes= 0
     over_list = {}
@@ -68,9 +85,31 @@ func init_game():
 
     emit_signal("init_poubelles")
 
+    # signal pour World (et la gestion de l'audio)
+    emit_signal("randomize_audio")
 
+
+
+# initialise le dictionnaire des poubelles
+# paramètre : nb de poubelles à utiliser
+func init_dict_poubelles(nb_poubelles= INF):
+    var temp= poubelles_disponibles.duplicate()
+    var n= min(nb_poubelles, len(temp))
+
+    poubelles= {}
+    for _i in range(n):
+        var index= randi() % len(temp)
+        poubelles[_i]= temp[index]
+        _i = _i + 1
+        temp.remove(index)
     
-func init_dict():
+    # print(poubelles)
+
+
+# initialiser le dictionnaire des têtes
+# paramètre : nb de tête maxi
+func init_dict_tetes(nb_tete= INF):
+    # établir la liste de toutes les têtes disponilbles
     var temp= []
     if with_boubou:
         for e in tetes_boubou:
@@ -81,17 +120,22 @@ func init_dict():
     if with_pelpel:
         for e in tetes_pelpel:
             temp.append(e)
+    if with_rourou:
+        for e in tetes_rourou:
+            temp.append(e)
     
-    var i= 0
-    while temp != [] :
+    # piocher parmis toutes les têtes disponible
+    #  * soir nb_tete fois
+    #  * soit mettre toutes les têtes
+    var n= min(nb_tete, len(temp))
+    for _i in range (n):
         randomize()
-        # print(temp)
         var index= randi() % len(temp)
-        tetes[i]= temp[index]
-        i = i + 1
+        tetes[_i]= temp[index]
+        _i = _i + 1
         temp.remove(index)
-    
-    print(tetes)
+
+    # print(tetes)
         
 
 

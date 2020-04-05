@@ -53,7 +53,7 @@ func _input(event):
 			# vider la liste des têtes déplaçables
 			sprites_list = []
 			# joue un son
-			Singleton.emit_signal("play_clic")
+			Singleton.emit_signal("play_clic", tete_to_move.get_id())
 	if event is InputEventMouseMotion:
 		if is_dragging():
 			# fait la grimace
@@ -73,7 +73,7 @@ func _input(event):
 
 
 func _on_nouvelle_tete():
-	printt("Tetes._on_nouvelle_tete:","nb_tete:",Singleton.nb_tetes)
+	# printt("Tetes._on_nouvelle_tete:","nb_tete:",Singleton.nb_tetes)
 	if Singleton.nb_tetes < Singleton.fin_partie_max_tete:
 		add_tete()#randi())
 	else:
@@ -87,7 +87,7 @@ func add_tete(id=null):
 	Singleton.nb_tetes += 1
 	if id == null:
 		id = randi() % (Singleton.max_tetes)
-		printt("choix aléatoire de tête:",id)
+		# printt("choix aléatoire de tête:",id)
 	
 	tetes.append(tete_scene.instance())
 	tetes[-1].set_id(id)

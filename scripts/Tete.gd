@@ -8,7 +8,7 @@ var tete:AnimatedSprite
 
 func set_id(current_id):
 	self.id = current_id % len(Singleton.tetes)
-	printt("tete.gd : id = ", self.id)
+	# printt("tete.gd : id = ", self.id)
 
 
 func _ready():

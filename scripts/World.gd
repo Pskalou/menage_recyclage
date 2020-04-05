@@ -29,15 +29,19 @@ var audio_pops = []
 
 var options_label
 
+
 func _populate_audio():
 	for e in get_node("Audio/clics").get_children():
 		audio_clics.append(e)
 	for e in get_node("Audio/pops").get_children():
 		audio_pops.append(e)
+
+func _randomize_audio():
+	audio_clics.shuffle()
+	audio_pops.shuffle()
 	
 
 func _ready():
-	_populate_audio()
 	Singleton.connect("increase_score", self, "increase_score")
 	Singleton.connect("decrease_score", self, "decrease_score")
 	Singleton.connect("mauvaise_poubelle", self, "_on_mauvaise_poubelle")
@@ -51,9 +55,15 @@ func _ready():
 	Singleton.connect("debut_pause", self, "_on_debut_pause")
 	Singleton.connect("fin_pause", self, "_on_fin_pause")
 	Singleton.connect("exit", self, "_on_exit")
+
+	# ordre de mélanger les sons (nouvelle partie)
+	Singleton.connect("randomize_audio", self, "_randomize_audio")
 	
 
-	# Singleton.init_game()
+	# import de tous les effets sonores
+	_populate_audio()
+	_randomize_audio()
+
 
 	score= Singleton.score
 	score_label= get_node("GUI/Score")
@@ -146,7 +156,7 @@ func play_pop(id=null):
 	if id == null:
 		var random_index= randi() % audio_pops.size()
 		audio_pops[random_index].play()
-		printt("audio:", random_index)
+		# printt("audio:", random_index)
 	else:
 		audio_pops[id].play()
 
@@ -156,7 +166,7 @@ func _play_clic(id=null):
 	if id == null:
 		var random_index= randi() % audio_clics.size()
 		audio_clics[random_index].play()
-		printt("audio:", random_index)
+		# printt("audio:", random_index)
 	else:
 		audio_clics[id].play()
 
@@ -164,30 +174,6 @@ func _play_clic(id=null):
 func _on_deltatimer_timeout():
 	play_pop()
 	Singleton.emit_signal("nouvelle_tete")
-
-
-func _on_timer_timeout():
-	index += 1
-	var score= Singleton.score
-	
-	if score < 3 :
-		timer.start(duree)
-	
-	elif score < 6:
-		timer.start(duree * coef_init)
-		_nouvelle_tetes(1)
-		
-	elif score < 9:
-		timer.start(duree_niv2 * coef_niv2)
-		_nouvelle_tetes(2)
-		
-	elif score < 12:
-		timer.start(duree_niv3 * coef_niv3)
-		_nouvelle_tetes(2)
-	
-	else:
-		timer.start(duree_niv4 * coef_niv4)
-		_nouvelle_tetes(3)
 
 
 func _nouvelle_tetes(nb_total_tete=1, coef_reducteur=0.5):
@@ -266,6 +252,30 @@ func _on_mauvaise_poubelle(id):
 
 
 
+
+# définition des niveaux
+func _on_timer_timeout():
+	index += 1
+	var score= Singleton.score
+	
+	if score < 3 :
+		timer.start(duree)
+	
+	elif score < 6:
+		timer.start(duree * coef_init)
+		_nouvelle_tetes(1)
+		
+	elif score < 9:
+		timer.start(duree_niv2 * coef_niv2)
+		_nouvelle_tetes(2)
+		
+	elif score < 12:
+		timer.start(duree_niv3 * coef_niv3)
+		_nouvelle_tetes(2)
+	
+	else:
+		timer.start(duree_niv4 * coef_niv4)
+		_nouvelle_tetes(3)
 
 
 
