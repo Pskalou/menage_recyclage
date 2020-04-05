@@ -86,7 +86,8 @@ func _on_game_over():
 	timer.stop()
 
 	for e in get_node("Tetes").get_children():
-		e.input_pickable = false
+		if e is Area2D:
+			e.input_pickable = false
 
 	var texte = "Déjà fini ?!?"
 	texte += "\n\nDommage pour toi..."
@@ -191,7 +192,7 @@ func increase_score():
 
 
 func decrease_score():
-	Singleton.score -= 1
+	Singleton.score -= 0
 	_update_score()
 
 
@@ -290,7 +291,7 @@ func _on_timer_timeout():
 		tempo= duree
 		nb_tete= 1
 
-	printt("index:", index, "bonus:", bonus)
+	# printt("index:", index, "bonus:", bonus)
 	timer.start(tempo)
 	_nouvelle_tetes(nb_tete + bonus)
 
