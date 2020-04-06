@@ -192,15 +192,16 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="Rourou" type="CheckButton" parent="HBoxContainer/VBoxContainer/Familles/HBoxContainer/VBoxContainer2"]
-visible = false
 margin_right = 203.0
 margin_bottom = 40.0
 theme = ExtResource( 1 )
+pressed = true
 text = "Rourou"
 
 [node name="Boubou" type="CheckButton" parent="HBoxContainer/VBoxContainer/Familles/HBoxContainer/VBoxContainer2"]
+margin_top = 44.0
 margin_right = 203.0
-margin_bottom = 40.0
+margin_bottom = 84.0
 theme = ExtResource( 1 )
 pressed = true
 text = "Boubou"

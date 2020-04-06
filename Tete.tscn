@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=2]
+[gd_scene load_steps=32 format=2]
 
 [ext_resource path="res://scripts/Tete.gd" type="Script" id=1]
 [ext_resource path="res://assets/tete_guigui_1.png" type="Texture" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://assets/tete_titi_1.png" type="Texture" id=7]
 [ext_resource path="res://assets/tete_noe_1.png" type="Texture" id=8]
 [ext_resource path="res://assets/tete_noe_0.png" type="Texture" id=9]
+[ext_resource path="res://assets/tete_emile_1.png" type="Texture" id=10]
 [ext_resource path="res://assets/tete_lucia_0.png" type="Texture" id=11]
 [ext_resource path="res://assets/tete_lucia_1.png" type="Texture" id=12]
 [ext_resource path="res://assets/tete_lolo_1.png" type="Texture" id=13]
@@ -19,6 +20,15 @@
 [ext_resource path="res://assets/tete_cecile_1.png" type="Texture" id=18]
 [ext_resource path="res://assets/tete_bruno_1.png" type="Texture" id=19]
 [ext_resource path="res://assets/tete_bruno_0.png" type="Texture" id=20]
+[ext_resource path="res://assets/tete_emile_0.png" type="Texture" id=21]
+[ext_resource path="res://assets/tete_guirou_0.png" type="Texture" id=22]
+[ext_resource path="res://assets/tete_guirou_1.png" type="Texture" id=23]
+[ext_resource path="res://assets/tete_elsa_0.png" type="Texture" id=24]
+[ext_resource path="res://assets/tete_elsa_1.png" type="Texture" id=25]
+[ext_resource path="res://assets/tete_amelia_1.png" type="Texture" id=26]
+[ext_resource path="res://assets/tete_amelia_0.png" type="Texture" id=27]
+[ext_resource path="res://assets/tete_simon_1.png" type="Texture" id=28]
+[ext_resource path="res://assets/tete_simon_0.png" type="Texture" id=29]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 46.5643
@@ -70,6 +80,31 @@ animations = [ {
 "loop": true,
 "name": "lolo",
 "speed": 5.0
+}, {
+"frames": [ ExtResource( 27 ), ExtResource( 26 ) ],
+"loop": true,
+"name": "amelia",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 21 ), ExtResource( 10 ) ],
+"loop": true,
+"name": "emile",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 24 ), ExtResource( 25 ) ],
+"loop": true,
+"name": "elsa",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 29 ), ExtResource( 28 ) ],
+"loop": true,
+"name": "simon",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 22 ), ExtResource( 23 ) ],
+"loop": true,
+"name": "guirou",
+"speed": 5.0
 } ]
 
 [node name="Tete" type="Area2D"]
@@ -85,5 +120,5 @@ shape = SubResource( 1 )
 [node name="sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, -2.64374 )
 frames = SubResource( 2 )
-animation = "bruno"
+animation = "simon"
 [connection signal="input_event" from="." to="." method="_on_Tete_input_event"]
