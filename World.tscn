@@ -54,33 +54,8 @@ script = ExtResource( 1 )
 [node name="Tuto" type="Node2D" parent="."]
 
 [node name="Perso" parent="Tuto" instance=ExtResource( 26 )]
-position = Vector2( 924.034, 443.278 )
-
-[node name="Texte2" type="Node2D" parent="Tuto"]
 visible = false
-position = Vector2( 929.034, 462.278 )
-
-[node name="Bulle2" type="Sprite" parent="Tuto/Texte2"]
-position = Vector2( -249.231, -177.555 )
-texture = ExtResource( 29 )
-
-[node name="Label2" type="Label" parent="Tuto/Texte2"]
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_left = -448.466
-margin_top = -268.49
-margin_right = -98.4656
-margin_bottom = -101.49
-theme = ExtResource( 27 )
-text = "Mais il est très
-important de bien
-recycler et de choisir
-la bonne poubelle."
-align = 1
-valign = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
+position = Vector2( 924.034, 443.278 )
 
 [node name="Texte1" type="Node2D" parent="Tuto"]
 visible = false
@@ -102,6 +77,32 @@ text = "Pour gagner,
 tu dois faire le ménage
 et supprimer le plus
 d'instrus possibles."
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Texte2" type="Node2D" parent="Tuto"]
+visible = false
+position = Vector2( 929.034, 462.278 )
+
+[node name="Bulle2" type="Sprite" parent="Tuto/Texte2"]
+position = Vector2( -249.231, -177.555 )
+texture = ExtResource( 29 )
+
+[node name="Label2" type="Label" parent="Tuto/Texte2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -448.466
+margin_top = -268.49
+margin_right = -98.4656
+margin_bottom = -101.49
+theme = ExtResource( 27 )
+text = "Mais il est très
+important de bien
+recycler et de choisir
+la bonne poubelle."
 align = 1
 valign = 1
 __meta__ = {
@@ -196,26 +197,6 @@ __meta__ = {
 [node name="Options" type="TextureButton" parent="GUI/Options_label"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Debut_partie" type="AcceptDialog" parent="GUI"]
-show_behind_parent = true
-margin_left = 249.163
-margin_top = 224.39
-margin_right = 871.163
-margin_bottom = 432.39
-theme = ExtResource( 22 )
-popup_exclusive = true
-window_title = "Ménage et recyclage !"
-dialog_text = "Pour gagner, tu dois faire le ménage et supprimer tous les intrus.
-Mais il est très important de bien recycler et de choisir la bonne poubelle.
-
-Fais bien attention car si tu te trompes, de nouveaux intrus appaîtront...
-
-
-Commencer une nouvelle partie?"
 __meta__ = {
 "_edit_use_anchors_": false
 }

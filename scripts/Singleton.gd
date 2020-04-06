@@ -4,6 +4,9 @@ signal update_sprites_touched
 signal increase_score
 signal decrease_score
 signal tete_lachee
+
+# → World : bonus + ajoute têtes
+signal plateau_vide
 signal mauvaise_poubelle
 signal nouvelle_tete
 signal good_poubelle
@@ -15,7 +18,12 @@ signal randomize_audio
 
 # from main_menu.gd → world.gd
 signal jeux_arcade
-signal jeux_tutoriel
+signal jeux_tutoriel1
+signal jeux_tutoriel2
+signal jeux_tutoriel3
+var tuto_state1= false
+var tuto_state2= false
+var tuto_state3= false
 signal jeux_histoire
 signal exit
 
@@ -26,6 +34,9 @@ signal main_menu
 
 signal init_poubelles
 
+
+# mode tutoriel
+var tuto_state= false
 
 var score
 var tetes = {}
@@ -39,7 +50,7 @@ var with_rourou = true
 var max_tetes
 var max_poubelles
 
-
+# nombre de têtes sur le jeu
 var nb_tetes= 0
 
 

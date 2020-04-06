@@ -39,8 +39,10 @@ func _ready():
 	Singleton.connect("play_clic", self, "_play_clic")
 	Singleton.connect("play_pop", self, "_play_pop")
 	Singleton.connect("jeux_arcade", self, "_on_jeux_arcade")
-	Singleton.connect("jeux_tutoriel", self, "_on_jeux_tutoriel")
-
+	# tutoriel en 3étapes
+	Singleton.connect("jeux_tutoriel1", self, "_on_jeux_tutoriel1")
+	Singleton.connect("jeux_tutoriel2", self, "_on_jeux_tutoriel2")
+	Singleton.connect("jeux_tutoriel3", self, "_on_jeux_tutoriel3")
 	# pause_menu.gd (faire pause, reprendre le jeux, retour accueil)
 	Singleton.connect("main_menu", self, "_on_main_menu")
 	Singleton.connect("debut_pause", self, "_on_debut_pause")
@@ -49,6 +51,10 @@ func _ready():
 
 	# ordre de mélanger les sons (nouvelle partie)
 	Singleton.connect("randomize_audio", self, "_randomize_audio")
+
+	# Plateau de jeu vidé : bonus !
+	Singleton.connect("plateau_vide", self, "_on_plateau_vide")
+	
 	
 
 	# import de tous les effets sonores
@@ -75,15 +81,115 @@ func _ready():
 	get_node("Tuto").set_visible(false)
 	
 
+
+# quand le plateau est vidé : 3 nouvelles têtes + bonus
+func _on_plateau_vide():
+	_nouvelle_tetes(3, 0.3)
+	for _i in range(3):
+		increase_score()
+
+
+
 # variable d'état du tutoriel
-var tuto_state= false
-func _on_jeux_tutoriel():
-	$GUI/Debut_partie.popup_centered(Vector2(200,100))
+func _on_jeux_tutoriel1():
 	get_node("Main_menu").set_visible(false)
 	get_node("Pause_menu").set_visible(false)
 	get_node("Tuto").set_visible(true)
-	tuto_state= true
+	get_node("Tuto/Perso").set_visible(true)
+	get_node("Tuto/Perso/AnimatedSprite").play()
+	get_node("Tuto/Texte1").set_visible(true)
+	get_node("Tuto/Texte2").set_visible(false)
+	get_node("Tuto/Texte3").set_visible(false)
+	Singleton.tuto_state1= true
+	Singleton.tuto_state2= false
+	Singleton.tuto_state3= false
+
+	print("chargement tutoriel page 1")
+	for element in get_node("Tetes").get_children():
+		element.queue_free()
+	for element in get_node("Poubelles").get_children():
+		element.queue_free()
 	
+
+	index= 0
+	bonus= 0
+
+	Singleton.with_bouscadilla= true
+	Singleton.with_pelpel = false
+	Singleton.with_boubou = false
+	Singleton.with_rourou = false
+
+	Singleton.init_game(10,1)
+
+	_nouvelle_tetes(4, 0.3)
+
+
+func _on_jeux_tutoriel2():
+	printt("tuto page 2 avec ",Singleton.nb_tetes,"tetes")
+	get_node("Main_menu").set_visible(false)
+	get_node("Pause_menu").set_visible(false)
+	get_node("Tuto").set_visible(true)
+	get_node("Tuto/Perso").set_visible(true)
+	get_node("Tuto/Perso/AnimatedSprite").play()
+	get_node("Tuto/Texte1").set_visible(false)
+	get_node("Tuto/Texte2").set_visible(true)
+	get_node("Tuto/Texte3").set_visible(false)
+	Singleton.tuto_state1= false
+	Singleton.tuto_state2= true
+	Singleton.tuto_state3= false
+
+	print("chargement tutoriel page 2")
+	for element in get_node("Tetes").get_children():
+		element.queue_free()
+	for element in get_node("Poubelles").get_children():
+		element.queue_free()
+	
+
+	index= 0
+	bonus= 0
+
+	Singleton.with_bouscadilla= false
+	Singleton.with_pelpel = true
+	Singleton.with_boubou = false
+	Singleton.with_rourou = false
+
+	Singleton.init_game(2,2)
+
+	_nouvelle_tetes(3, 0.3)
+
+
+func _on_jeux_tutoriel3():
+	printt("tuto page 2 avec ",Singleton.nb_tetes,"tetes")
+	get_node("Main_menu").set_visible(false)
+	get_node("Pause_menu").set_visible(false)
+	get_node("Tuto").set_visible(true)
+	get_node("Tuto/Perso").set_visible(true)
+	get_node("Tuto/Perso/AnimatedSprite").play()
+	get_node("Tuto/Texte1").set_visible(false)
+	get_node("Tuto/Texte2").set_visible(false)
+	get_node("Tuto/Texte3").set_visible(true)
+	Singleton.tuto_state1= false
+	Singleton.tuto_state2= false
+	Singleton.tuto_state3= true
+
+	print("chargement tutoriel page 3")
+	for element in get_node("Tetes").get_children():
+		element.queue_free()
+	for element in get_node("Poubelles").get_children():
+		element.queue_free()
+	
+
+	index= 0
+	bonus= 0
+
+	Singleton.with_bouscadilla= false
+	Singleton.with_pelpel = false
+	Singleton.with_boubou = true
+	Singleton.with_rourou = true
+
+	Singleton.init_game(3,3)
+
+	_nouvelle_tetes(2, 0.3)
 
 
 func _on_exit():
@@ -96,7 +202,17 @@ func _on_game_over():
 	for e in get_node("Tetes").get_children():
 		if e is Area2D:
 			e.input_pickable = false
-
+	
+	
+	get_node("Main_menu").set_visible(false)
+	get_node("Pause_menu").set_visible(false)
+	get_node("Tuto").set_visible(false)
+	get_node("Tuto/Perso").set_visible(false)
+	get_node("Tuto/Perso/AnimatedSprite").play()
+	get_node("Tuto/Texte1").set_visible(false)
+	get_node("Tuto/Texte2").set_visible(false)
+	get_node("Tuto/Texte3").set_visible(false)
+	
 	var texte = "Déjà fini ?!?"
 	texte += "\n\nDommage pour toi..."
 	texte += "\n\nTon score est de "
@@ -294,53 +410,6 @@ func _on_timer_timeout():
 	
 	timer.start(tempo)
 	_nouvelle_tetes(nb_tete + bonus)
-
-
-
-
-########## TUTO
-
-#Pour gagner, tu dois faire le ménage et supprimer tous les intrus.
-#Mais il est très important de bien recycler et de choisir la bonne poubelle.
-#
-#Fais bien attention car si tu te trompes, de nouveaux intrus appaîtront...
-
-
-# * 5 têtes / 2 différentes (titi & juju)
-# * 3 poubelles
-
-
-############# classique
-
-# Niveau 1
-#* < 5 points
-#* 3 poubelles
-#* 5 têtes / sur total nb de poubelle
-#* le temps accélère
-#
-#Niveau 2
-#* < 10 points
-#* 4 poubelles
-#* le temps accélère
-#
-#Niveau 3
-#* < 15 points
-#* 5 poubelles
-#* le temps accélère
-#
-#Niveau 4
-#* < 20 points
-#* 6 poubelles
-#* le temps accélère
-#
-#Niveau 5
-#* < 25 points
-#* 7 poubelles
-#* le temps accélère
-#
-
-
-
 
 
 ######### Histoire

@@ -81,6 +81,7 @@ func _on_nouvelle_tete():
 		Singleton.emit_signal("game_over")
 
 
+# ajoute réellement une tête sur le plateau
 func add_tete(id=null):
 	if Singleton.max_tetes == 0:
 		return
@@ -92,7 +93,12 @@ func add_tete(id=null):
 	tetes.append(tete_scene.instance())
 	tetes[-1].set_id(id)
 	
-	var randx= 100 + randi()%850
+	# en cas du tutoriel, ne pas mettre de tête trop à droite
+	var randx
+	if Singleton.tuto_state1 or Singleton.tuto_state2 or Singleton.tuto_state3 :
+		randx= 100 + randi()%350
+	else:
+		randx= 100 + randi()%850
 	var randy= 100 + randi()%200
 	tetes[-1].set_position(Vector2(randx,randy))
 	add_child(tetes[-1])
@@ -112,14 +118,6 @@ var Explosion = preload("res://Explosion.tscn")
 
 func _on_bad_poubelle(tete_node, tete_id):
 
-	# tete_node.input_pickable = false
-	# tete_node.z_index = 10
-	# tete_node.get_node("sprite").set_visible(false)
-	# tete_node.get_node("explosion").set_frame(0)
-	# tete_node.get_node("explosion").set_visible(true)
-	# tete_node.get_node("explosion").play()
-
-	# récupération de la position de la tête
 	var pos= tete_node.get_position()
 
 	# suppression de la tête
