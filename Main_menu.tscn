@@ -181,6 +181,7 @@ margin_top = 44.0
 margin_right = 203.0
 margin_bottom = 84.0
 theme = ExtResource( 1 )
+pressed = true
 text = "Pelpel"
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="HBoxContainer/VBoxContainer/Familles/HBoxContainer"]
@@ -201,6 +202,7 @@ text = "Rourou"
 margin_right = 203.0
 margin_bottom = 40.0
 theme = ExtResource( 1 )
+pressed = true
 text = "Boubou"
 
 [node name="CenterContainer" type="CenterContainer" parent="HBoxContainer"]

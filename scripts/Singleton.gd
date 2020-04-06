@@ -32,8 +32,8 @@ var tetes = {}
 var poubelles
 
 var with_bouscadilla= true
-var with_pelpel = false
-var with_boubou = false
+var with_pelpel = true
+var with_boubou = true
 var with_rourou = false
 
 var max_tetes

@@ -245,7 +245,7 @@ func _on_jeux_arcade():
 
 
 var duree_init= 2
-var coef_init= 0.6
+var coef_init= 0.95
 var duree_niv2= 3
 var coef_niv2= 0.8
 var duree_niv3= 2.5
@@ -253,7 +253,6 @@ var coef_niv3= 0.7
 var duree_niv4= 2
 var coef_niv4= 0.6
 var duree
-
 
 var index= 0
 var bonus= 0
@@ -263,35 +262,18 @@ func _on_timer_timeout():
 	index += 1
 
 	var tempo
-	var nb_tete
-	
-	if index < 5 :
-		tempo= duree
+	var nb_tete	
+	if index < 20:
+		tempo= duree * pow(coef_init, index)
 		nb_tete= 1
-
-	elif index < 10:
-		tempo= duree* coef_init
-		nb_tete= 1
-		
-	elif index < 15:
-		tempo= duree_niv2 * coef_niv2
-		nb_tete= 2
-		
-	elif index < 20:
-		tempo= duree_niv3 * coef_niv3
-		nb_tete= 2
-	
-	elif index < 30:
-		tempo= duree_niv4 * coef_niv4
-		nb_tete= 3
-
 	else:
 		index= 0
-		bonus += 3
+		bonus += 1
 		tempo= duree
 		nb_tete= 1
 
-	# printt("index:", index, "bonus:", bonus)
+	printt("index:", index, "bonus:", bonus, "tempo:", tempo)
+	
 	timer.start(tempo)
 	_nouvelle_tetes(nb_tete + bonus)
 

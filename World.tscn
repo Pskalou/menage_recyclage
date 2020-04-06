@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=2]
+[gd_scene load_steps=28 format=2]
 
 [ext_resource path="res://scripts/Poubelles.gd" type="Script" id=1]
 [ext_resource path="res://scripts/Tetes.gd" type="Script" id=2]
@@ -25,6 +25,8 @@
 [ext_resource path="res://Pause_menu.tscn" type="PackedScene" id=23]
 [ext_resource path="res://assets/Theme_20.tres" type="Theme" id=24]
 [ext_resource path="res://Main_menu.tscn" type="PackedScene" id=25]
+[ext_resource path="res://tuto.tscn" type="PackedScene" id=26]
+[ext_resource path="res://assets/Theme_20_invert.tres" type="Theme" id=27]
 
 [node name="World" type="Control"]
 script = ExtResource( 3 )
@@ -46,6 +48,60 @@ script = ExtResource( 2 )
 [node name="Poubelles" type="Node2D" parent="."]
 z_index = -1
 script = ExtResource( 1 )
+
+[node name="Tuto" type="Node2D" parent="."]
+
+[node name="Node2D" parent="Tuto" instance=ExtResource( 26 )]
+position = Vector2( 924.034, 443.278 )
+
+[node name="Label" type="Label" parent="Tuto"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 555.713
+margin_top = 40.063
+margin_right = 892.713
+margin_bottom = 139.063
+theme = ExtResource( 27 )
+text = "Pour gagner, tu dois faire
+le ménage et supprimer
+tous les intrus."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="Tuto"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 506.603
+margin_top = 122.774
+margin_right = 844.603
+margin_bottom = 221.774
+theme = ExtResource( 27 )
+text = "Mais il est très important 
+de bien recycler et de
+choisir la bonne poubelle."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label3" type="Label" parent="Tuto"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 555.713
+margin_top = 147.328
+margin_right = 851.713
+margin_bottom = 280.328
+theme = ExtResource( 27 )
+text = "Fais bien attention !
+Si tu te trompes,
+de nouveaux intrus
+appaîtront..."
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="GUI" type="Control" parent="."]
 show_behind_parent = true
