@@ -34,7 +34,7 @@ var poubelles
 var with_bouscadilla= true
 var with_pelpel = true
 var with_boubou = true
-var with_rourou = false
+var with_rourou = true
 
 var max_tetes
 var max_poubelles
@@ -52,10 +52,10 @@ var nb_tetes= 0
 
 # définition des varibales (à mettre à jour si nouvelle têtes ou poubelles)
 # les sprites
-var tetes_pelpel= ["guigui", "noe", "lucia"]
+var tetes_pelpel= ["guigui", "noe", "lucia", "emile"]
 var tetes_boubou= ["bruno", "cecile", "lolo", "marius"]
 var tetes_bouscadilla= ["titi", "juju"]
-var tetes_rourou= []
+var tetes_rourou= ["guirou", "amelia", "elsa", "simon"]
 var poubelles_disponibles= ["bleue", "jaune", "verte", "rouge"]
 # condition de fin de partie
 var fin_partie_max_tete = 30
