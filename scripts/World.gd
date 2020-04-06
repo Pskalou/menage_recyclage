@@ -114,10 +114,6 @@ func _on_jeux_tutoriel1():
 	index= 0
 	bonus= 0
 
-	Singleton.with_bouscadilla= true
-	Singleton.with_pelpel = false
-	Singleton.with_boubou = false
-	Singleton.with_rourou = false
 
 	Singleton.init_game(10,1)
 
@@ -148,10 +144,6 @@ func _on_jeux_tutoriel2():
 	index= 0
 	bonus= 0
 
-	Singleton.with_bouscadilla= false
-	Singleton.with_pelpel = true
-	Singleton.with_boubou = false
-	Singleton.with_rourou = false
 
 	Singleton.init_game(2,2)
 
@@ -182,12 +174,11 @@ func _on_jeux_tutoriel3():
 	index= 0
 	bonus= 0
 
-	Singleton.with_bouscadilla= false
-	Singleton.with_pelpel = false
-	Singleton.with_boubou = true
-	Singleton.with_rourou = true
+	
 
 	Singleton.init_game(3,3)
+
+
 
 	_nouvelle_tetes(2, 0.3)
 
