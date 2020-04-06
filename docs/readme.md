@@ -10,6 +10,7 @@ Pendant le confinement, nous avons préparé ce petit jeu...
 * télécharger la version **Android** : [cliquer ici](./exports/android)
 * télécharger la version **Linux** : [cliquer ici](./exports/linux)
 * télécharger la version **Mac** : [cliquer ici](./exports/mac)
+* télécharger la version **Windows** : [cliquer ici](./exports/win)
 
 
 
