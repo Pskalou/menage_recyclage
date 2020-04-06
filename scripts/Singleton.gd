@@ -21,6 +21,7 @@ signal jeux_arcade
 signal jeux_tutoriel1
 signal jeux_tutoriel2
 signal jeux_tutoriel3
+signal fin_tuto
 var tuto_state1= false
 var tuto_state2= false
 var tuto_state3= false

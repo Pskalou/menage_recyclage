@@ -31,7 +31,7 @@ func _on_tete_lachee(tete_lachee, poubelle_id):
 					Singleton.emit_signal("jeux_tutoriel3")
 				elif Singleton.tuto_state3:
 					print("signal → fin tuto")
-					Singleton.emit_signal("game_over")
+					Singleton.emit_signal("fin_tuto")
 				else:
 					Singleton.emit_signal("plateau_vide")
 			# printt("poubelle id:",self.id , "tete id:",current_id)

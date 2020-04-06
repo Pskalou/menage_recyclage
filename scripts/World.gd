@@ -43,6 +43,7 @@ func _ready():
 	Singleton.connect("jeux_tutoriel1", self, "_on_jeux_tutoriel1")
 	Singleton.connect("jeux_tutoriel2", self, "_on_jeux_tutoriel2")
 	Singleton.connect("jeux_tutoriel3", self, "_on_jeux_tutoriel3")
+	Singleton.connect("fin_tuto", self, "_on_fin_tuto")
 	# pause_menu.gd (faire pause, reprendre le jeux, retour accueil)
 	Singleton.connect("main_menu", self, "_on_main_menu")
 	Singleton.connect("debut_pause", self, "_on_debut_pause")
@@ -81,7 +82,6 @@ func _ready():
 	get_node("Tuto").set_visible(false)
 	
 
-
 # quand le plateau est vidé : 3 nouvelles têtes + bonus
 func _on_plateau_vide():
 	_nouvelle_tetes(3, 0.3)
@@ -89,102 +89,133 @@ func _on_plateau_vide():
 		increase_score()
 
 
-
 # variable d'état du tutoriel
+var tuto_speech_timer
+var perso
 func _on_jeux_tutoriel1():
+	print("chargement tutoriel page 1")
+
 	get_node("Main_menu").set_visible(false)
 	get_node("Pause_menu").set_visible(false)
 	get_node("Tuto").set_visible(true)
 	get_node("Tuto/Perso").set_visible(true)
-	get_node("Tuto/Perso/AnimatedSprite").play()
 	get_node("Tuto/Texte1").set_visible(true)
 	get_node("Tuto/Texte2").set_visible(false)
 	get_node("Tuto/Texte3").set_visible(false)
+
 	Singleton.tuto_state1= true
 	Singleton.tuto_state2= false
 	Singleton.tuto_state3= false
 
-	print("chargement tutoriel page 1")
+	# nettoyage éventuel des têtes et poubelle
 	for element in get_node("Tetes").get_children():
 		element.queue_free()
 	for element in get_node("Poubelles").get_children():
 		element.queue_free()
-	
+
+	# animation
+	perso= get_node("Tuto/Perso/AnimatedSprite")
+	perso.play()
+
+	# timer pour la durée de l'animation
+	tuto_speech_timer = Timer.new()
+	tuto_speech_timer.connect("timeout", self, "_on_fin_speech_tuto")
+	add_child(tuto_speech_timer)
+	tuto_speech_timer.start(2)
 
 	index= 0
 	bonus= 0
-
 
 	Singleton.init_game(10,1)
 
 	_nouvelle_tetes(4, 0.3)
 
 
+func _on_fin_speech_tuto():
+	perso.stop()
+	perso.set_frame(0)
+	tuto_speech_timer.stop()
+
+
 func _on_jeux_tutoriel2():
+	print("chargement tutoriel page 2")
+
 	printt("tuto page 2 avec ",Singleton.nb_tetes,"tetes")
-	get_node("Main_menu").set_visible(false)
-	get_node("Pause_menu").set_visible(false)
-	get_node("Tuto").set_visible(true)
-	get_node("Tuto/Perso").set_visible(true)
-	get_node("Tuto/Perso/AnimatedSprite").play()
 	get_node("Tuto/Texte1").set_visible(false)
 	get_node("Tuto/Texte2").set_visible(true)
-	get_node("Tuto/Texte3").set_visible(false)
+	
 	Singleton.tuto_state1= false
 	Singleton.tuto_state2= true
-	Singleton.tuto_state3= false
 
-	print("chargement tutoriel page 2")
+	# nettoyage éventuel des têtes et poubelle
 	for element in get_node("Tetes").get_children():
 		element.queue_free()
 	for element in get_node("Poubelles").get_children():
 		element.queue_free()
-	
 
-	index= 0
-	bonus= 0
+	# animation
+	perso= get_node("Tuto/Perso/AnimatedSprite")
+	perso.play()
 
+	# timer pour la durée de l'animation
+	tuto_speech_timer.start(3)
 
+	# affichage têtes
 	Singleton.init_game(2,2)
 
 	_nouvelle_tetes(3, 0.3)
 
 
 func _on_jeux_tutoriel3():
-	printt("tuto page 2 avec ",Singleton.nb_tetes,"tetes")
-	get_node("Main_menu").set_visible(false)
-	get_node("Pause_menu").set_visible(false)
-	get_node("Tuto").set_visible(true)
-	get_node("Tuto/Perso").set_visible(true)
-	get_node("Tuto/Perso/AnimatedSprite").play()
-	get_node("Tuto/Texte1").set_visible(false)
+	print("chargement tutoriel page 3")
+
 	get_node("Tuto/Texte2").set_visible(false)
 	get_node("Tuto/Texte3").set_visible(true)
-	Singleton.tuto_state1= false
+	
 	Singleton.tuto_state2= false
 	Singleton.tuto_state3= true
 
-	print("chargement tutoriel page 3")
 	for element in get_node("Tetes").get_children():
 		element.queue_free()
 	for element in get_node("Poubelles").get_children():
 		element.queue_free()
-	
 
-	index= 0
-	bonus= 0
+	# animation
+	perso= get_node("Tuto/Perso/AnimatedSprite")
+	perso.play()
 
-	
+	# timer pour la durée de l'animation
+	tuto_speech_timer.start(2)
 
 	Singleton.init_game(3,3)
-
-
 
 	_nouvelle_tetes(2, 0.3)
 
 
 func _on_exit():
 	get_tree().quit()
+
+
+func _on_fin_tuto():
+	get_node("Main_menu").set_visible(false)
+	get_node("Pause_menu").set_visible(false)
+	get_node("Tuto").set_visible(false)
+	get_node("Tuto/Perso").set_visible(false)
+	get_node("Tuto/Perso/AnimatedSprite").play()
+	get_node("Tuto/Texte1").set_visible(false)
+	get_node("Tuto/Texte2").set_visible(false)
+	get_node("Tuto/Texte3").set_visible(false)
+	
+	var texte = "Et voilà, à toi de jouer"
+	texte += "\n\nBonne chance !"
+	$GUI/Fin_partie.dialog_text = texte
+	$GUI/Fin_partie.popup_centered(Vector2(200,100))
+
+	for e in get_node("Tetes").get_children():
+		e.queue_free()
+	
+	for e in get_node("Poubelles").get_children():
+		e.queue_free()
 
 
 func _on_game_over():
@@ -274,7 +305,8 @@ func _play_clic(id=null):
 		audio_clics[random_index].play()
 		# printt("audio:", random_index)
 	else:
-		audio_clics[id].play()
+		audio_clics[id%audio_clics.size()].play()
+
 
 
 func _on_deltatimer_timeout():
