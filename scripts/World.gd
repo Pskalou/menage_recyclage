@@ -75,8 +75,15 @@ func _ready():
 	get_node("Tuto").set_visible(false)
 	
 
+# variable d'état du tutoriel
+var tuto_state= false
 func _on_jeux_tutoriel():
 	$GUI/Debut_partie.popup_centered(Vector2(200,100))
+	get_node("Main_menu").set_visible(false)
+	get_node("Pause_menu").set_visible(false)
+	get_node("Tuto").set_visible(true)
+	tuto_state= true
+	
 
 
 func _on_exit():
@@ -188,7 +195,17 @@ func _nouvelle_tetes(nb_total_tete=1, coef_reducteur=0.5):
 
 
 func increase_score():
-	Singleton.score += 1
+	var nb_famille= 0
+	if Singleton.with_bouscadilla:
+		nb_famille += 1
+	if Singleton.with_pelpel:
+		nb_famille += 1
+	if Singleton.with_boubou:
+		nb_famille += 1
+	if Singleton.with_rourou:
+		nb_famille += 1
+	
+	Singleton.score += nb_famille
 	_update_score()
 
 
