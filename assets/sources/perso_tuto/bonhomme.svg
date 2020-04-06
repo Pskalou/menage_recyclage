@@ -9,13 +9,16 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="210mm"
-   height="297mm"
-   viewBox="0 0 210 297"
+   width="184.29974mm"
+   height="116.8892mm"
+   viewBox="0 0 184.29974 116.8892"
    version="1.1"
    id="svg8"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
-   sodipodi:docname="bonhomme.svg">
+   sodipodi:docname="bonhomme.svg"
+   inkscape:export-filename="/home/bouscadilla/Documents/Code/godot/Menage_et_recyclage/assets/tuto_bonhomme.png"
+   inkscape:export-xdpi="137.81895"
+   inkscape:export-ydpi="137.81895">
   <defs
      id="defs2">
     <clipPath
@@ -93,8 +96,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.65039016"
-     inkscape:cx="177.23948"
-     inkscape:cy="662.36358"
+     inkscape:cx="59.845095"
+     inkscape:cy="182.388"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -105,7 +108,11 @@
      inkscape:window-maximized="1"
      inkscape:snap-bbox="true"
      showguides="false"
-     inkscape:snap-nodes="true" />
+     inkscape:snap-nodes="true"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -114,14 +121,15 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
      inkscape:label="Calque 1"
      inkscape:groupmode="layer"
-     id="layer1">
+     id="layer1"
+     transform="translate(-12.347471,-53.117263)">
     <g
        id="g1809"
        clip-path="url(#clipPath1811)"
