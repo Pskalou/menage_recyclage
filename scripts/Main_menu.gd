@@ -25,7 +25,7 @@ func _ready():
 
 				
 func _on_Tuto_button_pressed():
-	Singleton.emit_signal("jeux_tutoriel1")
+	Singleton.emit_signal("jeux_tutoriel")
 	_on_Tuto_button_mouse_exited()
 	print("lancement jeux tutoriel")
 

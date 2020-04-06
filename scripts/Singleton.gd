@@ -7,6 +7,7 @@ signal tete_lachee
 
 # → World : bonus + ajoute têtes
 signal plateau_vide
+
 signal mauvaise_poubelle
 signal nouvelle_tete
 signal good_poubelle
@@ -16,15 +17,21 @@ signal play_clic
 signal play_pop
 signal randomize_audio
 
+# message de popup
+# → World
+signal popup_message
+
+# → World : supprimer têtes et poubelles
+signal clean_world
+
 # from main_menu.gd → world.gd
 signal jeux_arcade
+signal jeux_tutoriel
 signal jeux_tutoriel1
 signal jeux_tutoriel2
 signal jeux_tutoriel3
 signal fin_tuto
-var tuto_state1= false
-var tuto_state2= false
-var tuto_state3= false
+
 signal jeux_histoire
 signal exit
 
@@ -34,6 +41,11 @@ signal fin_pause
 signal main_menu
 
 signal init_poubelles
+
+var tuto_state1= false
+var tuto_state2= false
+var tuto_state3= false
+
 
 
 # mode tutoriel

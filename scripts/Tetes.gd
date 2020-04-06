@@ -72,6 +72,8 @@ func _input(event):
 				tete_to_move.position.y= 500
 
 
+# teste la fin de la partie (pourquoi ici)
+# TODO déplacer dans World ?
 func _on_nouvelle_tete():
 	# printt("Tetes._on_nouvelle_tete:","nb_tete:",Singleton.nb_tetes)
 	if Singleton.nb_tetes < Singleton.fin_partie_max_tete:

@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=2]
+[gd_scene load_steps=27 format=2]
 
 [ext_resource path="res://scripts/Poubelles.gd" type="Script" id=1]
 [ext_resource path="res://scripts/Tetes.gd" type="Script" id=2]
@@ -25,10 +25,7 @@
 [ext_resource path="res://Pause_menu.tscn" type="PackedScene" id=23]
 [ext_resource path="res://assets/Theme_20.tres" type="Theme" id=24]
 [ext_resource path="res://Main_menu.tscn" type="PackedScene" id=25]
-[ext_resource path="res://tuto.tscn" type="PackedScene" id=26]
-[ext_resource path="res://assets/Theme_20_invert.tres" type="Theme" id=27]
-[ext_resource path="res://assets/bulle_0.png" type="Texture" id=28]
-[ext_resource path="res://assets/bulle_1.png" type="Texture" id=29]
+[ext_resource path="res://Tuto.tscn" type="PackedScene" id=26]
 
 [node name="World" type="Control"]
 script = ExtResource( 3 )
@@ -51,89 +48,8 @@ script = ExtResource( 2 )
 z_index = -1
 script = ExtResource( 1 )
 
-[node name="Tuto" type="Node2D" parent="."]
-
-[node name="Perso" parent="Tuto" instance=ExtResource( 26 )]
-visible = false
+[node name="Tuto" parent="." instance=ExtResource( 26 )]
 position = Vector2( 924.034, 443.278 )
-
-[node name="Texte1" type="Node2D" parent="Tuto"]
-visible = false
-position = Vector2( 928.034, 443.278 )
-
-[node name="Bulle1" type="Sprite" parent="Tuto/Texte1"]
-position = Vector2( -249.232, -328.761 )
-texture = ExtResource( 28 )
-
-[node name="Label1" type="Label" parent="Tuto/Texte1"]
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_left = -514.357
-margin_top = -405.8
-margin_right = 1.64276
-margin_bottom = -272.8
-theme = ExtResource( 27 )
-text = "Pour gagner,
-tu dois faire le ménage
-et supprimer le plus
-d'instrus possibles."
-align = 1
-valign = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Texte2" type="Node2D" parent="Tuto"]
-visible = false
-position = Vector2( 929.034, 462.278 )
-
-[node name="Bulle2" type="Sprite" parent="Tuto/Texte2"]
-position = Vector2( -249.231, -177.555 )
-texture = ExtResource( 29 )
-
-[node name="Label2" type="Label" parent="Tuto/Texte2"]
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_left = -448.466
-margin_top = -268.49
-margin_right = -98.4656
-margin_bottom = -101.49
-theme = ExtResource( 27 )
-text = "Mais il est très
-important de bien
-recycler et de choisir
-la bonne poubelle."
-align = 1
-valign = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Texte3" type="Node2D" parent="Tuto"]
-visible = false
-position = Vector2( 951, 437.278 )
-
-[node name="Bulle3" type="Sprite" parent="Tuto/Texte3"]
-position = Vector2( -272.232, -324.761 )
-texture = ExtResource( 28 )
-
-[node name="Label3" type="Label" parent="Tuto/Texte3"]
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_left = -429.321
-margin_top = -385.95
-margin_right = -133.321
-margin_bottom = -252.95
-theme = ExtResource( 27 )
-text = "Fais bien attention !
-Si tu te trompes,
-de nouveaux intrus
-appaîtront..."
-align = 1
-valign = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="GUI" type="Control" parent="."]
 show_behind_parent = true
