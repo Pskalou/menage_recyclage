@@ -72,6 +72,7 @@ func _ready():
 
 	get_node("Main_menu").set_visible(true)
 	get_node("Pause_menu").set_visible(false)
+	get_node("Tuto").set_visible(false)
 	
 
 func _on_jeux_tutoriel():
