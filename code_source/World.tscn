@@ -1,0 +1,201 @@
+[gd_scene load_steps=27 format=2]
+
+[ext_resource path="res://scripts/Poubelles.gd" type="Script" id=1]
+[ext_resource path="res://scripts/Tetes.gd" type="Script" id=2]
+[ext_resource path="res://scripts/World.gd" type="Script" id=3]
+[ext_resource path="res://assets/audio/audio_pop_02.wav" type="AudioStream" id=4]
+[ext_resource path="res://assets/audio/audio_clic_01.wav" type="AudioStream" id=5]
+[ext_resource path="res://assets/audio/audio_clic_11.wav" type="AudioStream" id=6]
+[ext_resource path="res://assets/audio/audio_clic_12.wav" type="AudioStream" id=7]
+[ext_resource path="res://assets/audio/audio_clic_05.wav" type="AudioStream" id=8]
+[ext_resource path="res://assets/audio/audio_clic_08.wav" type="AudioStream" id=9]
+[ext_resource path="res://assets/audio/audio_clic_02.wav" type="AudioStream" id=10]
+[ext_resource path="res://assets/audio/audio_clic_03.wav" type="AudioStream" id=11]
+[ext_resource path="res://assets/audio/audio_clic_13.wav" type="AudioStream" id=12]
+[ext_resource path="res://assets/audio/audio_clic_04.wav" type="AudioStream" id=13]
+[ext_resource path="res://assets/audio/audio_clic_10.wav" type="AudioStream" id=14]
+[ext_resource path="res://assets/audio/audio_clic_06.wav" type="AudioStream" id=15]
+[ext_resource path="res://assets/audio/audio_clic_07.wav" type="AudioStream" id=16]
+[ext_resource path="res://assets/audio/audio_clic_09.wav" type="AudioStream" id=17]
+[ext_resource path="res://assets/audio/audio_pop_03.wav" type="AudioStream" id=18]
+[ext_resource path="res://assets/audio/audio_pop_04.wav" type="AudioStream" id=19]
+[ext_resource path="res://assets/audio/audio_pop_01.wav" type="AudioStream" id=20]
+[ext_resource path="res://assets/fonds/fond.png" type="Texture" id=21]
+[ext_resource path="res://assets/Theme.tres" type="Theme" id=22]
+[ext_resource path="res://Pause_menu.tscn" type="PackedScene" id=23]
+[ext_resource path="res://assets/Theme_20.tres" type="Theme" id=24]
+[ext_resource path="res://Main_menu.tscn" type="PackedScene" id=25]
+[ext_resource path="res://Tuto.tscn" type="PackedScene" id=26]
+
+[node name="World" type="Control"]
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Fonds" type="Node2D" parent="."]
+z_index = -2
+
+[node name="fond" type="Sprite" parent="Fonds"]
+position = Vector2( 3.70129, -1.85063 )
+texture = ExtResource( 21 )
+centered = false
+
+[node name="Tetes" type="Node2D" parent="."]
+script = ExtResource( 2 )
+
+[node name="Poubelles" type="Node2D" parent="."]
+z_index = -1
+script = ExtResource( 1 )
+
+[node name="Tuto" parent="." instance=ExtResource( 26 )]
+position = Vector2( 924.034, 443.278 )
+
+[node name="GUI" type="Control" parent="."]
+show_behind_parent = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Score" type="Label" parent="GUI"]
+margin_left = 28.4349
+margin_top = 12.1357
+margin_right = 106.435
+margin_bottom = 32.1357
+theme = ExtResource( 22 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Score : 10"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Chrono" type="Label" parent="GUI"]
+visible = false
+margin_left = 344.064
+margin_top = 14.5561
+margin_right = 546.064
+margin_bottom = 34.5561
+theme = ExtResource( 22 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Compte à rebours... 3.5s"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Nbtetes" type="Label" parent="GUI"]
+margin_left = 30.5824
+margin_top = 35.5154
+margin_right = 182.582
+margin_bottom = 55.5154
+theme = ExtResource( 22 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Game over dans 30 têtes"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Options_label" type="Label" parent="GUI"]
+margin_left = 898.374
+margin_top = 11.7839
+margin_right = 1000.37
+margin_bottom = 42.7839
+mouse_filter = 1
+mouse_default_cursor_shape = 2
+theme = ExtResource( 24 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Options"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Options" type="TextureButton" parent="GUI/Options_label"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Fin_partie" type="AcceptDialog" parent="GUI"]
+show_behind_parent = true
+margin_left = 247.935
+margin_top = 224.39
+margin_right = 739.935
+margin_bottom = 384.39
+theme = ExtResource( 22 )
+popup_exclusive = true
+window_title = "GAME OVER"
+dialog_text = "Et c'est fini..."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Audio" type="Node" parent="."]
+
+[node name="clics" type="Node" parent="Audio"]
+
+[node name="clic_01" type="AudioStreamPlayer" parent="Audio/clics"]
+stream = ExtResource( 5 )
+
+[node name="clic_02" type="AudioStreamPlayer" parent="Audio/clics"]
+stream = ExtResource( 10 )
+
+[node name="clic_03" type="AudioStreamPlayer" parent="Audio/clics"]
+stream = ExtResource( 11 )
+
+[node name="clic_04" type="AudioStreamPlayer" parent="Audio/clics"]
+stream = ExtResource( 13 )
+
+[node name="clic_05" type="AudioStreamPlayer" parent="Audio/clics"]
+stream = ExtResource( 8 )
+
+[node name="clic_06" type="AudioStreamPlayer" parent="Audio/clics"]
+stream = ExtResource( 15 )
+
+[node name="clic_07" type="AudioStreamPlayer" parent="Audio/clics"]
+stream = ExtResource( 16 )
+
+[node name="clic_08" type="AudioStreamPlayer" parent="Audio/clics"]
+stream = ExtResource( 9 )
+
+[node name="clic_09" type="AudioStreamPlayer" parent="Audio/clics"]
+stream = ExtResource( 17 )
+
+[node name="clic_10" type="AudioStreamPlayer" parent="Audio/clics"]
+stream = ExtResource( 14 )
+
+[node name="clic_11" type="AudioStreamPlayer" parent="Audio/clics"]
+stream = ExtResource( 6 )
+
+[node name="clic_12" type="AudioStreamPlayer" parent="Audio/clics"]
+stream = ExtResource( 7 )
+
+[node name="clic_13" type="AudioStreamPlayer" parent="Audio/clics"]
+stream = ExtResource( 12 )
+
+[node name="pops" type="Node" parent="Audio"]
+
+[node name="pop_01" type="AudioStreamPlayer" parent="Audio/pops"]
+stream = ExtResource( 20 )
+
+[node name="pop_02" type="AudioStreamPlayer" parent="Audio/pops"]
+stream = ExtResource( 4 )
+
+[node name="pop_03" type="AudioStreamPlayer" parent="Audio/pops"]
+stream = ExtResource( 18 )
+
+[node name="pop_04" type="AudioStreamPlayer" parent="Audio/pops"]
+stream = ExtResource( 19 )
+
+[node name="Pause_menu" parent="." instance=ExtResource( 23 )]
+visible = false
+rect_min_size = Vector2( 1024, 600 )
+
+[node name="Main_menu" parent="." instance=ExtResource( 25 )]
+visible = false
+rect_min_size = Vector2( 1024, 600 )
+[connection signal="mouse_entered" from="GUI/Options_label/Options" to="." method="_on_Options_mouse_entered"]
+[connection signal="mouse_exited" from="GUI/Options_label/Options" to="." method="_on_Options_mouse_exited"]
+[connection signal="pressed" from="GUI/Options_label/Options" to="." method="_on_Options_pressed"]
+[connection signal="confirmed" from="GUI/Fin_partie" to="." method="_on_Fin_partie_confirmed"]

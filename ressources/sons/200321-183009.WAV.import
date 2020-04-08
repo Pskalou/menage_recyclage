@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/200321-183009.WAV-f14cacc9108a7df226723540a19b5406.sample"
+
+[deps]
+
+source_file="res://assets/sources/sons/200321-183009.WAV"
+dest_files=[ "res://.import/200321-183009.WAV-f14cacc9108a7df226723540a19b5406.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

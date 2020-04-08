@@ -1,0 +1,123 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://assets/tuto/bonhomme.svg" type="Texture" id=1]
+[ext_resource path="res://scripts/Tuto.gd" type="Script" id=2]
+[ext_resource path="res://assets/Theme_20_invert.tres" type="Theme" id=3]
+[ext_resource path="res://assets/tuto/bulle_0.png" type="Texture" id=4]
+[ext_resource path="res://assets/tuto/bulle_1.png" type="Texture" id=5]
+
+[sub_resource type="AtlasTexture" id=7]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 0, 0, 140, 440 )
+
+[sub_resource type="AtlasTexture" id=8]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 140, 0, 140, 440 )
+
+[sub_resource type="AtlasTexture" id=9]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 280, 0, 140, 440 )
+
+[sub_resource type="AtlasTexture" id=10]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 420, 0, 140, 440 )
+
+[sub_resource type="AtlasTexture" id=11]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 560, 0, 140, 440 )
+
+[sub_resource type="SpriteFrames" id=6]
+animations = [ {
+"frames": [ SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ), SubResource( 11 ) ],
+"loop": true,
+"name": "default",
+"speed": 8.0
+} ]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="Perso" type="AnimatedSprite" parent="."]
+scale = Vector2( 1.45998, 1.45998 )
+frames = SubResource( 6 )
+frame = 3
+
+[node name="Texte1" type="Node2D" parent="."]
+position = Vector2( 1.95258, 12.8951 )
+
+[node name="Bulle1" type="Sprite" parent="Texte1"]
+position = Vector2( -249.232, -328.761 )
+texture = ExtResource( 4 )
+
+[node name="Label1" type="Label" parent="Texte1"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -514.357
+margin_top = -405.8
+margin_right = 1.64276
+margin_bottom = -272.8
+theme = ExtResource( 3 )
+text = "Pour gagner,
+tu dois faire le ménage
+et supprimer le plus
+d'instrus possibles."
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Texte2" type="Node2D" parent="."]
+position = Vector2( -2.75092, 5.17599 )
+
+[node name="Bulle2" type="Sprite" parent="Texte2"]
+position = Vector2( -249.231, -177.555 )
+texture = ExtResource( 5 )
+
+[node name="Label2" type="Label" parent="Texte2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -448.466
+margin_top = -268.49
+margin_right = -98.4656
+margin_bottom = -101.49
+theme = ExtResource( 3 )
+text = "Mais il est très
+important de bien
+recycler et de choisir
+la bonne poubelle."
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Texte3" type="Node2D" parent="."]
+position = Vector2( 26.2475, 6.54727 )
+
+[node name="Bulle3" type="Sprite" parent="Texte3"]
+position = Vector2( -272.232, -324.761 )
+texture = ExtResource( 4 )
+
+[node name="Label3" type="Label" parent="Texte3"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -429.321
+margin_top = -385.95
+margin_right = -133.321
+margin_bottom = -252.95
+theme = ExtResource( 3 )
+text = "Fais bien attention !
+Si tu te trompes,
+de nouveaux intrus
+appaîtront..."
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
