@@ -44,6 +44,18 @@ func _speech(time):
 	# duree du speech
 	tuto_speech_timer.start(time)
 
+func _restore():
+	Singleton.with_bouscadilla= true
+	Singleton.with_pelpel = false
+	Singleton.with_boubou = false
+	Singleton.with_rourou = false
+
+func _setup():
+	Singleton.with_bouscadilla= true
+	Singleton.with_pelpel = true
+	Singleton.with_boubou = true
+	Singleton.with_rourou = true
+
 
 # lance le tuto avec un nombre de tête initial 
 # (sur un total de tête dispo et un total de poubelles)
@@ -66,7 +78,9 @@ func _on_jeux_tutoriel1():
 	_clean()
 	_speech(2)
 	# affiche 4 têtes sur 10 possible avec 1 poubelles
+	_setup()
 	_start(4, 10, 1)
+	_restore()
 
 
 # deuxième partie du tuto
@@ -78,7 +92,9 @@ func _on_jeux_tutoriel2():
 	_clean()
 	_speech(3)
 	# affiche 3 têtes sur 2 possible avec 2 poubelles
+	_setup()
 	_start(3,2,2)
+	_restore()
 	
 
 # troisième partie du tutoriel
@@ -90,7 +106,9 @@ func _on_jeux_tutoriel3():
 	_clean()
 	_speech(2)
 	# affiche 2 têtes sur 3 possible avec 3 poubelles
+	_setup()
 	_start(2,3,3)
+	_restore()
 
 
 func _on_fin_tuto():
@@ -110,4 +128,6 @@ func _on_fin_tuto():
 	var texte = "Et voilà, à toi de jouer"
 	texte += "\n\nBonne chance !"
 
+	_restore()
+	
 	Singleton.emit_signal("popup_message", texte)

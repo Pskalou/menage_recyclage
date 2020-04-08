@@ -25,16 +25,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.26813447"
-     inkscape:cx="409.61957"
-     inkscape:cy="571.6355"
+     inkscape:zoom="0.24748737"
+     inkscape:cx="109.5826"
+     inkscape:cy="140.57724"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1280"
-     inkscape:window-height="1000"
+     inkscape:window-width="1024"
+     inkscape:window-height="704"
      inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-y="36"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata5">
@@ -55,9 +55,7 @@
      transform="translate(-230.68092,54.274049)">
     <g
        id="g860"
-       transform="translate(223.25284,-408.55369)"
-       inkscape:export-xdpi="40"
-       inkscape:export-ydpi="40">
+       transform="translate(223.25284,-261.12436)">
       <ellipse
          ry="68.420998"
          rx="108.51142"
@@ -76,9 +74,7 @@
     </g>
     <g
        id="g985"
-       transform="translate(-81.726346,190.817)"
-       inkscape:export-xdpi="40"
-       inkscape:export-ydpi="40">
+       transform="translate(-94.546148,51.329172)">
       <ellipse
          ry="68.420998"
          rx="108.51142"

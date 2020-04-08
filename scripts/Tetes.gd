@@ -80,6 +80,7 @@ func _on_nouvelle_tete():
 		add_tete()#randi())
 	else:
 		printt("game over")
+		# → World : fin de partie
 		Singleton.emit_signal("game_over")
 
 

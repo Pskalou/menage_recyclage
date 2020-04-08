@@ -46,7 +46,6 @@ script = ExtResource( 2 )
 frames = SubResource( 6 )
 
 [node name="Texte1" type="Node2D" parent="."]
-visible = false
 position = Vector2( 1.95258, 12.8951 )
 
 [node name="Bulle1" type="Sprite" parent="Texte1"]
@@ -72,7 +71,6 @@ __meta__ = {
 }
 
 [node name="Texte2" type="Node2D" parent="."]
-visible = false
 position = Vector2( -2.75092, 5.17599 )
 
 [node name="Bulle2" type="Sprite" parent="Texte2"]
@@ -98,7 +96,6 @@ __meta__ = {
 }
 
 [node name="Texte3" type="Node2D" parent="."]
-visible = false
 position = Vector2( 26.2475, 6.54727 )
 
 [node name="Bulle3" type="Sprite" parent="Texte3"]
