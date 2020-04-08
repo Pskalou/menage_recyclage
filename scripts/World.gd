@@ -128,8 +128,6 @@ func _on_jeux_tutoriel():
 func _on_game_over():
 	timer.stop()
 	
-	_clean_world()
-	
 	var texte = "Déjà fini ?!?"
 	texte += "\n\nDommage pour toi..."
 	texte += "\n\nTon score est de "
@@ -178,6 +176,7 @@ func  _on_Fin_partie_confirmed():
 	_update_score()
 	get_node("Main_menu").set_visible(true)
 	get_node("Pause_menu").set_visible(false)
+	_clean_world()
 	
 
 
