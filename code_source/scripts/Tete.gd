@@ -1,4 +1,4 @@
-extends Area2D
+extends KinematicBody2D
 
 
 var id = 0
@@ -19,7 +19,8 @@ func _ready():
 
 func _on_Tete_input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.is_pressed():
-		# signale que la tête est touchée et envoie l'id de la poubelle associée
+		# → tetes
+		# signale que la tête est touchée et envoie le node tête en argument
 		Singleton.emit_signal("update_sprites_touched", self)
 
 

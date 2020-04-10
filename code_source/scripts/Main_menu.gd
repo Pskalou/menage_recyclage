@@ -13,6 +13,7 @@ var over_arcade:bool
 var over_quitter:bool
 
 func _ready():
+	Singleton.connect("init_buttons", self, "_init_buttons")
 	tutoriel_label= get_node("HBoxContainer/VBoxContainer/CenterContainer/Modes_jeux/Tutoriel")
 	over_tutoriel= false
 	histoire_label= get_node("HBoxContainer/VBoxContainer/CenterContainer/Modes_jeux/Histoire")
@@ -21,7 +22,23 @@ func _ready():
 	over_arcade= false
 	quitter_label= get_node("HBoxContainer/VBoxContainer/CenterContainer/Modes_jeux/Quitter")
 	over_quitter= false
+
+	_init_buttons()
 	
+
+func _init_buttons():
+	var buttons= []
+	buttons.append([
+		Singleton.with_bouscadilla, 
+		get_node("HBoxContainer/VBoxContainer/Familles/HBoxContainer/VBoxContainer/Bouscadilla")])
+	print (buttons)
+	for e in buttons:
+		if e[0]:
+			e[1].pressed = true
+		else:
+			e[1].pressed = false
+		
+
 
 				
 func _on_Tuto_button_pressed():

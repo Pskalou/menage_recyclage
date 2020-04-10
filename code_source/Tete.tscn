@@ -36,11 +36,6 @@ height = 29.4373
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
-"frames": [  ],
-"loop": true,
-"name": "New Anim",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 3 ), ExtResource( 2 ) ],
 "loop": true,
 "name": "guigui",
@@ -112,10 +107,11 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[node name="Tete" type="Area2D"]
+[node name="Tete" type="KinematicBody2D"]
 scale = Vector2( 0.7, 0.7 )
+input_pickable = true
 collision_layer = 2
-collision_mask = 6
+collision_mask = 4
 script = ExtResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -125,5 +121,5 @@ shape = SubResource( 1 )
 [node name="sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, -2.64374 )
 frames = SubResource( 2 )
-animation = "New Anim"
+animation = "amelia"
 [connection signal="input_event" from="." to="." method="_on_Tete_input_event"]

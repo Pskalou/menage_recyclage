@@ -7,7 +7,6 @@
 [ext_resource path="res://scripts/Main_menu.gd" type="Script" id=5]
 [ext_resource path="res://assets/fonds/fond_accueil.png" type="Texture" id=6]
 
-
 [sub_resource type="DynamicFont" id=1]
 size = 50
 font_data = ExtResource( 3 )

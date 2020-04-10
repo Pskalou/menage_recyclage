@@ -15,11 +15,12 @@ func _ready():
 	sprite.set_animation(poubelles[id])
 
 
-func _on_tete_lachee(tete_lachee, poubelle_id):
-	if tete == tete_lachee:
+func _on_tete_lachee(preview, tete_lachee, poubelle_id):
+	if tete == preview:
 		# bonne poubelle
 		if self.id == poubelle_id:
-			Singleton.emit_signal("good_poubelle", tete_lachee, poubelle_id)
+			# → Tetes.gd
+			Singleton.emit_signal("good_poubelle",preview, tete_lachee, poubelle_id)
 			# printt("nombre de tetes restant:",Singleton.nb_tetes)
 			if Singleton.nb_tetes < 1 :
 				Singleton.emit_signal("plateau_vide")
@@ -36,15 +37,14 @@ func _on_tete_lachee(tete_lachee, poubelle_id):
 			Singleton.emit_signal("play_clic", tete_lachee.get_id())
 
 
-var tete:Area2D
+var tete:KinematicBody2D
 
-
-func _on_Poubelle_area_entered(area):
-	tete= area
+func _on_Poubelle_body_entered(body):
+	tete= body
 	sprite.set_frame(1)
 
 
-func _on_Poubelle_area_exited(area):
+func _on_Poubelle_body_exited(body):
 	sprite.set_frame(0)
 	tete= null
 

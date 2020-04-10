@@ -19,7 +19,8 @@ var goog_poubelle_id
 func _update_sprites_list(sprite):
 	# ajoute la tête à déplacer dans la liste des têtes déplaçables
 	sprites_list.append(sprite)
-	print("tete_id=%d et poubelle_id=%d"%[sprite.get_id(), sprite.get_poubelle_id()])
+	# print("tete_id=%d et poubelle_id=%d"%[sprite.get_id(), sprite.get_poubelle_id()])
+	# retourne l'unique tête à déplacer
 	tete_to_move= choose_over_head()
 
 
@@ -33,6 +34,11 @@ func choose_over_head():
 			head= e
 	return head
 
+# func _create_preview():
+# 	printt("création de preview de ", tete_to_move)
+# 	preview= tete_scene.instance()
+# 	add_child(preview)
+	
 # fonction utilisée pour savoir s'il y a des têtes à déplacer
 func is_dragging():
 	if sprites_list == []:
@@ -40,36 +46,59 @@ func is_dragging():
 	else:
 		return true
 
+var is_preview_present= false
 
+var preview
 func _input(event):
-	if event is InputEventMouseButton and not event.is_pressed():
-		# si on était en train de déplacer une tête
-		if is_dragging():
-			# arrête la grimace
-			tete_to_move.tete.set_frame(0)
-			tete_to_move.tete.set_scale(Vector2(1,1))
-			# signaler que la tete est posée
-			# à destination de Poubelle
-			Singleton.emit_signal("tete_lachee", tete_to_move, tete_to_move.get_poubelle_id()) 
-			# vider la liste des têtes déplaçables
-			sprites_list = []
+	if event is InputEventMouseButton:
+		if  not event.is_pressed():
+			# si on était en train de déplacer une tête
+			if is_dragging():
+				# arrête la grimace
+				tete_to_move.tete.set_frame(0)
+				tete_to_move.tete.set_scale(Vector2(1,1))
+				tete_to_move.z_index= -1
+				# signaler que la tete est posée
+				# → Poubelle.gd
+				Singleton.emit_signal("tete_lachee", preview, tete_to_move, tete_to_move.get_poubelle_id()) 
+				# vider la liste des têtes déplaçables
+				sprites_list = []
+				# supprimer preview
+				if is_preview_present:
+					is_preview_present= false
+					preview.queue_free()
 
 	if event is InputEventMouseMotion:
+		
 		if is_dragging():
-			# fait la grimace
-			tete_to_move.tete.set_frame(1)
-			tete_to_move.tete.set_scale(Vector2(1.2,1.2))
+
+
+			if not is_preview_present:
+				# fait la grimace
+				tete_to_move.tete.set_frame(1)
+				tete_to_move.tete.set_scale(Vector2(1.6,1.6))
+				tete_to_move.z_index= 0
+				# création de preview
+				preview= tete_scene.instance()
+				preview.set_id(tete_to_move.get_id())
+				preview.set_modulate(Color(1,1,1,0.5))
+				add_child(preview)
+				is_preview_present= true
+
+			tete_to_move.look_at(event.position)
+			tete_to_move.rotation -= 1.5 
+
 			# déplacer la tête du dessus
-			tete_to_move.position= event.position
+			preview.position= event.position
 			# empêche la tête de sortir du cadre
-			if tete_to_move.position.x < 100:
-				tete_to_move.position.x= 100
-			if tete_to_move.position.x> 950:
-				tete_to_move.position.x= 950
-			if tete_to_move.position.y < 100:
-				tete_to_move.position.y= 100
-			if tete_to_move.position.y > 500:
-				tete_to_move.position.y= 500
+			if preview.position.x < 100:
+				preview.position.x= 100
+			if preview.position.x> 950:
+				preview.position.x= 950
+			if preview.position.y < 100:
+				preview.position.y= 100
+			if preview.position.y > 500:
+				preview.position.y= 500
 
 
 # teste la fin de la partie (pourquoi ici)
@@ -108,13 +137,19 @@ func add_tete(id=null):
 	tetes[-1].z_index=-1
 
 
-func _on_good_poubelle(tete_node, tete_id):
+func _on_good_poubelle(preview, tete_node, tete_id):
 #	printt("supprime", tete_node, "id:",tete_id)
 	# Singleton.over_list.erase(tete_node)
-	tete_node.queue_free()
+	_supprime_tete(preview, tete_node)
 	Singleton.nb_tetes = max(Singleton.nb_tetes - 1, 0)
 	
 	Singleton.emit_signal("increase_score")
+
+
+func _supprime_tete(preview, tete):
+	tete.queue_free()
+
+	
 
 
 var Explosion = preload("res://Explosion.tscn")

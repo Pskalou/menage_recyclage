@@ -40,6 +40,9 @@ signal debut_pause
 signal fin_pause
 signal main_menu
 
+# → Main_menu.gd : mets les boutons des familles dans les bonnes positions
+signal init_buttons
+
 signal init_poubelles
 
 var tuto_state1= false

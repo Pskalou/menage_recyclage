@@ -44,17 +44,29 @@ func _speech(time):
 	# duree du speech
 	tuto_speech_timer.start(time)
 
-func _restore():
-	Singleton.with_bouscadilla= true
-	Singleton.with_pelpel = false
-	Singleton.with_boubou = false
-	Singleton.with_rourou = false
 
 func _setup():
+	var save= []
+	save.append(Singleton.with_bouscadilla)
+	save.append(Singleton.with_pelpel)
+	save.append(Singleton.with_boubou)
+	save.append(Singleton.with_rourou)
+
 	Singleton.with_bouscadilla= true
 	Singleton.with_pelpel = true
 	Singleton.with_boubou = true
 	Singleton.with_rourou = true
+
+	return save
+
+
+func _restore(my_array):
+	Singleton.with_bouscadilla= my_array[0]
+	Singleton.with_pelpel = my_array[1]
+	Singleton.with_boubou = my_array[2]
+	Singleton.with_rourou = my_array[3]
+	# → Main_menu.gd : remet les boutons des familles comme il faut
+	Singleton.emit_signal("init_buttons")
 
 
 # lance le tuto avec un nombre de tête initial 
@@ -78,9 +90,9 @@ func _on_jeux_tutoriel1():
 	_clean()
 	_speech(2)
 	# affiche 4 têtes sur 10 possible avec 1 poubelles
-	_setup()
+	var save = _setup()
 	_start(4, 10, 1)
-	_restore()
+	_restore(save)
 
 
 # deuxième partie du tuto
@@ -92,9 +104,9 @@ func _on_jeux_tutoriel2():
 	_clean()
 	_speech(3)
 	# affiche 3 têtes sur 2 possible avec 2 poubelles
-	_setup()
+	var save= _setup()
 	_start(3,2,2)
-	_restore()
+	_restore(save)
 	
 
 # troisième partie du tutoriel
@@ -106,9 +118,9 @@ func _on_jeux_tutoriel3():
 	_clean()
 	_speech(2)
 	# affiche 2 têtes sur 3 possible avec 3 poubelles
-	_setup()
+	var save= _setup()
 	_start(2,3,3)
-	_restore()
+	_restore(save)
 
 
 func _on_fin_tuto():
@@ -128,6 +140,4 @@ func _on_fin_tuto():
 	var texte = "Et voilà, à toi de jouer"
 	texte += "\n\nBonne chance !"
 
-	_restore()
-	
 	Singleton.emit_signal("popup_message", texte)

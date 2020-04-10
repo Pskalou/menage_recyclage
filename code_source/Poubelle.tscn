@@ -3,66 +3,66 @@
 [ext_resource path="res://assets/poubelle/4_poub.png" type="Texture" id=1]
 [ext_resource path="res://scripts/Poubelle.gd" type="Script" id=3]
 
-[sub_resource type="AtlasTexture" id=11]
-flags = 4
-atlas = ExtResource( 1 )
-region = Rect2( 0, 378, 175, 378 )
-
-[sub_resource type="AtlasTexture" id=12]
-flags = 4
-atlas = ExtResource( 1 )
-region = Rect2( 175, 378, 175, 378 )
-
-[sub_resource type="AtlasTexture" id=13]
+[sub_resource type="AtlasTexture" id=1]
 flags = 4
 atlas = ExtResource( 1 )
 region = Rect2( 350, 0, 175, 378 )
 
-[sub_resource type="AtlasTexture" id=14]
+[sub_resource type="AtlasTexture" id=2]
 flags = 4
 atlas = ExtResource( 1 )
 region = Rect2( 525, 0, 175, 378 )
 
-[sub_resource type="AtlasTexture" id=16]
+[sub_resource type="AtlasTexture" id=3]
 flags = 4
 atlas = ExtResource( 1 )
 region = Rect2( 175, 0, 175, 378 )
 
-[sub_resource type="AtlasTexture" id=15]
+[sub_resource type="AtlasTexture" id=4]
 flags = 4
 atlas = ExtResource( 1 )
 region = Rect2( 0, 0, 175, 378 )
 
-[sub_resource type="AtlasTexture" id=17]
+[sub_resource type="AtlasTexture" id=5]
 flags = 4
 atlas = ExtResource( 1 )
 region = Rect2( 350, 378, 175, 378 )
 
-[sub_resource type="AtlasTexture" id=18]
+[sub_resource type="AtlasTexture" id=6]
 flags = 4
 atlas = ExtResource( 1 )
 region = Rect2( 525, 378, 175, 378 )
 
+[sub_resource type="AtlasTexture" id=7]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 0, 378, 175, 378 )
+
+[sub_resource type="AtlasTexture" id=8]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 175, 378, 175, 378 )
+
 [sub_resource type="SpriteFrames" id=9]
 animations = [ {
-"frames": [ SubResource( 11 ), SubResource( 12 ) ],
-"loop": true,
-"name": "rouge",
-"speed": 5.0
-}, {
-"frames": [ SubResource( 13 ), SubResource( 14 ) ],
+"frames": [ SubResource( 1 ), SubResource( 2 ) ],
 "loop": true,
 "name": "jaune",
 "speed": 5.0
 }, {
-"frames": [ SubResource( 16 ), SubResource( 15 ) ],
+"frames": [ SubResource( 3 ), SubResource( 4 ) ],
 "loop": true,
 "name": "verte",
 "speed": 5.0
 }, {
-"frames": [ SubResource( 17 ), SubResource( 18 ) ],
+"frames": [ SubResource( 5 ), SubResource( 6 ) ],
 "loop": true,
 "name": "bleue",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 7 ), SubResource( 8 ) ],
+"loop": true,
+"name": "rouge",
 "speed": 5.0
 } ]
 
@@ -83,5 +83,5 @@ animation = "verte"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( -1.81915, 43.6553 )
 shape = SubResource( 10 )
-[connection signal="area_entered" from="." to="." method="_on_Poubelle_area_entered"]
-[connection signal="area_exited" from="." to="." method="_on_Poubelle_area_exited"]
+[connection signal="body_entered" from="." to="." method="_on_Poubelle_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_Poubelle_body_exited"]
